@@ -148,6 +148,38 @@ class DataResponder {
     }
 
     /**
+     * Based on the provided search type, performs the appropriate
+     * search using the request.
+     * 
+     * @param request The request object being read
+     * @param search_type the string name of the search type
+     * @returns The data returned by the data repo in response to the request
+     */
+    public static GetResponse(request: any, search_type : string) {
+
+        switch(search_type) {
+            case "id": {
+                return DataResponder.GetSingleEntry(request);
+            }
+            case "file": {
+                return DataResponder.GetFullDataEntry(request);
+            }
+            case "keyvalues": {
+                return DataResponder.GetAllOfKeyInData(request);
+            }
+            case "complex": {
+                return DataResponder.ComplexSearch(request);
+            }
+            case "tags": {
+                return DataResponder.GetAllTagsInData(request);
+            }
+            default: {
+                return []
+            }
+        }
+    }
+
+    /**
      * Grabs a single entry based on ID value
      * @param request JSON structure that provides the file to search and the ID to search by
      * @returns JSON object, either empty or containing the found entry
