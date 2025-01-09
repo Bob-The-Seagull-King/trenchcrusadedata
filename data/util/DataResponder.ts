@@ -155,7 +155,7 @@ class DataResponder {
      * @param search_type the string name of the search type
      * @returns The data returned by the data repo in response to the request
      */
-    public static GetResponse(request: any, search_type : string) {
+    public static GetResponse(request: any, search_type : string, language_set : string) {
 
         switch(search_type) {
             case "id": {
