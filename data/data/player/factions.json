@@ -480,7 +480,6 @@
             {"id": "eq_troopflag",                  "cost":  1, "cost_id": "glory",  "limit": 1, "restriction": []},
             {"id": "eq_binoculars",                 "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_rocketpropelledgrenade",     "cost":  2, "cost_id": "glory",  "limit": 2, "restriction": [{"type": "purchase", "val": "explore"}]},
-            {"id": "eq_wargavel",                   "cost":  0, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_witchburnergeneral  "}]},
             {"id": "eq_sniperscope",                "cost":  2, "cost_id": "glory",  "limit": 2, "restriction": [{"type": "purchase", "val": "explore"}]},
             {"id": "eq_salvagegolem",               "cost":  4, "cost_id": "glory",  "limit": 1, "restriction": [{"type": "purchase", "val": "explore"}]},
             {"id": "eq_knighthood",                 "cost":  5, "cost_id": "glory",  "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"},{"type": "purchase", "val": "explore"}]},
