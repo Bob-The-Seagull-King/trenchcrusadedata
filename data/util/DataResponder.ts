@@ -1,26 +1,6 @@
 
 // Data File Imports -----------------------------------
-import modelsdata from '../data/player/models.json'
-import addonsdata from '../data/player/addons.json'
-import glossarydata from '../data/references/glossary.json'
-import equipmentdata from '../data/player/equipment.json'
-import factiondata from '../data/player/factions.json'
-import variantdata from '../data/player/variants.json'
-import scenariodata from '../data/scenarios/scenarios.json'
-import injurydata from '../data/general/injuries.json'
-import skilldata from '../data/general/skills.json'
-import skillgroupdata from '../data/general/skillgroup.json'
-import explorationtable from '../data/general/explorationcharts.json'
-import explorationmodifiers from '../data/general/explorationmodifiers.json'
-import location from '../data/general/explorationitems.json'
-import tablechartdata from '../data/references/tablecharts.json'
-import tableresultdata from '../data/references/tableresults.json'
-import quickrulesdata from '../data/references/quickrules.json'
-import campaignrulesdata from '../data/references/campaignrules.json'
-import genDeeds from '../data/scenarios/gen_deeds.json'
-import genDeployment from '../data/scenarios/gen_deployment.json'
-import genScenario from '../data/scenarios/gen_scenario.json'
-import upgradedata from '../data/player/upgrades.json'
+import { DataByLanguageTable, DataSetTC } from "./DataHandler"
 // -----------------------------------------------------
 
 /**
@@ -29,6 +9,7 @@ import upgradedata from '../data/player/upgrades.json'
 interface IDataRequest {
     type: string // The data file to search within
     data: []
+    language?: string
 }
 
 /**
@@ -76,70 +57,76 @@ class DataResponder {
      * @param type The type of data to be searched
      * @returns JSON array of data to search
      */
-    private static GetDataType(type: string, data : any[]) {
+    private static GetDataType(type: string, data : any[], language : string | undefined) {
+        let RelevantSet : DataSetTC;
+        if (language != undefined) {
+            RelevantSet = DataByLanguageTable[language]
+        } else {
+            RelevantSet = DataByLanguageTable['ln_english']
+        }
         switch(type) {
             case "models": {
-                return modelsdata.concat(data)
+                return RelevantSet.modelsdata.concat(data)
             }
             case "addons": {
-                return addonsdata.concat(data)
+                return RelevantSet.addonsdata.concat(data)
             }
             case "equipment": {
-                return equipmentdata.concat(data)
+                return RelevantSet.equipmentdata.concat(data)
             }
             case "faction": {
-                return factiondata.concat(data)
+                return RelevantSet.factiondata.concat(data)
             }
             case "variants": {
-                return variantdata.concat(data)
+                return RelevantSet.variantdata.concat(data)
             }
             case "glossary": {
-                return glossarydata.concat(data)
+                return RelevantSet.glossarydata.concat(data)
             }
             case "scenario": {
-                return scenariodata.concat(data)
+                return RelevantSet.scenariodata.concat(data)
             }
             case "injuries": {
-                return injurydata.concat(data)
+                return RelevantSet.injurydata.concat(data)
             }
             case "skills": {
-                return skilldata.concat(data)
+                return RelevantSet.skilldata.concat(data)
             }
             case "skillgroup": {
-                return skillgroupdata.concat(data)
+                return RelevantSet.skillgroupdata.concat(data)
             }
             case "location": {
-                return location.concat(data)
+                return RelevantSet.location.concat(data)
             }
             case "exploremodifiers": {
-                return explorationmodifiers.concat(data)
+                return RelevantSet.explorationmodifiers.concat(data)
             }
             case "exploration": {
-                return explorationtable.concat(data)
+                return RelevantSet.explorationtable.concat(data)
             }
             case "tablechart": {
-                return tablechartdata.concat(data)
+                return RelevantSet.tablechartdata.concat(data)
             }
             case "tableresult": {
-                return tableresultdata.concat(data)
+                return RelevantSet.tableresultdata.concat(data)
             }
             case "quickrules": {
-                return quickrulesdata.concat(data)
+                return RelevantSet.quickrulesdata.concat(data)
             }
             case "campaignrules": {
-                return campaignrulesdata.concat(data)
+                return RelevantSet.campaignrulesdata.concat(data)
             }
             case "upgrade": {
-                return upgradedata.concat(data)
+                return RelevantSet.upgradedata.concat(data)
             }
             case "genDeed": {
-                return genDeeds.concat(data)
+                return RelevantSet.genDeeds.concat(data)
             }
             case "genDeployment": {
-                return genDeployment.concat(data)
+                return RelevantSet.genDeployment.concat(data)
             }
             case "genScenario": {
-                return genScenario.concat(data)
+                return RelevantSet.genScenario.concat(data)
             }
             default: {
                 return data
@@ -156,7 +143,7 @@ class DataResponder {
      * @returns The data returned by the data repo in response to the request
      */
     public static GetResponse(request: any, search_type : string, language_set : string) {
-
+        request.language = language_set;
         switch(search_type) {
             case "id": {
                 return DataResponder.GetSingleEntry(request);
@@ -185,7 +172,7 @@ class DataResponder {
      * @returns JSON object, either empty or containing the found entry
      */
     public static GetSingleEntry(request: IDataRequestID) {
-        const dataSet = DataResponder.GetDataType(request.type, request.data)
+        const dataSet = DataResponder.GetDataType(request.type, request.data, request.language)
         let i = 0;
         for (i = 0; i < dataSet.length; i++) {
             if (dataSet[i].id == request.id) {
@@ -201,7 +188,7 @@ class DataResponder {
      * @returns JSON array of all data in the specified file
      */
     public static GetFullDataEntry(request: IDataRequest) {
-        const dataSet = DataResponder.GetDataType(request.type, request.data)
+        const dataSet = DataResponder.GetDataType(request.type, request.data, request.language)
         return dataSet;
     }
 
@@ -211,7 +198,7 @@ class DataResponder {
      * @returns Array of all values associated with the requested key in the requested file
      */
     public static GetAllOfKeyInData(request: IDataRequestID) {
-        const dataSet = DataResponder.GetDataType(request.type, request.data)
+        const dataSet = DataResponder.GetDataType(request.type, request.data, request.language)
         const valueSet: any = []
 
         let i = 0;
@@ -232,7 +219,7 @@ class DataResponder {
      * @returns Array of string names of tags
      */
     public static GetAllTagsInData(request: IDataRequest) {
-        const dataSet = DataResponder.GetDataType(request.type, request.data)
+        const dataSet = DataResponder.GetDataType(request.type, request.data, request.language)
         const valueSet: any = []
 
         let i = 0;
@@ -258,7 +245,7 @@ class DataResponder {
      * @returns JSON array of entries in a data file that match the criteria
      */
     public static ComplexSearch(search: IDataRequestComplexSearch) {
-        const dataSet = DataResponder.GetDataType(search.type, search.data)
+        const dataSet = DataResponder.GetDataType(search.type, search.data, search.language)
         const dataSelect = []
 
         let i = 0;
