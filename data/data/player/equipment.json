@@ -762,6 +762,17 @@
         "modifiers": [],
         "eventtags": {"action": true},
         "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Gives +1 DICE bonus to any other ACTION the model takes apart from Dash, Ranged Attack or Melee Attack.",
+                        "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "+1 DICE", "id": "gl_plusdice"}]
+                    }
+                ]
+            }
                         ]
     },
     {
@@ -837,6 +848,32 @@
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                         "content": "Always takes one hand to use in both melee and in ranged combat, and cannot be switched out. Grants -1 to all injury rolls against the model. This bonus stacks with any armour the model wears, unless otherwise indicated. For the purposes of wielding a 2-handed weapon with the ‘Shield Combo’ indicator, the Trench Shield does not take a hand to wield but still functions as normal."
+                                    }
+                                ]
+                            }
+                        ]
+    },
+    {
+        "id": "eq_heavyballisticshield",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "armour",
+        "name": "Heavy Ballistic Shield",
+        "equip_type": null,
+        "range": null,
+        "blurb": "These massive shields are made of aramid fiber mesh and orichalcum-steel alloy. They are so heavy that they can only be carried by the Heavy Mechanised infantry, and even then they are too cumbersome to be used is fast paced melee, and are mainly used to protect them during their ponderous advance towards the enemy.",
+        "modifiers": null,
+        "eventtags": {"trait": true,"armour":-1},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "akes always one hand to use in both melee and in ranged combat and cannot be switched out. The target is always considered to be in Cover, and count as fighting behind a defended obstacle when an enemy charges them. These bonuses cannot be combined with Polearms, shovels, cover or defended obstacles."
                                     }
                                 ]
                             }
@@ -2105,6 +2142,35 @@
             ]
     },
     {
+        "id": "eq_tanksplittersword",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+            {"tag_name": "Cumbersome", "val": "gl_cumbersome"},
+            {"tag_name": "Critical", "val": "gl_critical"}
+                ],
+        "category": "melee",
+        "name": "Tank-Splitter Sword",
+        "equip_type": "2-Handed",
+        "range": "Melee",
+        "blurb": "It takes years of gruelling Mensur practice and field drills to acquire the required precision and speed to use the specialist tank-splitter swords of thre Gardekorps. Despite their great size (often over 6 feet long!) they are remarkably light, and due the large quantities of Orichalcum used in their forging process they are virtually unbreakable, and thus often used to disable tanks and other armoured vehicles by either slicing their armour open or disabling them with an accurate swing to sever their tracks. Before any battle they are treated with special metal-melting chemical compound which melts the armour, making it far deadlies weapon against armoured targets than those who wear none.",
+        "modifiers": ["+1 on Injury Results"],
+        "eventtags": {"action": true},
+        "description":  [
+                {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Rule:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "Adds +1 to Injury rolls. If the model the sword hits has armour modifier from any other source than a shield, then the player may set any one dice of the Injury roll into 6 before the Injury Roll is made. Rest of the dice for the injury toll.",
+                            "glossary": []
+                        }
+                    ]
+                }
+            ]
+    },
+    {
         "id": "eq_assassinsdagger",
         "type": "Equipment",
         "source": "core",
@@ -2402,8 +2468,16 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Grants a -3 modifier to all injury rolls against the model wearing this armour. Due to its bulk the wearer rolls D3 for a charge extra distance instead of D6. Any Down results on the Injury Chart are converted to Minor Hit. Machine armour cannot be combined with any shield. Models wearing Machine Armour may have a Base Size of 40mm if you wish.",
+                            "content": "Grants a -3 modifier to all injury rolls against the model wearing this armour, and treats Down Injury results as a Minor Hit instead (note that TOUGH Keyword ability to avoid Out Of Action with Down overrides this). Due to its bulk the wearer rolls D3 for a charge extra distance instead of D6. Machine armour cannot be combined with any shield. Models wearing Machine Armour may have Base size of 40mm if you wish unless the model wearing it already is on 50mm or bigger base.",
                             "glossary": [{"val": "TOUGH", "id": "gl_tough"}]
+                        },
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": ""
+                        },
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "If worn by a model that is not part of New Antioch force/subfaction, the only bonus the armour gives is the -3 Injury modifier, as the chemical treatment that allows the wearer to withstand the rigors of the armour is a carefully guarded military secret."
                         }
                     ]
                 }
@@ -3875,7 +3949,7 @@
         "name": "Infernal Iron Armour",
         "equip_type": null,
         "range": null,
-        "blurb": "This armour is forged simultaneously in Hell and on Earth, so no weapon, whether infernal or man-made can overcome its protection.",
+        "blurb": "This armour is forged simultaneously in Hell and on Earth, so no weapon, whether Infernal or man-made can overcome its protection. It serves both as protection and torturous prison for the Hellknights that are forced to wear it",
         "modifiers": null,
         "eventtags": {"trait": true, "armour":-2},
         "description":  [
@@ -3885,7 +3959,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Injuries against this model are rolled with a flat -2 penalty. This penalty applies against injuries that ignore armour."
+                                        "content": "Injuries against this model are rolled with a flat -2 penalty. This penalty applies even against injuries that ignore armour."
                                     }
                                 ]
                             }
@@ -4081,7 +4155,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "The Anchorite may make an Injury roll against all models within 6” except the Anchorite itself. Note that all models within range, friend or foe, are hit if the weapon is used. No Line of Sight is needed. The attack has the Keyword GAS and Ignores Armour.",
+                            "content": "The Anchorite may make an Injury roll against all models within 6” except the Anchorite itself. Note that all models within range, friend or foe, are hit if the weapon is used. No Line of Sight is needed. The attack has the Keyword GAS and Ignores Armour unless the models are in Cover in which case armour works as normal. The use of the Gas Censer always ends the Activation of this model.",
                             "glossary": [{"val": "GAS", "id": "gl_gas"}]
                         }
                     ]
@@ -4243,8 +4317,34 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Downed Enemy models in Melee Combat with this model cannot automatically Stand at the start of their Activation.",
-                            "glossary": []
+                            "content": "If the model fighting the Shrine Anchorite in Melee is affected by the Keyword FEAR, one of the ACTIONS it has to take when it is activated must be Retreat from Melee Combat.",
+                            "glossary": [{"val": "ACTIONS", "id": "gl_action"},{"val": "FEAR", "id": "gl_fear"}]
+                        }
+                    ]
+                }
+            ]
+    },
+    {
+        "id": "eq_hallowedanchorite",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Hallowed Anchorite",
+        "equip_type": null,
+        "range": null,
+        "blurb": "The anchorite has been anointed with holy Chrism, the oil made of pure myrrh and fifty-six other ingredients including ash from burnt icons. This makes the Anchorite pleasing to the LORD and its blessings can become manifold over time.",
+        "modifiers": [],
+        "eventtags": {"trait": true, "promotion": 2},
+        "description":  [
+                {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Rule:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "This Anchorite can be promoted into ELITE during campaigns."
                         }
                     ]
                 }

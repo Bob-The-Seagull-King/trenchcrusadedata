@@ -82,6 +82,12 @@
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                 "content": "Once Activated a model can take as many or as few ACTIONS during each Activation as you wish, in any order you choose. However, each ACTION can only be taken once per Activation unless otherwise stated in the rules. Thus you could fire your weapon, then Move and then Dash during the same Activation, or Dash and then Charge and so on.",
                 "glossary": [{"val": "ACTIONS", "id": "gl_action"},{"val": "ACTION", "id": "gl_action"}]
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Several ACTIONS require you to roll on the Action Success Chart to see if you succeed. If you succeed, you take the ACTION as described in the rules. If you fail, you can still move or take any other ACTIONS the model may have access to. If the ACTION is classed as a RISKY ACTION and you fail, the activation of the model is over and your opponent can now activate one of their models!",
+                "glossary": [{"val": "RISKY ACTION", "id": "gl_riskyaction"},{"val": "ACTIONS", "id": "gl_action"},{"val": "ACTION", "id": "gl_action"}]
             }
         ],
         "rules": [
@@ -292,7 +298,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": " Add +1 DICE to hit rolls if the model is taking the shot from a position more than 3” above the target.",
+                                        "content": "Add +1 DICE to hit rolls if the model is taking the shot from a position more than 2” above the target’s ground level. If the target is on a 50mm base, the height must be 4” from the target’s ground level.",
                                         "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"} ]
                                     }
                                  ]
@@ -465,6 +471,15 @@
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
                         "content": "There are four types of terrain in Trench Crusade: Open, Difficult, Dangerous and Impassable. Most terrain is considered Open (including going up the side of trenches and crossing obstacles up to the base height of the moving model) and the models may move freely through it without penalty. Difficult terrain (such as rock beds, swamps, barbed wire etc.) costs 2” of movement for every 1” the character moves through it. Models may not travel through Impassable terrain.",
                         "subcontent": [ ]
+                    }
+                ]
+            },
+            {
+                "title": "Open Terrain",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Open terrain is the most common terrain is Trench Crusade. Models can move freely through Open terrain. This includes crossing obstacles of up to 1” high, which does not cost movement. Ladders and ramps are Open Terrain."
                     }
                 ]
             },
@@ -651,6 +666,16 @@
                                 "subcontent": [ ]
                             }
                          ]
+                    }
+                ]
+            },
+            {
+                "title": "Purchasable Abilities",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Some Warbands allow you to purchase optional abilities for your models, such as the Goetic Powers of the Court of the Seven-headed Serpent. Unless otherwise specified, you can only ever buy one copy of any of these abilities for a single model. Same applies to bonuses gained from equipment, such as the Martrydom pills.",
+                        "subcontent": [ ]
                     }
                 ]
             }

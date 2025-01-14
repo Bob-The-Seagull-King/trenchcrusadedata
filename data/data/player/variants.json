@@ -144,8 +144,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "All models in Trench Ghost Warband have -1 DICE in all their Dash ACTIONS.",
-                                "glossary":  [{"val": "-1 DICE", "id": "gl_minusdice"},{"val": "ACTIONS", "id": "gl_action"}]
+                                "content": "All models in Trench Ghost Warband have a half Dash distance (ie. 3”)"
                             }
 
                         ]
@@ -160,17 +159,87 @@
                             }
 
                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Enemies Of All",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Trench Ghosts cannot use Mercenaries."
+                            }
+
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Battlefield Looters",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "When this Warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your Warband."
+                            }
+
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Lost Souls",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Since only mortals who have souls become ghosts, this Warband may not have any model with the Keyword ARTIFICIAL, such as War Wolves or Artillery Witches. In addition, no model in the Warband may have a Hellbound Soul Contract or an Infernal Brand Mark. Any model that has one of these pieces of equipment in their base profile will not have it although its price stays the same."
+                            }
+
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Sarcopaghus Mine",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "At the cost of +35 ducats, up to two of the Troopers can be turned into Sarcophagus Mines. These models can carry no other equipment from the Armoury."
+                            }
+
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Barbed Wire Banshee",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Instead of a Chorister, a Trench Ghost Warband may include A Barbed wire Banshee at the same cost."
+                            }
+
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Tank Palanquin",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "At the cost of 55 ducats, the Heretic Priest of the warband can ride ghostly Tank Palanquin."
+                            }
+
+                        ]
                     }
                 ]
             } 
         ],
         "removed_rules": [],
         "removed_equip": ["eq_hellboundsoulcontract","eq_infernalbrandmark"],
-        "removed_model": ["md_warwolfassaultbeast","md_artillerywitch","md_anointedheavyinfantry","md_hereticpriest"],
+        "removed_model": ["md_heretictrooper","md_warwolfassaultbeast","md_artillerywitch","md_anointedheavyinfantry","md_hereticpriest","md_sineater","md_goeticwarlock","md_wardog","md_guarddog","md_mercydog","md_hellhound"],
         "equipment": [ ],
         "models" : [
-            {"id": "md_hereticpriest_fv_trenchghosts", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_anointedheavyinfantry", "cost": 95, "cost_id": "ducats", "limit_min": 0, "limit_max": 5, "equipment": ["eq_reinforcedarmour"], "upgrades": []} ]
+            {"id": "md_hereticpriest_fv_trenchghosts", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_tankpalanquin", "cost": 55, "cost_id": "ducats"}]},
+            {"id": "md_anointedheavyinfantry", "cost": 95, "cost_id": "ducats", "limit_min": 0, "limit_max": 5, "equipment": ["eq_reinforcedarmour"], "upgrades": []} ,
+            {"id": "md_barbedwirebanshee", "cost": 65, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
+            {"id": "md_heretictrooper", "cost": 30, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_heretictroopertolegionnareranged", "cost": 10, "cost_id": "ducats"},{"id": "up_heretictroopertolegionnaremelee", "cost": 10, "cost_id": "ducats"},{"id": "up_heretictroopersarcopaghusmine", "cost": 35, "cost_id": "ducats"}]}
+        ]
+            
     },
     {
         "id": "fv_knightsofavarice",
@@ -373,11 +442,12 @@
             } 
         ],
         "removed_rules": [],
-        "removed_equip": ["eq_machinegun","eq_antitankhammer","eq_ironcapirote","eq_holyiconshield"],
+        "removed_equip": ["eq_machinegun","eq_antitankhammer","eq_ironcapirote","eq_holyiconshield","eq_puntgun"],
         "removed_model": ["md_castigator","md_trenchpilgrim"],
         "equipment": [
             {"id": "eq_antitankhammer", "cost": 35, "cost_id": "ducats", "limit": 3, "restriction": []},
             {"id": "eq_holyiconshield", "cost": 20, "cost_id": "ducats", "limit": 0, "restriction": []},
+            {"id": "eq_puntgun", "cost": 20, "cost_id": "ducats", "limit": 1, "restriction": []},
             {"id": "eq_holyiconarmour", "cost": 30, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "keyword", "val": "Elite"}]}
         ],
         "models" : [
@@ -547,7 +617,7 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Due to its construction and immense size, any Anchorite of this Warband may use any one of these weapons as a single-handed weapon. Such a weapon replaces the Breaking Wheel of the standard Shrine Anchorite. The Anchorite still retains the use of the Bonebreaker Mace on its other hand if it does this.",
+                        "content": "Due to its construction and immense size, any Anchorite of this Warband may use any one of these weapons as a single-handed weapon. The Anchrorite may replace its Breaking Wheel with one of these weapons at cost (except the Punt Gun, which costs 10 ducats). You can change these weapons and equipment between battles, but you must sell the old weapon at half price and install a new one.",
                         "subcontent": []
                     },
                     {
@@ -617,6 +687,10 @@
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "equipmentclick"}],
                                 "content": "eq_wrathfulcherubface"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "equipmentclick"}],
+                                "content": "eq_hallowedanchorite"
                             }
                         ]
                     }
@@ -625,27 +699,28 @@
         ],
         "removed_rules": [],
         "removed_equip": ["eq_machinegun","eq_submachinegun"],
-        "removed_model": ["md_anchoriteshrine","md_ecclesiasticprisoner","md_communicant","md_trenchpilgrim","md_stigmaticnun"],
+        "removed_model": ["md_anchoriteshrine","md_ecclesiasticprisoner","md_communicant","md_communicantantitankhunter","md_trenchpilgrim","md_stigmaticnun"],
         "equipment": [
             {"id": "eq_machinegun", "cost": 50, "cost_id": "ducats", "limit": 2, "restriction": []},
             {"id": "eq_automaticrifle", "cost": 40, "cost_id": "ducats", "limit": 1, "restriction": [], "features":["Bayonet Lug"]},
             {"id": "eq_submachinegun", "cost": 30, "cost_id": "ducats", "limit": 1, "restriction": [], "features":["Bayonet Lug","Shield Combo"]},
-            {"id": "eq_heavyflamethrower", "cost": 55, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
-            {"id": "eq_antimaterialrifle", "cost": 3, "cost_id": "glory", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
+            {"id": "eq_heavyflamethrower", "cost": 45, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
+            {"id": "eq_antimaterialrifle", "cost": 2, "cost_id": "glory", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_trenchmortar", "cost": 50, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
-            {"id": "eq_autocannon", "cost": 65, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
-            {"id": "eq_gascenser", "cost": 60, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
+            {"id": "eq_autocannon", "cost": 55, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
+            {"id": "eq_gascenser", "cost": 50, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_gasfilter", "cost": 5, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_holydieselengine", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_sacredgeometry", "cost": 10, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_grandanchorite", "cost": 15, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_pistonlegs", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
-            {"id": "eq_wrathfulcherubface", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]}
+            {"id": "eq_wrathfulcherubface", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
+            {"id": "eq_hallowedanchorite", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]}
         ],
         "models" : [
             {"id": "md_ecclesiasticprisoner", "cost": 20, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_trenchpilgrim", "cost": 30, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_zealotstrengthpilgrim", "cost": 5, "cost_id": "ducats"}]},
-            {"id": "md_stigmaticnun", "cost": 65, "cost_id": "ducats", "limit_min": 0, "limit_max": 4, "equipment": ["eq_standardarmour"], "upgrades": []},
+            {"id": "md_stigmaticnun", "cost": 65, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": ["eq_standardarmour"], "upgrades": []},
             {"id": "md_anchoriteshrine_warpilgramageofstmethodius", "cost": 140, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": ["eq_combathelmet","eq_machinearmour"], "upgrades": []}
         ]
     },
@@ -992,7 +1067,7 @@
                 {"id": "up_homunculussealofsolomon",        "cost": 10, "cost_id": "ducats"},
                 {"id": "up_homunculusgargantuansize",       "cost": 20, "cost_id": "ducats"},
                 {"id": "up_homunculusregenerativetissue",   "cost": 25, "cost_id": "ducats"}]},
-            {"id": "md_lionsofjabir",        "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": [], "upgrades": []}
+            {"id": "md_lionsofjabir",        "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": [], "upgrades": [{"id": "up_fiercelion", "cost": 5, "cost_id": "ducats"}]}
         ]
     },
     {
@@ -1036,7 +1111,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "Up to 4 non-Elite troopers can be upgraded into Swiss Guards at the cost of 5 Ducats each. They are immune to FEAR.",
+                                "content": "Up to 4 non-Elite troopers and the Lieutenant can be upgraded into Swiss Guards at the cost of 5 Ducats each. They are immune to FEAR.",
                                 "glossary":  [{"val": "FEAR", "id": "gl_fear"}]
                             }
 
@@ -1048,7 +1123,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "One model in the Warband may carry the crucifix given by the Supreme Pontiff. This model can take further ACTIONS if it fails in an attempted RISKY ACTION. Note that the action fails, but you are allowed to try any other Actions on your profile without losing the Activation.",
+                                "content": "One model in the Warband may carry the crucifix given by the Supreme Pontiff. This model can take further ACTIONS if it fails in an attempted RISKY ACTION. Note that the action fails, but you are allowed to try any other Actions on your profile without losing the Activation. If the crucifix is lost, a new one can be acquired at the cost of 3 Glory Points.",
                                 "glossary":  [{"val": "ACTION", "id": "gl_action"},{"val": "ACTIONS", "id": "gl_action"},{"val": "RISKY ACTION", "id": "gl_riskyaction"}]
                             }
 
@@ -1074,8 +1149,8 @@
         "removed_model": ["md_trenchcleric","md_lieutenant","md_yeoman","md_shocktroopers","md_combatengineer","md_mechanisedheavyinfantry","md_combatmedic","md_wardog","md_guarddog","md_mercydog","md_communicantantitankhunter","md_mendelistammomonk","md_observer","md_sniperpriest"],
         "equipment": [],
         "models" : [
-            {"id": "md_lieutenant",                 "cost": 70, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1}]},
-            {"id": "md_trenchcleric",               "cost": 60, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1}]},
+            {"id": "md_lieutenant",                 "cost": 70, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats"}]},
+            {"id": "md_trenchcleric_palalinterventionforce",               "cost": 60, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1}]},
             {"id": "md_sniperpriest",               "cost": 50, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1}]},
             {"id": "md_yeoman",                     "cost": 40, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": ["eq_boltactionrifle"],                                                           "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
             {"id": "md_shocktroopers",              "cost": 45, "cost_id": "ducats", "limit_min": 0, "limit_max": 5, "equipment": [],                                                                               "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
@@ -1356,6 +1431,7 @@
             {"id": "eq_automaticpistol", "cost": 20, "cost_id": "ducats", "limit": 3, "restriction": []},
             {"id": "eq_automaticshotgun", "cost": 15, "cost_id": "ducats", "limit": 2, "restriction": []},
             {"id": "eq_machinegun", "cost": 50, "cost_id": "ducats", "limit": 1, "restriction": []},
+            {"id": "eq_tanksplittersword", "cost": 15, "cost_id": "ducats", "limit": 3, "restriction": []},
             {"id": "eq_machinearmour", "cost": 50, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_mechanisedheavyinfantry"},{"type": "model", "val": "md_lieutenant"}]}
         ],
         "models" : [

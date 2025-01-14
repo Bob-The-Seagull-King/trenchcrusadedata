@@ -44,8 +44,7 @@
         "tags": [
                     {"tag_name": "heretic", "val": "gl_heretic"},
                     {"tag_name": "elite", "val": "gl_elite"},
-                    {"tag_name": "tough", "val": "gl_tough"},
-                    {"tag_name": "strong", "val": "gl_strong"}
+                    {"tag_name": "tough", "val": "gl_tough"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -143,8 +142,8 @@
             }
         ],
         "equipment":  [{
-                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "The Death Commando can be equipped with any melee weapon, armour or equipment from the Heretic Legion Armoury. The only ranged weapons they can buy are silenced pistols, a Tormentor Chain and/or Gas Grenades."
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}], 
+                            "content": "The Death Commando can be equipped with any weapon, armour or equipment from the Heretic Legion Armoury. The only ranged weapons they can be equipped with are Silenced Pistols, Tormentor Chain and Gas Grenades"
                         }],
         "abilities":  [{
                         "tags": [{"tag_name": "desc_type", "val": "addon"}],
@@ -211,6 +210,57 @@
 
     },
     {
+        "id": "md_barbedwirebanshee",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+            {"tag_name": "heretic", "val": "gl_heretic"},
+            {"tag_name": "elite", "val": "gl_elite"},
+            {"tag_name": "fear", "val": "gl_fear"}
+                ],
+        "promotion": 0,
+        "movement": [6],
+        "ranged": [-2],
+        "melee": [2],
+        "armour": [0],
+        "base": [32],
+        "faction_id": "fc_hereticlegion",
+        "team":"hell",
+        "variant_id": "fv_trenchghosts",
+        "eventtags": {},
+        "name": "Barbed Wire Banshee",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Suicide is a Mortal Sin, and sacrificing yourself to the glory of Hell is a yet greater affront to God. Some Heretics born with a gift of sonorous voice but little prospects of rising through the ranks but possessing a determination to excel may pursue the dark path of becoming a Barbed Wire Banshee."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Such supplicants go to one of the black altars of Heretic abodes at the bottom of the deep inverted pyramid temples dedicated to the greatest of Arch-devils. There they are dressed in the robes of dark devotion, lie on the altar and mutilate themselves to death by carving unholy runes into their flesh. The more wounds they can suffer before perishing, the more pleasing it is said their offering is. The most devout slice their own throats, trying to cut as deep as they can before their miserable life leaves them."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Most such wretches go to their doom in the Lake of Fire, but some are reborn as Barbed Wire Banshee after nine days. Their corpses lurch back to their feet, and finish their grisly beheading, and lift their severed heads that begin to sing hymns they have learned in the Inferno. From their self-inflicted wounds spurts cold blood that forms diabolic symbols and changes to match the words of their unholy chorale. They head towards the front lines driven by a call no living can hear and join the Heretic warband of their choosing."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "As their severed heads sing their agonising hymns, the minds of their enemies are filledwith visions from the Pits of Hell, weakening both the resolve and strength of thoseunfortunate enough to hear the dire song of a Barbed Wire Banshee. Their hymns are often the firstthing a fresh recruit experiences on the battlefield, as their unholy voice rolls across thetrenches, proclaiming a never-ending prophecy of the final victory of Hell over Heaven."
+            }
+        ],
+        "equipment":  [{
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The Barbed Wire Banshee can be equipped with any weapon, armour or equipment from the Heretic Legion Armoury."
+                        }],
+        "abilities":  [{
+            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+            "content": "ab_deathwail"
+        },{
+            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+            "content": "ab_unholyhorror"
+        }]
+
+    },
+    {
         "id": "md_heretictrooper",
         "type": "Model",
         "source": "core",
@@ -236,7 +286,7 @@
         ],
         "equipment":  [{
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Heretic Troopers can be equipped with any weapon, armour or equipment from the Heretic Legion armoury. You can upgrade up to half (rounding down) of your Heretic Troopers into Heretic Legionnaires at the cost of +10 ducats each. You can select to upgrade either the Ranged or Melee characteristic of all your Legionnaires by +1 DICE. All Legionnaires must have the same bonus.",
+                            "content": "Heretic Troopers can be equipped with any weapon, armour or equipment from the Heretic Legion armoury. You can upgrade up to half (rounding down) of your Heretic Troopers into Heretic Legionnaires at the cost of +10 ducats each. You can select to upgrade either the Ranged or Melee characteristic of all your Legionnaires by +1 DICE.",
                             "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
                         }],
         "abilities":  []
@@ -352,13 +402,18 @@
         "blurb": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Artillery Witches stalk the battlefields, hurling ordnance assembled in the death factories of Hell’s 3rd Circle. They are completely mute and no one has ever seen their faces. Some question if they are even living, and there are tales that they too were manufactured in Hell. They can pull an infinite number of Infernal Bombs from a portal to Hell that they manifest at will. Their infernal explosives appear in their hand from a gate of midnight blackness."
+                "content": "Artillery Witches stalk the battlefields, hurling ordnance assembled in the death factories of Hell’s Third Circle. They are completely mute and no one has ever seen their faces. Some question if they are even living, and there are tales that they too were manufactured in Hell. They can pull an infinite number of Infernal Bombs from a portal to Hell that they manifest at will, summoning them into their hands from a gate of midnight blackness."
             }
         ],
         "equipment":  [{
-                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "An Artillery Witch is always equipped with an endless supply of Infernal Bombs (see below) and can carry no other ranged weapons  Otherwise, she can be equipped with any melee weapon, armour or equipment from the Heretic Legion Armoury."
-                        }],
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "An Artillery Witch is always equipped with an endless supply of Infernal Bombs (see below) and can carry no other ranged weapons  Otherwise, she can be equipped with any melee weapon, armour or equipment from the Heretic Legion Armoury."
+        },
+        { "tags": [{"tag_name": "desc_type", "val": "gap"}],  "content": ""},
+        {
+            "tags": [{"tag_name": "desc_type", "val": "effect"}],
+            "content": "An Artillery Witch May Be Placed on a 32mm Base."
+        }],
         "abilities":  [{
                             "tags": [{"tag_name": "desc_type", "val": "addon"}],
                             "content": "ab_infernalbomb"
@@ -1450,6 +1505,15 @@
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                 "content": "Lions can be equipped with armour (except shields) and Wind Amulets. They cannot be equipped with any other items. They do not suffer penalties for fighting unarmed.",
                 "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "You can mount the Lion on 2 different base sizes (30x60 or 50) due the variance of their shape and size.",
+                "glossary": []
             }
             ],
         "abilities":  [
@@ -1830,6 +1894,49 @@
         ]
     },
     {
+        "id": "md_trenchcleric_palalinterventionforce",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+            {"tag_name": "newantioch", "val": "gl_newantioch"},
+            {"tag_name": "elite", "val": "gl_elite"}
+                ],
+        "promotion": 0,
+        "movement": [6],
+        "ranged": [1],
+        "melee": [1],
+        "armour": [0],
+        "base": [32],
+        "faction_id": "fc_newantioch",
+        "team":"heaven",
+        "variant_id": "fv_basic",
+        "eventtags": {},
+        "name": "Trench Cleric",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "A holy warrior who looks after the souls of the soldiers in the company. The cleric chants inspiring battle prayers, can perform various miracles such as healing or even smiting the enemy. Cleric often carries a portable shrine on his back to denote his faith in the company’s Patron, be that one of the Saints of their homeland, a mighty Arch-Angel or the Lord himself."
+            }
+        ],
+        "equipment":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "A Cleric can be equipped with any weapon, armour and equipment from the New Antioch Armoury.",
+                "glossary": []
+            }
+            ],
+        "abilities":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_godiswithus"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_lector"
+            }
+        ]
+    },
+    {
         "id": "md_trenchcleric_expiditiaryforces_holywarriors",
         "type": "Model",
         "source": "core",
@@ -1985,7 +2092,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Each Yeoman is equipped with a Bolt Action Rifle. You can swap this Bolt Action Rifle for another ranged weapon of lower, equal or greater cost. If the cost is greater, yoy must pay the difference in ducats.",
+                "content": "Each Yeoman is equipped with a Bolt Action Rifle at a reduced cost of 5 ducats. You can swap this Bolt Action Rifle for another ranged weapon of lower, equal or greater cost. If the cost is greater, yoy must pay the difference in ducats.",
                 "glossary": []
             },
             {
@@ -3378,7 +3485,7 @@
             {"tag_name":"strong", "val": "gl_strong"}
                 ],
         "promotion": 0,
-        "movement": [10],
+        "movement": [8],
         "ranged": [3],
         "melee": [3],
         "armour": [0],

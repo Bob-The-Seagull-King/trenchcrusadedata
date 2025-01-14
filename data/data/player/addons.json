@@ -189,6 +189,23 @@
                         ]
     },
     {
+        "id": "ab_deathwail",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_hereticlegion",
+        "name": "Death Wail",
+        "eventtags": {"trait": true},
+        "description":  [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "All enemy models within 8” of the Chorister suffer additional +1 DICE when any Injury roll is made against them.",
+                            "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+                        }
+                        ]
+    },
+    {
         "id": "ab_unholyhorror",
         "type": "Addon",
         "source": "core",
@@ -656,7 +673,7 @@
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Martyr-Penitents retain any possessions they had before dying and being resurrected.",
+                "content": "Martyr-Penitents retain any possessions they had before dying and being resurrected, but lose any Scars and advancements they had if they were ELITE via Campaign promotion.",
                 "glossary": []
             }
         ]
@@ -1177,8 +1194,8 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Select one friendly model within 3” of the Warrior and take an ACTION. If successful, the target immediately Stands if Down and loses up to 1 BLOOD MARKER or INFECTION MARKER (your choice) it has.",
-                "glossary": [{"val": "ACTION", "id": "gl_action"},
+                "content": "Select one friendly model within 3” of the Warrior and take a RISKY ACTION. If successful, the target immediately Stands if Down and loses up to D3 BLOOD MARKER or INFECTION MARKER (or any combination) it has.",
+                "glossary": [{"val": "RISKY ACTION", "id": "gl_riskyaction"},
                 {"val": "BLOOD MARKER", "id": "gl_bloodmarker"},
                 {"val": "INFECTION MARKER", "id": "gl_infectionmarker"}]
             }
@@ -1233,6 +1250,30 @@
             {
                 "tags": [{"tag_name": "desc_type", "val": "addon"}],
                 "content": "ab_awayserpents"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_ariseandbehealed"
+            }
+        ]
+    },
+    {
+        "id": "ab_lector",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_newantioch",
+        "name": "Lector",
+        "eventtags": {"action": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "When recruited, this model chooses one of the following actions."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_onwardchristiansoldiers"
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "addon"}],

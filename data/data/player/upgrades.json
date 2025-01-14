@@ -7,7 +7,7 @@
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Add +1 DICE to the ranged characteristic of the model. All legionnares in a warband must upgrade the same characteristic.",
+                            "content": "Add +1 DICE to the ranged characteristic of the model. ",
                             "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
                         }
                         ]
@@ -20,9 +20,46 @@
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Add +1 DICE to the melee characteristic of the model. All legionnares in a warband must upgrade the same characteristic.",
+                            "content": "Add +1 DICE to the melee characteristic of the model. ",
                             "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
                         }
+                        ]
+    },
+    {
+        "id": "up_heretictroopersarcopaghusmine",
+        "type": "Upgrade",
+        "name": "Sarcopaghus Mine",
+        "eventtags": {"action": true, "armour": -3},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Whenever an enemy comes within 3” of the Mine, you can trigger a detonation as described below: ",
+                "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "When detonated, the mine explosion is treated as a BLAST 3” weapon targeting the Sargophagus model with Keyword SHRAPNEL. Models within 1” of the Prisoner hit by the explosion roll their injuries with +1 DICE. The Mine itself is taken Out of Action.",
+                "glossary": [{"val": "BLAST", "id": "gl_blastx"},{"val": "SHRAPNEL", "id": "gl_shrapnel"},{"val": "+1 DICE", "id": "gl_plusdice"}]
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Alternatively, you can forgo this and explode the mine during your own Activation of the model with a successful RISKY ACTION with +1 DICE. These models can carry no other equipment from the Armoury.",
+                "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "RISKY ACTION", "id": "gl_riskyaction"}]
+            }
+                        ]
+    },
+    {
+        "id": "up_tankpalanquin",
+        "type": "Upgrade",
+        "name": "Tank Palanquin",
+        "eventtags": {"trait": true, "armour": -3, "sizeset":50},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This counts as Machine Armour, and the Priest riding it has a 50mm base, and counts as being on a 2” high platform. While on Tank Palanquin, the Priest gains the Keyword STRONG.",
+                "glossary": [{"val": "STRONG", "id": "gl_strong"}]
+            }
                         ]
     },
     {
@@ -74,6 +111,19 @@
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
                             "content": "Add +1 DICE to the melee characteristic of the model. When hit, any attacks against a Martyr-Penitent add -1 DICE when rolling on the Injury Table",
                             "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "-1 DICE", "id": "gl_minusdice"}]
+                        }
+                        ]
+    },
+    {
+        "id": "up_fiercelion",
+        "type": "Upgrade",
+        "name": "Fierce Lion of Jabir",
+        "eventtags": {"trait": true},
+        "description":  [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "Fierce Lions are not affected by the Keyword FEAR.",
+                            "glossary": [{"val": "FEAR", "id": "gl_fear"}]
                         }
                         ]
     },
@@ -755,7 +805,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "This model can be equipped with one weapon or suit of armour from Trench Pilgrim, New Antioch or Iron Sultanate warband armouries. You must pay the cost of this item as standard and, if it is lost, it must be purchased again as soon as you have the funds. This item follows the normal limitations. The model will never willingly trade this item away or allow it to be removed.",
+                "content": "This model can be equipped with one weapon or suit of armour (excluding shields) from Trench Pilgrim, New Antioch or Iron Sultanate warband armouries. You must pay the cost of this item as standard and, if it is lost, it must be purchased again as soon as you have the funds. This item follows the normal limitations. The model will never willingly trade this item away or allow it to be removed.",
                 "glossary": []
             }
                         ]
@@ -846,8 +896,8 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (2) spell allows the model to negate a Down state or ignore any Injury, attack or power that would have caused the model to fall Down.",
-                "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
+                "content": "Using this GOETIC (2) spell allows the model to negate a Down state or ignore any Injury, attack or power that would have caused the model to fall Down. Note that a TOUGH model suffers Out of Action result which is then convered into Down, this power can be used, but the TOUGH ability is considered to have been used.",
+                "glossary": [{"val": "GOETIC", "id": "gl_goetic"},{"val": "TOUGH", "id": "gl_tough"}]
             }
                         ]
     },
@@ -900,6 +950,68 @@
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                 "content": "For any enemy model 6” area around this model is considered Difficult Terrain.",
                 "glossary": []
+            }
+                        ]
+    },
+    {
+        "id": "up_goetic_bellyofthebeast",
+        "type": "Upgrade",
+        "name": "Belly Of The Beast",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "This creature is known to feast on vast mounds of flesh before it leaves Hell. It then vomits the partially-digested contents of its vast gut before the battle. Yoke Fiends gorge themselves on this flesh of the damned before they go to war, calming their bloodlust during the battle."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "All the Yoke Fiends of the Warband ignore the Hateful rule."
+            }
+                        ]
+    },
+    {
+        "id": "up_goetic_uncaringgluttony",
+        "type": "Upgrade",
+        "name": "Uncaring Gluttony",
+        "eventtags": {"action": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "This curse drives its target mad with an unnatural hunger, making them heedless of any danger as it seeks to consume any matter its manipulated mind perceives as edible."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This GOETIC (2) Spell can be cast at any enemy model that has not yet been Activated in the battle at all. Pick any one equipment item the model is carrying. This item is discarded for the duration of the battle as the model has been chewing on it before the battle, rendering the item temporarily unusable.",
+                "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
+            }
+                        ]
+    },
+    {
+        "id": "up_goetic_eateroftheflesh",
+        "type": "Upgrade",
+        "name": "Eater of the Flesh",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The unnatural hunger for the flesh haunts this creature. Whenever blood of a mortal creature is spilled this demonic entity may consume it through tears in reality, to orge themselves in viscera and guts."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Whenever a model without a keyword DEMONIC or BLACK GRAIL suffers one or more BLOOD MARKERS in melee combat against this model, you can remove those markers and heal the equal number of BLOOD MARKERS from this model. This model may charge and engage friendly models in melee combat.",
+                "glossary": [{"val": "DEMONIC", "id": "gl_demonic"},{"val": "BLACK GRAIL", "id": "gl_blackgrail"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"}]
             }
                         ]
     }
