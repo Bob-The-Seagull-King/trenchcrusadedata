@@ -865,7 +865,7 @@
         "range": null,
         "blurb": "These massive shields are made of aramid fiber mesh and orichalcum-steel alloy. They are so heavy that they can only be carried by the Heavy Mechanised infantry, and even then they are too cumbersome to be used is fast paced melee, and are mainly used to protect them during their ponderous advance towards the enemy.",
         "modifiers": null,
-        "eventtags": {"trait": true,"armour":-1},
+        "eventtags": {"trait": true},
         "description":  [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "effect"}],

@@ -702,7 +702,7 @@
     {
         "id": "up_furyofthelord",
         "type": "Upgrade",
-        "name": "Fury Of The Lord",
+        "name": "Wrath of God",
         "eventtags": {"trait": true},
         "description":  [
                         {
