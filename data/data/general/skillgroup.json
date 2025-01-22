@@ -282,5 +282,57 @@
             { "id": "sk_organisationalskills", "roll_start": "choose", "roll_end": "choose"},
             { "id": "sk_healingarts", "roll_start": "choose", "roll_end": "choose"}
         ]
+    },
+    {
+        "id": "sg_mammon",
+        "type": "SkillGroup",
+        "source": "core",
+        "tags": [
+            {"tag_name": "mammon", "val": ""},
+            {"tag_name": "hereticlegion", "val": ""},
+            {"tag_name": "court", "val": "greed"},
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Patron: Mammon",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "I will make you so poor that in the end you will have nothing but money",
+                "subcontent": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Your Patron is Mammon, the Prince of Greed, the Treasurer of Hell, and the King of Fools, the greatest of all devils of Greed. He appears as a golden-skinned king on an opulent throne, with black schorch marks tarnishing his splendour. He is the most popular patron amongst mortals.",
+                "subcontent": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Mammon has countless titles and monikers, as befits the great Arch-Fiend who has held the Throne of Greed at the Court of the Seven-headed Serpent for untold years while other seats of power have seen his rivals rise and then topple one after another.",
+                "subcontent": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This type of Patron allows you to select one of the following when a Patron Skill rolled up on your Skill Chart:",
+                "subcontent": []
+            }
+        ],
+        "listtype": "skills",
+        "list_items": [
+            { "id": "sk_moneycanbuyanything", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_unsecuredloan", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_crookeddice", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_plutocracy", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_aureateskin", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_eternaldebt", "roll_start": "choose", "roll_end": "choose"}
+        ]
     }
 ]

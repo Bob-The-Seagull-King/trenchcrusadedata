@@ -1139,5 +1139,106 @@
                 "glossary": []
             }
         ]
+    },
+    {
+        "id": "sk_moneycanbuyanything",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Money Can Buy Anything",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You can increase a LIMIT of any Weapon, piece of Equipment or Armour by 1.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "sk_unsecuredloan",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Unsecured Loan",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Gain 100 ducats immediately. This Skill can only be used once, at the moment it is bought.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "sk_crookeddice",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Crooked Dice",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Once per game, the model with this Skill can re-roll all the dice of any single dice for one ACTION or an Injury roll it makes.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_plutocracy",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Plutocracy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This model may form a FIRETEAM with any one non-ELITE model of the Warband. Further, failing a RISKY ACTION will not finish the turn of either this model or the other model in the FIRETEAM.",
+                "glossary": [{"val": "RISKY ACTION", "id": "gl_riskyaction"},{"val": "FIRETEAM", "id": "gl_fireteam"},{"val": "ELITE", "id": "gl_elite"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_aureateskin",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Aureate Skin",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The model with this skill is granted the splendid (yet tarnished) golden skin of their Patron, and their blood turns into molten gold. Each time the model suffers a blood marker, add 5 ducats to your treasury.",
+                "glossary": [{"val": "blood marker", "id": "gl_bloodmarker"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_eternaldebt",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Eternal Debt",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The Wretched of this Warband are never lost as casualties, as their heads (kept as surety by Mammo) are used to re-grown the lost bodies. All Wretched models of the Warband are considered to make a full recovery after the battle if taken Out of Action."
+            }
+        ]
     }
 ]

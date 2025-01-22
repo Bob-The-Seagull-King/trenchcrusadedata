@@ -1857,17 +1857,7 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "The player with the higher number of models is the Attacker. The other deployment zone will be their opponent’s, as the Defender, with half the number of models the Attacker has declared.",
-                        "subcontent": []
-                    },
-                    {
-                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "The Defender starts by deploying their models, and also placing the Gun Turret, or Mortar, where they wish according to the parameters set below. After the Defender has deployed their models, the Attacker deploys theirs.",
-                        "subcontent": []
-                    },
-                    {
-                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Models must be set up wholly within their own deployment zone.",
+                        "content": "The Defender starts by deploying all their models. Then, the Attacker deploys all of theirs. Models must be set up wholly within their own deployment zone.",
                         "subcontent": []
                     },
                     {
@@ -1882,7 +1872,19 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "The player with the higher number of models is the Attacker. The Attacker must declare the size of their warband, up to sixteen models max. If the Attacker has two or fewer ELITES, they must field all of them. The opponent is the Defender, and they can have up to half of the total number of models the Attacker has declared, rounded down. If both warbands have the same number of models, roll a dice to see who the Attacker is and who the Defender is.",
+                        "content": "The players roll-off. The winner can decide to be either the Attacker or the Defender.",
+                        "subcontent": []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender selects up to 6 models from their warband. The Attacker selects up to 6+D6 models from their warband. If the Attacker has two or fewer ELITES, they must field all of them.",
+                        "subcontent": []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "At the beginning of turn two, and for all the subsequent turns, both players receive D3 randomly selected models from the rest of their warband as reinforcements. These reinforcements are placed anywhere along the player’s own table edge but at least 8” away from any enemy models. Once the player has deployed their entire warband, no further reinforcements can be deployed.",
                         "subcontent": []
                     }
                 ]
@@ -1895,10 +1897,68 @@
                         "content": "The game is played on a standard-sized Battlefield (we suggest 4’X4’)",
                         "subcontent": []
                     },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
                     {
-                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
-                        "content": "",
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender places three 8”-long Trench sections in their Deployment Zone. They can be placed as the Defender wishes and can be continuous, however, in the division between each of the three trench sections the Defender must place a bunker model (as indicated by the small Red Markers on the map) of at least 4” by 4”, and up to 3” high, so that models of up to 75mm tall may enter the bunker’s interior.",
                         "subcontent": []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender must place a Main Structure in the location indicated on the map by a large Red Marker. This structure can be a church, a large bunker, a tower, etc. It must be at least 6” by 6”, and up to 6” high, so that models of up to 150mm tall may enter the building’s interior.",
+                        "subcontent": []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Main Structure and the bunkers are the Objectives of the scenario, hereafter referred to as Objective Buildings, and score Victory Points (see below).",
+                        "subcontent": []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender then places three defense works (sandbags, barricades, low wall etc.) each of which counts as a defended obstacle and is at least 4” long horizontally. They are max 1” high. Use the following instructions to deploy these defense works.",
+                        "glossary":  []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Within 18” of the center of the battlefield (measured to the center).",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "At least 12” away from another defense work (measured from the center).",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Not within or surrounded by Impassable terrain.",
+                                "glossary":  []
+                            }
+                        ]
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender places either a Gun Turret or a Mortar, represented by a circled G and a circled M, respectively, on the scenario map, in any location within the their deployment zone. Once placed, neither of these can be moved during the game. See the Field Artillery rules for these weapons’ profile and specifications.",
+                        "glossary":  []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Attacker then places a Fortified Tank anywhere within their deployment zone. See the Machines of War rules for this vehicle’s profile and specifications.",
+                        "glossary":  []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Fill the rest of the battlefield with terrain in the usual way, using models such as barricades, ruined buildings, trees, sandbags, etc.",
+                        "glossary":  []
                     },
                     {
                         "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -1910,54 +1970,54 @@
                                 "glossary":  []
                             },
                             {
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "The Defender places three 8”-long Trench sections in their Deployment Zone. They can be placed as the Defender wishes and can be continuous, however, in the division between each of the three trench sections the Defender must place a bunker model (as indicated by the small Red Markers on the map) of at least 4” by 4”, and up to 3” high, so that models of up to 75mm tall may enter the bunker’s interior.",
-                                "glossary":  []
-                            },
-                            {
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "The Defender must place a Main Structure in the location indicated on the map by a large Red Marker. This structure can be a church, a large bunker, a tower, etc. It must be at least 6” by 6”, and up to 6” high, so that models of up to 150mm tall may enter the building’s interior.",
-                                "glossary":  []
-                            },
-                            {
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "The Main Structure and the bunkers are the Objectives of the scenario, hereafter referred to as Objective Buildings, and score Victory Points (VPs).",
-                                "glossary":  []
-                            },
-                            {
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "The Defender then places three defense works (sandbags, barricades, low wall etc.) each of which counts as a defended obstacle and is at least 4” long horizontally. They are max 1” high. Use the following instructions to deploy these defense works.",
-                                "glossary":  []
-                            },
-                            {
                                 "tags": [{"tag_name": "desc_type", "val": "list"}],
                                 "content": "",
                                 "subcontent":  [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Within 18” of the center of the battlefield (measured to the center).",
+                                        "content": "One Building (a tower, house etc.)",
                                         "glossary":  []
                                     },
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "At least 12” away from another defense work (measured from the center).",
+                                        "content": "One Piece of Dangerous Terrain (swamp, barbed wire etc.)",
                                         "glossary":  []
                                     },
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Not within or surrounded by Impassable terrain.",
+                                        "content": "One Piece of Difficult Terrain (forest, rocky ground)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Impassable terrain (12” river with a bridge or ford, sheer cliffs etc.) Maximum two pieces per battle",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Hill",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Fence/wall/other defendable terrain piece (max one per player)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "6” Section of a Trench",
                                         "glossary":  []
                                     }
                                 ]
                             },
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "The Defender places either a Gun Turret or a Mortar, represented by a circled G and a circled M, respectively, on the scenario map, in any location within the their deployment zone. Once placed, neither of these can be moved during the game. See the Field Artillery rules for the weapons’ profile and specifications.",
+                                "content": "Each building must be placed at least 8” away from any table edge and at least 6” away from the nearest building terrain piece.",
                                 "glossary":  []
                             },
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "Fill the rest of the battlefield with terrain in the usual way, using models such as barricades, ruined buildings, trees, sandbags, etc.",
+                                "content": "In addition, both players should add six smaller terrain pieces like boxes, sandbags, bomb craters, wells, fountains etc. anywhere on the table to create cover.",
                                 "glossary":  []
                             }
                         ]
@@ -1979,7 +2039,7 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Infiltrators can be used in this scenario, but they cannot be within 8” of any of the Defender’s Objective Buildings.",
+                        "content": "Infiltrators can be used in this scenario, but they cannot be within 6” of any of the Defender’s Objective Buildings.",
                         "subcontent": []
                     }
                 ]
@@ -2010,6 +2070,11 @@
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                 "content": "The Attacker destroys an Objective Building if at least one of their ELITE models that is wholly within the building plants an explosive charge. The model can plant the explosive charge with an Action (no roll required), but upon doing so, the Activation of the model ends. In any following turn, if the ELITE model is activated and moves at least 1” outside of the building’s footprint (previously accorded by the players), the Objective Building is immediately destroyed and any other model (friends and foes) that is still wholly within the building must immediately roll on the Injury Chart, ignoring armor. If the ELITE model is taken Out of Action before its next Activation, the explosive charge does not go off.",
                                 "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Every model that gets into base contact with the opponent’s furthermost board edge is considered to have broken into the enemy’s defense lines, causing havoc within their territory. Any model that does so must be immediately removed from the battlefield, and adds one VP for their warband.",
+                                "glossary":  []
                             }
                         ]
                     },
@@ -2024,7 +2089,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "If the Attacker takes control of the Main Structure Objective Building for two full consecutive turns, they win the game regardless of the VPs the Defender may have.",
+                                "content": "If the Attacker takes control of the Main Structure Objective Building for a full consecutive turn, they win the game regardless of the VPs the Defender may have.",
                                 "glossary":  []
                             },
                             {
@@ -2060,7 +2125,7 @@
                                 "subcontent":  [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "As the Attacker, win the game by taking control of the Main Structure Objective Building for two full consecutive turns. Your last activated model to have entered the Main Structure and that was not taken Out of Action gains the Glory Point.",
+                                        "content": "As the Attacker, win the game by taking control of the Main Structure Objective Building. Your last activated model to have entered the Main Structure and that was not taken Out of Action gains the Glory Point.",
                                         "glossary": []
                                     }
                                 ]
@@ -2071,7 +2136,7 @@
                                 "subcontent":  [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": " As the Defender, take half of the Attacker’s ELITE models Out of Action (rounded down) with the same model.",
+                                        "content": "As the Defender, take half of the Attacker’s ELITE models Out of Action (rounded down) with the same model.",
                                         "glossary": []
                                     }
                                 ]
@@ -2089,11 +2154,11 @@
                             },
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                                "content": "Bloodcloud:",
+                                "content": "Reckless:",
                                 "subcontent":  [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Take at least three enemy models Out of Action with one of your models using a weapon with the Keyword BLAST.",
+                                        "content": "Reach the opponent’s furthermost board edge without suffering any BLOOD MARKERS. If the model suffers a BLOOD MARKER but reduces it back to zero, it does not count.",
                                         "glossary": [{"val": "BLAST", "id": "gl_blastx"}]
                                     }
                                 ]
@@ -2990,6 +3055,822 @@
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                         "content": "Inflict 2+ BLOOD MARKERS on the Dragon with the same model, using a weapon with either the Keyword FIRE, GAS, or SHRAPNEL.",
                                         "glossary": [{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "FIRE", "id": "gl_fire"},{"val": "GAS", "id": "gl_gas"},{"val": "SHRAPNEL", "id": "gl_shrapnel"}]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "id": "sc_dontbreathe",
+        "type": "Scenario",
+        "source": "core",
+        "tags": [
+            {"tag_name": "mid_campaign", "val": ""}
+                ],
+        "image_url": "https://i.imgur.com/46fwf00.png",
+        "name": "Don't Breathe",
+        "widerules": [
+            
+            {
+                "title": "Gas Mines",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Once all the terrain pieces have been placed on board, the Defender places twelve Gas Mine Markers on the battlefield, four which will be duds – the Defender marks the duds in secrecy on the side of the Marker that is hidden from view (face down).",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender can place the Gas Mines anywhere within the battlefield within 12” of their Deployment Zone. Out of these twelve mines, the Defender can also place up to four Gas Mines within their own Zone.",
+                        "glossary": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "When any model comes within 2” of the center of a Gas Mine Marker (players can measure this distance beforehand), flip the counter over to see if it is a dud or not. If the Gas Mine is a dud, discard it immediately. If the Gas Mine is not a dud, the Gas Mine detonates into a cloud of a newly discovered poisonous gas. All models within 3” of the Gas Mine must immediately roll on the Injury Chart to see what happens as a result of the exploding Gas Mine. Additionally, a large area around the Gas Mine becomes covered in the gas cloud. All models within 6” of the center of the Gas Mine, that enter the area afterwards, or that start their Activation within the area, is affected by the gas. The gas cloud ignores terrain barriers such as walls and Cover.",
+                        "glossary": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "It is possible to trigger more than one Gas Mine at the time. The Gas Mines have the Keywords SHRAPNEL and GAS. A model hit by the Gas Mine blast (models within 3”) suffer an additional +1 BLOOD MARKER unless they have protection against this. A model that is within the gas covered area also suffers a BLOOD MARKER. The model suffers this BLOOD MARKER even if the attack has no other effect on them or is otherwise negated. A model can suffer both BLOOD MARKERS from the blast and the SHRAPNEL and the GAS if also caught in the blast zone, as they will also be within the gas covered zone. Note that some equipment or abilities can negate the additional BLOOD MARKER caused by the Keyword GAS.",
+                        "glossary": [{"val": "GAS", "id": "gl_gas"},{"val": "SHRAPNEL", "id": "gl_shrapnel"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The poisonous gas is highly flammable. A gas covered area can be dissipated with an Ability, or weapon Attack, with the Keyword FIRE, and/or BLAST, made directly against a Gas Mine Marker, causing an explosive combustion. This explosion has the Keyword FIRE. All models within 6” of the center of the Gas Mine Marker must immediately roll on the Injury Chart with +2 DICE to injure. Any model hit by this explosion, but not taken Out of Action, is also blown D3” directly away from the center point of the explosion (roll for each model separately), stopping if they hit other models/ buildings/objects. Cover, range and higher position do not affect this effect. Roll injuries for models that would benefit from Cover from the perspective of the blast point with -1 DICE. Remove the exploded Gas Mine Marker from the board, and consider the affected area clear of its effects.",
+                        "glossary": [{"val": "FIRE", "id": "gl_fire"},{"val": "BLAST", "id": "gl_blastx"},{"val": "+2 DICE", "id": "gl_plusdice"},{"val": "-1 DICE", "id": "gl_minusdice"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Some models, such as New Antioch Combat Engineers can remove a Gas Mine Marker by moving in base contact with it and passing a RISKY ACTION as indicated in their warband entry. Note that when a model attempts this, the Gas Mine does not explode until the result of the roll is determined.",
+                        "glossary": [{"val": "RISKY ACTION", "id": "gl_riskyaction"}]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Scenario Overview",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "A deadly new form of poisonous gas has begun spreading across the front lines, causing excruciating blistering wounds inside and out of the body. Intelligence has pinpointed one of the facilities responsible for producing the gas. Orders are clear: capture or destroy the facility and eliminate all personnel within. The region is heavily fortified, with defenses including mines filled with the gas. High casualties are expected for any force attempting the assault. This mission won’t be easy, but its success is critical to halting the spread of this treacherous weapon.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Battle Length",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "At the end of the fifth turn, the Attacker rolls 1D6. On a roll of 1-2, the battle ends. Otherwise the game lasts for six turns.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Infiltrators",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Infiltrators can be used in this scenario. However, the Attacker cannot place their infiltrators within 8” of any of the Objective Buildings.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Victory Conditions",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "If one warband is wiped out completely or loses their Morale test, the game ends and the opposing warband wins. Otherwise, keep a running tally of Victory Points for both sides. The players accumulate VPs as follows:",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "At the end of the battle, the Defender scores 2 VPs for each Trench Section that has at least one of the Defender’s models and no enemy models in it. The defender scores 1 VP for each Trench Section that has at least one of their models, but also has one or more enemy models.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "At the end of the battle, the Attacker scores 2 VPs for each Trench Section that has one or more of their models, but also has one or more enemy models. The Attacker scores 3 VPs for each Trench Section that has one or more of their models, but no enemy models.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The players score 4 VPs for each Objective Building that they have taken control of. The Attacker scores 2 VPs for each Objective Building they have destroyed.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The players control an Objective Building if the total number of models from their warband that are wholly within that building’s footprint is higher than the total number of enemy models within 1” of the Objective Building. A model is considered wholly within a building if it is entirely within the edges of the building’s footprint, as agreed by the players.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The Attacker destroys an Objective Building if at least one of their ELITE models that is wholly within the building plants an explosive charge. The model can plant the explosive charge with an Action (no roll required), but upon doing so, the Activation of the model ends. In any following turn, if the ELITE model is activated and moves at least 1” outside of the building’s footprint (previously accorded by the players), the Objective Building is immediately destroyed and any other model (friends and foes) that is still wholly within the building must immediately roll on the Injury Chart, ignoring armor. If the ELITE model is taken Out of Action before its next Activation, the explosive charge does not go off.",
+                                "glossary":  []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Deployment",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The players then take turns to deploy one model at a time, starting with the Defender.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Models must be set up wholly within their own deployment zone. If a player runs out of models to set up, the other player sets up all their models afterwards. Once the players have set up their models, deployment ends and the battle begins.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Forces",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The players roll-off. The winner can decide to be either the Attacker or the Defender.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender selects up to six models from their warband. The Attacker selects up to 6+D6 models from their warband.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "At the beginning of turn two, and for all the subsequent turns, both players receive D3 randomly selected models from the rest of their warband as reinforcements. These reinforcements are placed anywhere along the player’s own table edge but at least 8” away from any enemy models. Once the player has deployed their entire warband, no further reinforcements can be deployed.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "The Battlefield",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The game is played on a standard-sized Battlefield (we suggest 4’X4’)",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Defender places six 8”-long Trench sections in the pre-determined area as marked on the map. At least every three sections must be continuous, and each section always counts separately for Victory Points (see below). Additionally, these sections must be connected to another through a Bunker terrain piece, as shown on the map. These will work as Objective Buildings (see below). The configuration of the Trench network can be altered as the Defender wishes, as long as it follows the metrics above.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Fill the rest of the battlefield with terrain in the usual way, using models such as guard towers, ruined buildings, etc., placing them at least 1” away from the hill sides.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Setting Up Terrain:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The player with the lower number of models in their force can place one of the following terrain pieces on the table:",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                                "content": "",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Building (a tower, house etc.)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Dangerous Terrain (swamp, barbed wire etc.)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Difficult Terrain (forest, rocky ground)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Impassable terrain (12” river with a bridge or ford, sheer cliffs etc.) Maximum two pieces per battle",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Hill",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Fence/wall/other defendable terrain piece (max one per player)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "6” Section of a Trench",
+                                        "glossary":  []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Each building must be placed at least 8” away from any table edge and at least 6” away from the nearest building terrain piece.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "In addition, both players should add six smaller terrain pieces like boxes, sandbags, bomb craters, wells, fountains etc. anywhere on the table to create cover.",
+                                "glossary":  []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Glorious Deeds",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Players score one Glory Point for every model that completes any of the following Glorious Deeds. Glory Points for these can only be gained once - whichever player completes them first gets the Glory Points!",
+                        "subcontent": [
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Combustive:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Take at least two enemy models Out of Action by triggering an explosive combustion of a gas clouded area due to the Action of one of your models.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Iron Lungs:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": " Take control of an Objective Building that is within a gas clouded area for two turns. The model that first entered the area, and is not taken Out of Action by the end of the second turn, gains the Glory Point.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Deep Breaths:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Force an enemy model to enter or fall into a gas clouded area due to the Action of one of your models (shooting, melee, Supernatural Power etc).",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Burning Sight:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Take an enemy model Out of Action by by triggering an explosive combustion of a gas clouded area with one of your models that is at least 14” away from the area.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Poisonous Rage:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Dive Charge an enemy model that is within a gas clouded area and either knock them Down, or take them Out of Action, in a same turn with one of your models using a Melee Weapon. This Deed is worth two Glory Points.",
+                                        "glossary": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "id": "sc_frombelow",
+        "type": "Scenario",
+        "source": "core",
+        "tags": [
+            {"tag_name": "mid_campaign", "val": ""}
+                ],
+        "image_url": "https://i.imgur.com/JashUdV.png",
+        "name": "From Below",
+        "widerules": [
+            
+            {
+                "title": "Ichor Pits",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The entire area of the battlefield was unknowingly built on the back of a dormant Larval Beast Lord. The constant firing and shelling has caused injures the size of pits to open all over the monster’s back. These pits are filled with toxic ichor, forming large pits of the rare substance that can corrode metal, flesh, and bone, holds never seen before diseases, and has other unknown properties. As such, this ichor is highly coveted by all factions of the Trench Crusade, and despite the high risks of collecting the substance and awakening the beast, this opportunity cannot be wasted.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The ichor pits are large in diameter, but not too deep. The area inside a pit is considered both Difficult and Dangerous terrain, with +2 to injure, and ignores armor. Additionally, a model moves into, or starts its Activation in the area and fails upon taking an ACTION, suffers +2 BLOOD MARKERS.",
+                        "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "All models in this scenario are considered to be equipped with three Empty Vials, that can be used to collect the ichor. A Vial does not occupy any of the model’s hands. A model that comes into base contact with a pit, or is inside the area of a pit, can collect the ichor with an ACTION. If successful, the model is considered to be in possession of one Vial of Ichor. A model can carry up to three Vials of Ichor, and cannot be in possession of more than three Vials (empty or not). A model can transfer Vials of Ichor to an allied model with an ACTION (without the need for a roll) when in base contact with them, as long as the model is not in possession of three Vials of Ichor themselves, and only up until they’re in possession of three Vials of Ichor. Place a dice beside each model that has a Vial of Ichor with the corresponding number of Vials they currently possess.",
+                        "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "A model that knocks Down or takes Out of Action another model that is possession of Vials of Ichor, can steal the Vials from the fallen model with an ACTION (without the need for a roll) when in base contact with them. A model can steal as many Vials from an opponent’s model, as long as they’re not in possession of three Vials of Ichor themselves, and only up until they’re in possession of three Vials of Ichor. If the model cannot take all the Vials of Ichor from the fallen model, the remaining Vials of Ichor stay in the models body, and can be stolen by another model (friend or not), as per the rules above. Leave the dice beside the fallen model with the corresponding number of Vials of Ichor they possess until these are taken by another model.",
+                        "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "A large pit (large Objective Marker) holds enough ichor to fill up to six Empty Vials. Place a dice beside each pit with the corresponding number of ichor remaining. Every time a model fills a Vial, the ichor value decreased by one, and so too does the number on the dice to match the current value. Once a pit has been drained of its ichor, remove the dice beside it. The pit is not considered Dangerous terrain any longer, only as Difficult.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "title": "Piles of Shells",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Spread throughout the beast’s back are piles of artillery shells that are highly unstable. These are represented on the map by the smaller Objective Markers. Place a pile of artillery shells model on a 32mm base, for each smaller Objective Marker, to a total of four.",
+                        "subcontent": [] 
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "If a model attacks a pile of artillery shells, be it in melee, ranged, or if the pile is caught in the blast radius of an attack, it immediately explodes. Any model within 3” of the pile when it explodes is within its BLAST radius, and must immediately roll 3D6 on the Injury Chart, ignoring armor. Any model hit, but not taken Out of Action, by this explosion is blown D3” away from the point of the explosion (roll for each model separately, and the opponent decides the direction for each of your models, and vice versa), stopping if they hit other models/buildings/objects. This explosion also has the Keyword SHRAPNEL and therefore causes an additional +1 BLOOD MARKER. Cover, range and higher position do not affect this explosion. Roll injuries for models that would benefit from Cover from the perspective of the BLAST point with -1 DICE.",
+                        "glossary": [{"val": "BLAST", "id": "gl_blastx"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "-1 DICE", "id": "gl_minusdice"},{"val": "SHRAPNEL", "id": "gl_shrapnel"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "When a pile of artillery shells explode, it opens a pit of ichor on the beast’s back. Replace the pile of artillery shells model with a large pit (large Objective Marker). This pit can then be used to collect the ichor from the beast, as per the rules of Ichor pits.",
+                        "glossary": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The injures caused by the explosion of a pile of artillery shells disturbs the beast’s slumber, possibly awakening it. For the first pile to be exploded, the beast will only twitch, causing a minor tremor. All models on the board, that aren’t knocked Down or taken Out of Action must roll a D6. On a roll of 6, the model is knocked Down. However, for any other piles exploded, the chances to awaken the beast increase as follows:",
+                        "glossary": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Second Explosion: ",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "For the second pile exploded, roll a D6. On a roll of 4-6, the beast awakes;"
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Third Explosion: ",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "For the third pile exploded, roll another D6. On a roll of 3-6, the beast awakes;"
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Fourth Explosion: ",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "For the fourth pile exploded, roll another D6. On a roll of 2-6, the beast awakes;"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "If the beast awakes, the game immediately ends. See the Victory Conditions.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "title": "Call of the Beast",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Starting from the first explosion of a pile of artillery shells, the Larval Beast’s wail of torment will echo throughout the valley, calling forth the waves of parasites that feed upon its flesh. These blood driven, large Hell Ticks storm the battlefield, crawling and digging their way out of the Beast’s flesh, ready to feast upon any living being they can sink their fangs in.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "When a Pile of Shells is exploded, randomly place D3 Hell Tick models within 8” of the newly opened Ichor Pit. Note, however, that the Hell Tick(s) cannot be placed within 2” of any other model, except if the model is another Hell Tick.",
+                        "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "From this point onward, at the end of each of a player’ model Activation, the player must roll a 1D6 for each Hell Tick on the board. On a roll of 1-4, that Hell Tick model is Activated subsequently, before the opponent activates one of their own models. The same player then acts out that Hell Tick’s actions, as described in its profile. If by the end of the turn, any remaining Hell Tick that hasn’t been activated is the start of the next turn. A Hell Tick can only be Activated once per turn.",
+                        "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": "",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "model"}],
+                        "content": "md_helltick"
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Scenario Overview",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "“I saw a great beast rise up from beneath, having seven amalgamated heads with ten mouths, and in each mouth a thousand teeth and a hundred tongues, and upon its body were carved marks of blasphemy and the sigils of the end.”",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": ""
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "These were the words of Scripture Guardian, Ishaaq, upon fleeing Ubeidiya. Reports from the valley tell of tremors and sinkholes oozing with ichor, swallowing entire encampments built unknowingly atop what it’s believed to be a fully grown Larval Beast Lord. Piles of artillery shells and unstable cargo lie scattered all over the slumbering titan’s back. Warbands from all sides of the Great War now converge on the site to secure the invaluable ichor for its alchemic properties, all while perilously trying to avoid triggering the explosive shells and awakening the beast below.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Battle Length",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "At the end of the fifth turn, roll a D6. On a roll of 1-2, the battle ends. Otherwise, the game lasts for six turns.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Infiltrators",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Infiltrators can be used in this scenario, but they cannot be within 6” of any of the Objective Markers.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Victory Conditions",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "If one warband is wiped out completely or loses their Morale test, the game ends and the opposing warband wins. Otherwise, keep a running tally of Victory Points for both sides. The players accumulate VPs as follows:",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "A player scores one VP for each Vial of Ichor their warband models extract from the board.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "A warband model successfully extracts any Vials of Ichor they have in possession when they come into base contact with the largest side edge of the board within a Deployment Zone. The model does not leave the board with the extracted Vials. Instead, the Vials of Ichor the model had are then replaced back with Empty Vials.",
+                                "glossary":  []
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": ""
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Calculate VPs at the end of the game for both players and add them together. The player with the higher number of VPs wins, otherwise the game is a draw. However, the following condition can bring the game to an immediate end, regardless of the VPs the players may have accumulated:",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "If the Larval Beast Lord awaken at any point during the game, neither of the players win the game, regardless of the VPs they may have accumulated up until this point. Take into account only the Glorious Deeds performed, if any, and award no VPs. Additionally, consider that all models still on the board when the beast awakes are taken Out of Action.",
+                                "glossary":  []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Deployment",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The players roll-off. The loser of the roll-off chooses which deployment zone will be theirs. The other deployment zone will be their opponent’s.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The players then take it in turns to deploy one model at a time, starting with the player who has more models in their warband (roll-off if both have the same number of models).",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Models must be set up wholly within their own deployment zone. If a player runs out of models to set up, the other player sets up all their models afterwards. Once the players have set up their models, deployment ends and the battle begins.",
+                        "subcontent": []
+                    }
+                ]
+            },
+            {
+                "title": "Forces",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Both sides use half of their entire forces."
+                    }
+                ]
+            },
+            {
+                "title": "The Battlefield",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The game is played on a standard-sized Battlefield (we suggest 4’X4’)",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Place three large Objective Markers, as indicated on the map, to represent large sized pits (at least 60x60mm). Have another four large Objective Markers reserved for later.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Place four smaller Objective Markers (32mm), as indicated on the map, to represent the explosive cargo.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The Objective Markers (both large and small) cannot be placed over Impassable terrain, or surrounded by it.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Fill the rest of the battlefield with terrain in the usual way, using models such as guard towers, ruined buildings, etc., placing them at least 1” away from the hill sides.",
+                        "subcontent": []
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Setting Up Terrain:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The player with the lower number of models in their force can place one of the following terrain pieces on the table:",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                                "content": "",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Building (a tower, house etc.)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Dangerous Terrain (swamp, barbed wire etc.)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Difficult Terrain (forest, rocky ground)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Piece of Impassable terrain (12” river with a bridge or ford, sheer cliffs etc.) Maximum two pieces per battle",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Hill",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "One Fence/wall/other defendable terrain piece (max one per player)",
+                                        "glossary":  []
+                                    },
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "6” Section of a Trench",
+                                        "glossary":  []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Each building must be placed at least 8” away from any table edge and at least 6” away from the nearest building terrain piece.",
+                                "glossary":  []
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "In addition, both players should add six smaller terrain pieces like boxes, sandbags, bomb craters, wells, fountains etc. anywhere on the table to create cover.",
+                                "glossary":  []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Glorious Deeds",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Players score one Glory Point for every model that completes any of the following Glorious Deeds. Glory Points for these can only be gained once - whichever player completes them first gets the Glory Points!",
+                        "subcontent": [
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Vial Theif:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Steal three Vials of Ichor from an enemy model that you have taken Out of Action, and successfully extract these Vials from the board with the same model.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Sadistic Wretch:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Make an enemy model fall into an ichor pit due to your action (shooting, melee, Supernatural Power etc), so that they are immediately taken Out of Action due to the effects of the pit.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Bloodlust:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Take a Poisoned enemy model that has suffered at least one BLOOD MARKER due to the poison effect, Out of Action with a Blood Bath.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "For Science:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Successfully extract at least five Vials of Ichor from the board with the same model.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Ichor Frenzy:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Successfully extract at least one Vial of Ichor from the board through the edge of the enemy’s Deployment Zone.",
+                                        "glossary": []
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": "Risk Taker:",
+                                "subcontent":  [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Take at least two enemy models Out of Action by exploding piles of artillery shells with the Action of one of your warband models.",
+                                        "glossary": []
                                     }
                                 ]
                             }

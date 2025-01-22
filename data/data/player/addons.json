@@ -2665,5 +2665,74 @@
                             "glossary": [{"val": "FEAR", "id": "gl_fear"}]
                         }
                         ]
+    },
+    {
+        "id": "ab_helltick_bite",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_none",
+        "name": "Bite",
+        "eventtags": {"action": true},
+        "description":  [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The Hell Tick treats its Bite as a melee weapon that has a +1 DICE bonus to injure. The Bite does not take any hands to wield.",
+                            "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+                        }
+                        ]
+    },
+    {
+        "id": "ab_helltick_unrelenting",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_none",
+        "name": "Unrelenting",
+        "eventtags": {"trait": true},
+        "description":  [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The Hell Tick may take its Dash and any of its Jump ACTIONS with +2 DICE.",
+                            "glossary": [{"val": "+2 DICE", "id": "gl_plusdice"},{"val": "ACTIONS", "id": "gl_action"}]
+                        }
+                        ]
+    },
+    {
+        "id": "ab_helltick_poisonousbite",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_none",
+        "name": "Poisonous Bite",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "If a Hell Tick’s melee attack causes a BLOOD MARKER on any model in Melee Combat, the Hell Tick can then remove one of their own BLOOD MARKERS, if it has any.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Additionally, the bitten model is considered Poisoned. A Poisoned model begins to immediately show deep rashes all over their body, swelling blisters that ooze a foul, corrosive ichor, and feel excruciating joint pains. At the start of each of the model’s subsequent Activations, they immediately gain a BLOOD MARKER.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "A Poisoned model can be cured of the disease by spending a BLESSING MARKER, or by any healing effect that removes a BLOOD MARKER.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "BLESSING MARKER", "id": "gl_blessingmarker"}]
+            }
+                        ]
     }
 ]

@@ -4167,5 +4167,62 @@
                             "content": "ab_dragon_terrifying"
                         }]
 
+    },
+    {
+        "id": "md_helltick",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+                ],
+        "promotion": 1,
+        "movement": [10],
+        "ranged": [],
+        "melee": [1],
+        "armour": [0],
+        "base": [25],
+        "faction_id": "fc_none",
+        "variant_id": "fv_basic",
+        "eventtags": {},
+        "name": "Hell Tick",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The Hell Tick model can be up to 32mm tall, and must be placed on a base of 25mm. It is armed only with its vicious Parasitic Bite. This is a natural part of the creature itself and cannot be removed or lost in any way."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Upon being Activated, the Hell Tick will seek out the nearest model with the most BLOOD MARKERS. The Hell Tick will Charge the model through the fastest route, and will Climb, Jump Over Gaps, Between Ledges of Unequal Heights, and Down, to get at a warband model. Note that the Hell Tick does not suffer any Injuries or consequences from falling down a height that would normally damage the model. It will move through Difficult and Dangerous terrain as if it is Open terrain. The Hell Tick does not need to have line of sight of a model to Charge it. If the Hell Tick cannot Charge a model, it will just Move toward the nearest one."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "When the Hell Tick reaches a model, it will make one attack ACTION with each of its Bite, in Melee Combat (so it can make one attack per Activation). If the Hell Tick Charges more than one model, it will split attack the opponent with the most BLOOD MARKERS. If neither opponents have Blood Markers, or have the same amount, the players roll-off a D6, choosing between odds and even numbers to represent their models, to decide whose model the Hell Tick will attack.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"}]
+            }
+        ],
+        "equipment":  [{
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The tick is equipped with its BITE. The BITE takes no hands to wield."
+                        }],
+        "abilities":  [{
+                            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                            "content": "ab_helltick_bite"
+                        },
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                            "content": "ab_helltick_unrelenting"
+                        },
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                            "content": "ab_helltick_poisonousbite"
+                        }]
+
     }
 ]
