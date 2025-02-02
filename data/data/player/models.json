@@ -1094,6 +1094,51 @@
         ]
     },
     {
+        "id": "md_silahdar",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+            {"tag_name": "ironsultanate", "val": "gl_sultanate"},
+            {"tag_name": "elite", "val": "gl_elite"},
+            {"tag_name": "tough", "val": "gl_tough"},
+            {"tag_name": "strong", "val": "gl_strong"}
+                ],
+        "promotion": 0,
+        "movement": [6],
+        "ranged": [2],
+        "melee": [2],
+        "armour": [0],
+        "base": [32],
+        "faction_id": "fc_ironsultanate",
+        "team":"heaven",
+        "variant_id": "fv_defendersoftheironwall",
+        "eventtags": {},
+        "name": "Silahdar Captain ",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Your Warband must contain a Silahdar Captain. Military expeditions over the Great Iron Wall into No Man’s Land carry many risks, and their commanders are field officers known as Yüzbaşı. They are expected to lead from the front and their selection is solely on merit, with no consideration given to family pedigree or wealth."
+            }
+        ],
+        "equipment":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Silahdar can be equipped with any weapon, armour and equipment from the Iron Sultanate Armoury, including Sapper-only equipment.",
+                "glossary": []
+            }
+            ],
+        "abilities":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_tough"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_strong"
+            }
+        ]
+    },
+    {
         "id": "md_jabireanalchemist",
         "type": "Model",
         "source": "core",
@@ -1408,6 +1453,50 @@
         "variant_id": "fv_basic",
         "eventtags": {},
         "name": "Janissaries",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The janissaries are the Sultanate’s elite warriors, raised from childhood in the arts of war. Captured during raids upon the desolate northern and eastern marches beyond the Iron Wall, they are subjected to rigorous martial training and indoctrination from an early age. On the battlefield, Janissaries excel at devastating counter-charges, crushing the enemy elite formations and acting as the bodyguard for high-ranking individuals."
+            }
+        ],
+        "equipment":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Janissaries can be equipped with any weapon, armour and equipment from the Iron Sultanate Armoury.",
+                "glossary": []
+            }
+            ],
+        "abilities":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_strong"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_countercharge"
+            }
+        ]
+    },
+    {
+        "id": "md_janissaries_defendersoftheironwall",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+            {"tag_name": "ironsultanate", "val": "gl_sultanate"},
+            {"tag_name": "strong", "val": "gl_strong"},
+            {"tag_name": "elite", "val": "gl_elite"}
+                ],
+        "promotion": 0,
+        "movement": [6],
+        "ranged": [1],
+        "melee": [1],
+        "armour": [0],
+        "base": [32],
+        "faction_id": "fc_ironsultanate",
+        "team":"heaven",
+        "variant_id": "fv_defendersoftheironwall",
+        "eventtags": {},
+        "name": "Janissary Officers",
         "blurb": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -3946,6 +4035,71 @@
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                 "content": "A Mamluk carries a Jezzail with Alchemical Ammunition. They wear a Helmet and Reinforced Armour. In addition, before each battle, you may choose one of the following loadouts from their personal armoury:",
+                "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Polearm and Trench Shield"
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Sword and Pistol"
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Two-handed sword (Mamluk ignores the Keyword HEAVY on this weapon)",
+                        "glossary": [{"val": "HEAVY", "id": "gl_heavy"}]
+                    }
+                ]
+            }
+            ],
+        "abilities":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_swornsword"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_martialprowess"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_arabiandestrier"
+            }
+        ]
+    },
+    {
+        "id": "md_sipahi",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+            {"tag_name":"fireteam", "val": "gl_fireteam"}
+                ],
+        "promotion": 0,
+        "movement": [6],
+        "ranged": [1],
+        "melee": [1],
+        "armour": [0],
+        "base": [32],
+        "faction_id": "fc_none",
+        "variant_id": "fv_defendersoftheironwall",
+        "eventtags": {},
+        "team":"heaven",
+        "name": "Sipahi Automaton Cavalry",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Sipahi Automaton Cavalry often serves as infantry in the Iron Wall units to reinforce areas under severe pressure."
+            }
+        ],
+        "equipment":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "A Sipahi carries a Jezzail with Alchemical Ammunition. They wear a Helmet and Reinforced Armour. In addition, before each battle, you may choose one of the following loadouts from their personal armoury:",
                 "glossary": []
             },
             {

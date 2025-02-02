@@ -1071,6 +1071,150 @@
         ]
     },
     {
+        "id": "fv_defendersoftheironwall",
+        "type": "Variant",
+        "source": "core",
+        "tags": [
+            {"tag_name": "ironsultanate", "val": ""}
+                ],
+        "faction_id": "fc_ironsultanate",
+        "name": "Defenders of the Iron Wall",
+        "flavour":  [ 
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "\"Whosoever fears defeat always remains defeated. Do you truly think the Iron Wall alone protects Those Who Believe? For its iron extends into the very hearts of our warriors wherever their duties take them.\""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "-Sultan Selim of the Great and Invincible Iron Wall"
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Since assuming the throne in the year 1902, Sultan Malik (affectionately nicknamed the ‘Lion Padishah’’ by his troops) has demonstrated a more aggressive policy in waging the Great War. On an ocassion, even detachments from the the million-strong garrison of the Iron Wall are sent on missions beyond the Wall, for the Sultanate has never relinquished the claim to the muslim lands lost to the Heretics. Though the Great Wall still comes under continuous attacks as the forces of Shaitan ceaslessly test the defenses of the Believers, the Sultan refuses to sit idle and fight passively only in defense. Thus the regular troops defending the Iron Wall have sent into missions far more regularly than in the past, hardening the raw recruits into veterans."
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "When the Defenders of the Iron Wall go into an expedition into No Man’s Land, they utilize their unique way of war to its fullest extent. All warriors have been drilled ceaslessly in marksmanship that takes advantage of elevated positions and using Siege Jezzails in two-man teams. These skills are honed into perfection, and it is almost impossible to dislodge these troops from a well-prepared high ground. Mighty Brazen Bulls form a lynchpin of the defense in close quarters, and can push back even the greatest of enemy champions."
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The core of any such warband is often formed around the Sultanate Sappers: experts at demolition, mine-setting and veterans of the bitter battles above and below the Wall. They are superb in the transportation and use of the Field Artillery, erecting defensive positions at a speed that borders on supernatural, and using explosive charges to frustrate their enemies who will be whittled into nothing before they reach the lines of Sultanate’s defenders finish them off with ruthless efficiency."
+            }
+        ],
+        "rules": [
+            {
+                "title": "Variant Rules",
+                "description": [
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Silahdar:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The commanders of the Iron Wall units come from amongst the personal bodyguards of the Sultan known as Silahdar. Each Warband must contain one Silahdrar when it is created. They use the Yüzbaşı characteristics, do not have the Mubarizun Ability. Instead they have the Keyword STRONG and can use any Sapper Only choices from the Armoury. They cost 70 ducats.",
+                            "glossary": [{"val": "STRONG", "id": "gl_strong"}]
+                        }
+
+                    ]
+                    },
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Far from the Sublime Gate:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The Warband may not include any Lions of Jabir, Yüzbaşi or Assassins. They cannot buy the Cloak of Alamut or the Wind Amulet.",
+                            "glossary": []
+                        }
+
+                    ]
+                    },
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Sipahi:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "Sipahi Automaton Cavalry often serves as infantry in the Iron Wall units to reinforce areas under severe pressure. They use characteristics of Mamluk Faris Mercenary. They cost 110 ducats. You cannot modify their equipment in any way. You can have up to 1 Sipahi. Note that this does not stop you from recruiting a Mamluk as a mercenary as well. Sipahi can be promoted as any other non-ELITE model.",
+                            "glossary": [{"val": "ELITE", "id": "gl_elite"}]
+                        }
+
+                    ]
+                    },
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Janissary Officers:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The Warband may include up to 2 Janissaries acting as officers. They have Keyword ELITE. The Warband may not have any other Janissaries.",
+                            "glossary": [{"val": "ELITE", "id": "gl_elite"}]
+                        }
+
+                    ]
+                    },
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Sappers Corps:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The standard divisions assigned to the Iron wall have double-strength Sapper detachment. This Warband may include up to 4 Sappers.",
+                            "glossary": []
+                        }
+
+                    ]
+                    },
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Siege Jezzail Teams:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "All the members of the Warband are trained to use the Siege Jezzails in pairs. When any model of this Warband shoots a Siege Jezzail and they are within 1” of another member of the Warband, they add +1 DICE to their Ranged Attack to hit roll with the Siege Jezzai.",
+                            "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+                        }
+
+                    ]
+                    },
+                    {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Marksmanship of the Iron Wall:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "All the members of the Warband practise marksmanship from the dizzying heights of the Iron Wall against targets on the ground below. The Elevated position Ranged bonus for this Warband is +2 DICE instead of the usual +1 DICE.",
+                            "glossary": [{"val": "+2 DICE", "id": "gl_plusdice"},{"val": "+1 DICE", "id": "gl_plusdice"}]
+                        }
+
+                    ]
+                    }
+                ]
+            } 
+        ],
+        "removed_rules": [],
+        "removed_equip": ["eq_cloakofalamut", "eq_windamulet", "eq_alaybozan","eq_sultanategrandcannon"],
+        "removed_model": ["md_yuzbasicaptain", "md_sultanatesapper", "md_sultanateassassin", "md_lionsofjabir", "md_janissaries"],
+        "equipment": [ 
+            {"id": "eq_alaybozan",      "cost": 9,  "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_sultanatesapper"},{"type": "model", "val": "md_silahdar"}], "features":["Shield Combo"]},
+            {"id": "eq_explosivecharges",      "cost": 35,  "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_sultanatesapper"},{"type": "model", "val": "md_silahdar"}], "features":[]},
+            {"id": "eq_anqaguard",      "cost": 10,  "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_sultanatesapper"},{"type": "model", "val": "md_silahdar"}], "features":[]},
+            {"id": "eq_ironwallkalkan", "cost": 30,  "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_brazenbull"}], "features":[]},
+            {"id": "eq_bannerofdesertwind", "cost": 30,  "cost_id": "ducats", "limit": 1, "restriction": [], "features":[]},
+            {"id": "eq_sultanategrandcannon_defendersoftheironwall",   "cost": 60, "cost_id": "ducats",  "limit": 2, "restriction": [{"type": "model", "val": "md_brazenbull"}]}
+            
+        ],
+        "models" : [
+            {"id": "md_silahdar",     "cost": 70,     "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": []},
+            {"id": "md_janissaries_defendersoftheironwall",        "cost": 55,     "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": []},
+            {"id": "md_sipahi",     "cost": 110,     "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet","eq_jezzail","eq_alchemicalammunition"], "upgrades": []},
+            {"id": "md_sultanatesapper",    "cost": 50,     "cost_id": "ducats", "limit_min": 0, "limit_max": 4, "equipment": ["eq_shovel"], "upgrades": []}
+        ]
+    },
+    {
         "id": "fv_papalstatesinterventionforce",
         "type": "Variant",
         "source": "core",

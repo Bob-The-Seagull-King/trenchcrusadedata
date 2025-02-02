@@ -352,5 +352,50 @@
                 "glossary": []
             }
         ]
+    },
+    {
+        "id": "tr_huntforheroes_unforseenevent_risingfog",
+        "type": "TableResult",
+        "source": "core",
+        "tags": [
+            ],
+        "name": "Rising Fog",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Heavy fog covers the entire combat zone, drastically limiting visibility for all models. All Ranged Attacks have their total range halved, according to the weapon’s profile and respective modifiers that may have been applied (such as scopes, etc.) The fog last for two turns before it dissipates.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "tr_huntforheroes_unforseenevent_rainmudandguts",
+        "type": "TableResult",
+        "source": "core",
+        "tags": [
+            ],
+        "name": "Rain Mud and Guts",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The clouds roar and wail, as a sudden downpour strikes the battlefield, leaving the ground muddy and bloody, and gear wet and heavy. All Melee Attacks are made with -2 DICE to hit, additional to any other conditions of the model and/or weapon’s profile and respective modifiers that may have been applied. The storm last for two turns before it dissipates.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "tr_huntforheroes_unforseenevent_deepcraters",
+        "type": "TableResult",
+        "source": "core",
+        "tags": [
+            ],
+        "name": "Deep Craters",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "An strong and swift earthquake hits the area, causing the ground to shake and land to giving in on itself, forming deep craters all over the area. Each player places three Objective Markers (4”by 4”) to represent the craters (to a total of six) anywhere on the battlefield. The craters cannot be placed within a Deployment Zone, on impassable terrain or surrounded by it. They must be at least 3” away from any Defensive Work or Objective Building, at least 4” away from any model. A model that falls into a crater, falls D3+3” and is knocked Down. If the model is not taken Out of Action by the fall, they can Climb out of the hole with a RISKY ACTION, but it must have enough remaining movement to clear the entire height. If this RISKY ACTION fails, the model remains where it is.",
+                "glossary": []
+            }
+        ]
     }
 ]

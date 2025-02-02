@@ -4485,5 +4485,156 @@
                     ]
                 }
             ]
+    },
+    {
+        "id": "eq_ironwallkalkan",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "armour",
+        "name": "Iron Wall Kalkan",
+        "equip_type": null,
+        "range": null,
+        "blurb": "It is rare that even the greatest artillery bombardments manage to even dent the Invincible Iron Wall, but sometimes when the most powerful of enemy Sorcerers Such shards and slivers of the divine metal are carefully gathered by the Alchemists and incorporated into mighty shields of the Brazen Bulls, to be used solely by the defenders of the Iron Wall.",
+        "modifiers": null,
+        "eventtags": {"trait": true},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Takes always one hand to use in both melee and in ranged combat and cannot be switched out. The target is always considered to be in Cover when shot, and counts as fighting behind a defended obstacle when an enemy charges them. In addition, when the Brazen bull is Activated and it is in combat with only 1 model on a 40mm or smaller base, the Bull can Move normally (though not Charge or Dash), pushing its opponent in the same direction as the Bull is moving and travelling the same distance as the Bull moves if it moves directly towards the enemy that is in front half of its base. This can push the enemies so they fall as per Falling rules), and if the Bull pushes the opponent against a terrain piece higher than 2”, both models stop and the opponent immediately rolls on the injury table."
+                                    }
+                                ]
+                            }
+                        ]
+    },
+    {
+        "id": "eq_bannerofdesertwind",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Banner of Desert Wind",
+        "equip_type": null,
+        "range": null,
+        "blurb": "“This, then, is the parable of those who are bent on denying their Sustainer: all their works are as ashes which the wind blows about fiercely on a stormy day: they cannot achieve any benefit whatever from all that they may have wrought: for this is indeed the farthest one can go astray.” The alchemical compounds woven into this banner attract desert winds that make it impossible for flying machines or winged creatures to overcome the Iron Wall",
+        "modifiers": null,
+        "eventtags": {"trait": true},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "This banner occupies one hand at all times and acts as Troop Flag. In addition, as long as the model carrying this banner is not Down or Out of Action, all enemies with 24” have to reduce their Movement Characteristic of by 1”."
+                                    }
+                                ]
+                            }
+                        ]
+    },
+    {
+        "id": "eq_sultanategrandcannon_defendersoftheironwall",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+            {"tag_name": "Heavy", "val": "gl_heavy"}
+                ],
+        "category": "ranged",
+        "name": "Sultanate Grand Cannon (Defenders of the Iron Wall Variant)",
+        "equip_type": "1-Handed",
+        "range": "48\"",
+        "blurb": "Mounted on the Great Iron Wall, these are the main artillery that the Sultanate produces in vast numbers. Normally fixed in place, a variant suited for the massive hands of the Brazen Bulls has been designed so the living field artillery of the Padishah can take on truly heavily armoured enemies and vehicles.",
+        "modifiers": ["+2D to Injury","Ignore Armour"],
+        "eventtags": {"action": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Add +2 DICE to all Injury rolls and ignores all armour. If this attack hits its target, but does not take it Out of Action, the target is pushed 1d6” directly away from the attacker, stopping if they hit another model or solid piece of terrain.",
+                        "glossary": [{"val": "+2 DICE", "id": "gl_plusdice"}]
+                    }
+                ]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "If the Cannon is placed as a Stationary object on the battlefield, it is deployed separately as one of your standard units on a 50mm base in your own Deployment Zone or Table Edge. It is immobile and cannot be damaged. Any model in the Defenders of the Iron Wall warband can shoot it during their Activation as long as they are not in Melee combat, are within 1” of the Cannon, and do not move in any way during their Activation. Alchemist Abilty Mastery of the Elements does apply to the Cannon. As with any other Ranged Weapon, each Grand Cannon can only be fired once per Turn. The Cannon cannot be lost as a casuality unless carried by a Brazen Bull.",
+                        "glossary": [{"val": "+2 DICE", "id": "gl_plusdice"}]
+                    }
+                ]
+            }
+            ]
+    },
+    {
+        "id": "eq_explosivecharges",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+            {"tag_name": "Consumable", "val": "gl_consumable"}
+                ],
+        "category": "equipment",
+        "name": "Explosive Charges",
+        "equip_type": null,
+        "range": null,
+        "blurb": "Sultanate Sapper Corps are experts at using explosive charges to overcome defended enemy positions such as walls, bunkers, casemates and pillboxes. Experts at timing the fuses of their bombs, many a battle has been turned thanks to a well-timed blast.",
+        "modifiers": null,
+        "eventtags": {"trait": true},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "After deployment but before the battle starts select one piece of terrain that is not a Scenario Objective granting Victory Points and no model is touching outside of the enemy Deployment Zone. Write on a piece of paper which terrain piece it is. It can be no bigger than 8” x 8” (an 8” section of trench, a wall, a tree, a building etc). The Sappers have placed explosive charges here before the battle. Whenever you Activate one of your models you can declare you are detonating the charges by revealing the name of the terrain piece. Roll on the Injury Chart to see what happens to any model that is placed touching or on top of this terrain piece. The mine has the Keyword SHRAPNEL. After this, the terrain piece is removed from the game. If any model(s) are standing on top of the terrain piece when it explodes they will have to roll on the Injury Chart immediately. If they are on top of the terrain piece and are more than 2” high, they suffer Falling damage as per standard rules. Remove this terrain piece permanently from the play.",
+                                        "glossary": [{"val": "SHRAPNEL", "id": "gl_shrapnel"}]
+                                    }
+                                ]
+                            }
+                        ]
+    },
+    {
+        "id": "eq_anqaguard",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+            {"tag_name": "Heavy", "val": "gl_heavy"}
+                ],
+        "category": "equipment",
+        "name": "Anqa Guard",
+        "equip_type": null,
+        "range": null,
+        "blurb": "Shaped into a likeness of the wondrous Anqā bird, and Created by the Imperial School of Military Engineering in association with the House of Wisdom, these movable defensive walls are light and extraordinarily resistant to all damage thanks to a richly-decorated ceramic layer on their outer surface and a secret compound of aramic and alchemical steel at its core. A Sapper can carry one on their back to battle, and with a single press of a button the guard unfolds by spreading its metalling wings and revealing a face of beautiful yet frightening countenance.",
+        "modifiers": null,
+        "eventtags": {"trait": true},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "This transportable fortification is represented by a 1” high standing shield on 40mm base. They can either be placed anywhere within your own deployment zone after all other models are deployed. Alternatively, a sapper may carry one on their back, and then deploy it with a +2 DICE RISKY ACTION during their Activation as long as the Sapper is not in Melee combat. In this case, it must be placed within 1” of the Sapper. In either case, they count as both Cover and a Defended Obstacle once deployed.",
+                                        "glossary": [{"val": "+2 DICE", "id": "gl_plusdice"},{"val": "RISKY ACTION", "id": "gl_riskyaction"}]
+                                    }
+                                ]
+                            }
+                        ]
     }
 ]

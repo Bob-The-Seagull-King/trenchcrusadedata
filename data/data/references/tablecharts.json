@@ -18,6 +18,21 @@
         ]
     },
     {
+        "id": "tc_huntforheroes_unforseenevents",
+        "type": "TableChart",
+        "source": "core",
+        "tags": [
+            ],
+        "name": "Unforseen Events",
+        "description": [ ],
+        "listtype": "tableresult",
+        "list_items": [
+            { "id": "tr_huntforheroes_unforseenevent_risingfog", "roll_start": 1, "roll_end": 1},
+            { "id": "tr_huntforheroes_unforseenevent_rainmudandguts", "roll_start": 2, "roll_end": 2},
+            { "id": "tr_huntforheroes_unforseenevent_deepcraters", "roll_start": 3, "roll_end": 3}
+        ]
+    },
+    {
         "id": "tc_actionsuccess",
         "type": "TableChart",
         "source": "core",
