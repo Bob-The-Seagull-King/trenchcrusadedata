@@ -101,7 +101,7 @@
         "source": "core",
         "tags": [
             ],
-        "name": "Check Wound",
+        "name": "Chest Wound",
         "roll_start": 16,
         "roll_end": 16,
         "scar": 1,

@@ -272,7 +272,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Owing to its high accuracy, add +1 DICE to all rolls to hit and ignore the penalty to hit rolls when attacking at long range. However, injuries are rolled with -1 DICE at long range due to the low penetration power. Counts as a 1-Handed weapon when wielded with a shield.",
+                                        "content": "Owing to its high accuracy, add +1 DICE to all rolls to hit and ignore the penalty to hit rolls when attacking at long range. However, injuries are rolled with -1 DICE at long range due to the low penetration power.",
                                         "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "-1 DICE", "id": "gl_minusdice"}]
                                     }
                                 ]
@@ -328,7 +328,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Owing to its high accuracy, add +1 DICE to all rolls to hit and ignore the penalty to hit rolls when attacking at long range. However, injuries are rolled with -1 DICE at long range due to the low penetration power. Counts as a 1-Handed weapon when wielded with a shield.",
+                                        "content": "Owing to its high accuracy, add +1 DICE to all rolls to hit and ignore the penalty to hit rolls when attacking at long range. However, injuries are rolled with -1 DICE at long range due to the low penetration power.",
                                         "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "-1 DICE", "id": "gl_minusdice"}]
                                     }
                                 ]
@@ -686,7 +686,7 @@
         "equip_type": "1-Handed",
         "range": "Melee",
         "blurb": "Terrifying blades blessed by the hand of a greater devil, these knives are used in Heretic rituals to sacrifice captives to the dark powers of Hell. They simply need to touch their opponents to cause indescribable pain and even the slightest wound often proves fatal from the agony alone. They are risky even to their wielders, as the merest scratch wounds friend and a foe alike.",
-        "modifiers": ["+2D on Injury Results"],
+        "modifiers": ["+2 on Injury Results"],
         "eventtags": {"action": true},
         "description":  [
                             {
@@ -695,7 +695,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "The Sacrificial Knife adds +2 DICE to all rolls on the Injury Chart."
+                                        "content": "The Sacrificial Knife adds +2 to all rolls on the Injury Chart. For example, a roll of 7 on the Injury Chart becomes 9 when using the Sacrificial Knife."
                                     }
                                 ]
                             }
@@ -4458,5 +4458,32 @@
             }
 
         ]
+    },
+    {
+        "id": "eq_exploration_saintsreliquary",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Saint's Reliquary",
+        "equip_type": null,
+        "range": null,
+        "blurb": "A well-hidden reliquary of a Fallen Saint.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+                {
+                    "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                    "content": "Rule:",
+                    "subcontent": [
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": " This piece of equipment can only be carried by an ELITE model. A model equipped with the Saintly Relic gains the Keyword TOUGH but loses the Keyword INFILTRATOR (should it have it) and can never have cover.",
+                            "glossary": [{"val": "ELITE", "id": "gl_elite"},{"val": "TOUGH", "id": "gl_tough"},{"val": "INFILTRATOR", "id": "gl_infiltrator"}]
+                        }
+                    ]
+                }
+            ]
     }
 ]
