@@ -715,7 +715,7 @@
             {"id": "eq_grandanchorite", "cost": 15, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_pistonlegs", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
             {"id": "eq_wrathfulcherubface", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]},
-            {"id": "eq_hallowedanchorite", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]}
+            {"id": "eq_hallowedanchorite", "cost": 10, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_anchoriteshrine_warpilgramageofstmethodius"}]}
         ],
         "models" : [
             {"id": "md_ecclesiasticprisoner", "cost": 20, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
@@ -790,7 +790,6 @@
         "removed_equip": [],
         "removed_model": ["md_communicant","md_ecclesiasticprisoner","md_warprophet","md_trenchpilgrim"],
         "equipment": [
-            {"id": "eq_tarnishedarmour", "cost": 45, "cost_id": "ducats", "limit": 1, "restriction": []},
             {"id": "eq_sacrificiallamb", "cost": 5, "cost_id": "ducats", "limit": 0, "restriction": []}
         ],
         "models" : [
