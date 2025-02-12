@@ -1250,6 +1250,18 @@
                     },
                     {
                         "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Vatican's Representative:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Papal States Warbands must include a Trench Cleric, but does not have to include a Lieutenant.",
+                                "glossary":  []
+                            }
+
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
                         "content": "Swiss Guard",
                         "subcontent": [
                             {

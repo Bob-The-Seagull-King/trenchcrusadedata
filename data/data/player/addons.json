@@ -1527,7 +1527,6 @@
         "type": "Addon",
         "source": "core",
         "tags": [
-            {"tag_name": "Risky", "val": "gl_riskyaction"}
                 ],
         "faction_id": "fc_blackgrail",
         "name": "Beelzebub's Touch",
