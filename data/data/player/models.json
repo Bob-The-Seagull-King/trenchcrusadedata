@@ -721,7 +721,8 @@
         "tags": [
             {"tag_name": "newantioch", "val": "gl_newantioch"},
             {"tag_name": "strong", "val": "gl_strong"},
-            {"tag_name": "tough", "val": "gl_tough"}
+            {"tag_name": "tough", "val": "gl_tough"},
+            {"tag_name": "elite", "val": "gl_elite"}
                 ],
         "promotion": 0,
         "movement": [6],
