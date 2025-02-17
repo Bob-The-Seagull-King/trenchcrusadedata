@@ -472,7 +472,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Hits up to two models within range automatically with an Attack Action as long as they are within 6” of each other. Ignores armour. It also has the Keyword FIRE, so it causes an additional +1 BLOOD MARKER on enemies it hits, even if no other damage is caused.",
+                                        "content": "Hits up to two models within range automatically with an Attack Action as long as they are within 6” of each other and within the Heavy Flamethrower range. Ignores armour. It also has the Keyword FIRE, so it causes an additional +1 BLOOD MARKER on enemies it hits, even if no other damage is caused.",
                                         "glossary": [{"val": "FIRE", "id": "gl_fire"},{"val": "+1 BLOOD MARKER", "id": "gl_bloodmarker"}]
                                     }
                                 ]
@@ -2154,7 +2154,7 @@
         "equip_type": "2-Handed",
         "range": "Melee",
         "blurb": "It takes years of gruelling Mensur practice and field drills to acquire the required precision and speed to use the specialist tank-splitter swords of thre Gardekorps. Despite their great size (often over 6 feet long!) they are remarkably light, and due the large quantities of Orichalcum used in their forging process they are virtually unbreakable, and thus often used to disable tanks and other armoured vehicles by either slicing their armour open or disabling them with an accurate swing to sever their tracks. Before any battle they are treated with special metal-melting chemical compound which melts the armour, making it far deadlies weapon against armoured targets than those who wear none.",
-        "modifiers": ["+1 on Injury Results"],
+        "modifiers": ["+1D to Injury"],
         "eventtags": {"action": true},
         "description":  [
                 {
@@ -2163,8 +2163,8 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Adds +1 to Injury rolls. If the model the sword hits has armour modifier from any other source than a shield, then the player may set any one dice of the Injury roll into 6 before the Injury Roll is made. Rest of the dice for the injury toll.",
-                            "glossary": []
+                            "content": "Adds +1 DICE to Injury rolls. If the model the sword hits has armour modifier from any other source than a shield, then the player may set any one dice of the Injury roll into 6 before the Injury Roll is made. Rest of the dice for the injury toll.",
+                            "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
                         }
                     ]
                 }
