@@ -4379,5 +4379,55 @@
                             "content": "ab_helltick_poisonousbite"
                         }]
 
+    },
+    {
+        "id": "md_scriptureguardian",
+        "type": "Model",
+        "source": "core",
+        "tags": [
+            {"tag_name": "golem", "val": "gl_golem"}
+                ],
+        "promotion": 2,
+        "movement": [6],
+        "ranged": [1],
+        "melee": [1],
+        "armour": [0],
+        "base": [40],
+        "faction_id": "fc_none",
+        "variant_id": "fv_basic",
+        "eventtags": {},
+        "name": "Scripture Guardian",
+        "blurb": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The Origins of the Scripture Guardians are unknown, but rumours claim they are creations of great masters of Kabbalah. Reports of the Scripture Guardians began to circulate in the early days of the Great War. The destruction of Jerusalem upended great cities and unearthed tombs that should never have been disturbed, their occupants now wandering this unhappy land, endlessly reciting the sacred writings entrusted to them in death. Sometimes a lucky expedition to No Man’s Land can fi nd such a creature, and placing a holy text of their own faith into its hands can turn the Scripture Guardian into a potent ally to whomever aligns with the holy (or indeed desecrated) scroll of tome given to its unyielding grasp."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Capable of speaking and reading the One True Language, the Scripture Guardian can unleash the powers it calls upon against anyone its master dictates. It serves its purpose with the single-mindedness of an automaton, unthinking and uncaring. Spoken by the Guardian, the words are empowered with the primordial power of Creation, and can unmake anything, growing in power the longer they target anything in the physical world."
+            }
+        ],
+        "equipment":  [{
+                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                            "content": "The Scripture Guardian carries a Scripture Scroll. It wears reinforced armour and a helmet. In addition, it has 2 arms that can be made to carry one Melee weapon available to your Warband as long as they have no restrictions (such as ELITE only, Assassins only, LIMIT: 2 etc.). You must pay the appropriate cost as standard.",
+                            "glossary": [{"val": "ELITE", "id": "gl_elite"}]
+                        }],
+        "abilities":  [{
+                            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                            "content": "ab_scriptureguardian_golem"
+                        },
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                            "content": "ab_scriptureguardian_slow"
+                        },
+                        {
+                            "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                            "content": "ab_scriptureguardian_vengefulscripture"
+                        }]
+
     }
 ]

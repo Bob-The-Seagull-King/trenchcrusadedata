@@ -122,7 +122,8 @@
             {"id": "md_guarddog", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_mercydog", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": ["eq_medikit"], "upgrades": []},
             {"id": "md_hellhound", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
-            {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []}
+            {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []},
+            {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
     },
     {
@@ -243,7 +244,8 @@
             {"id": "md_communicantantitankhunter", "cost": 5, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_antimaterialrifle","eq_combathelmet","eq_trenchclub","eq_trenchclub"], "upgrades": []},
             {"id": "md_mendelistammomonk", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_gasmask"], "upgrades": []},
             {"id": "md_observer", "cost": 3, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_standardarmour","eq_combathelmet","eq_gasmask","eq_medikit","eq_polearm"], "upgrades": []},
-            {"id": "md_combatmedic",                "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_misericordia","eq_medikit","eq_gasmask","eq_standardarmour"], "upgrades": []}
+            {"id": "md_combatmedic",                "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_misericordia","eq_medikit","eq_gasmask","eq_standardarmour"], "upgrades": []},
+            {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
     },
     {
@@ -344,7 +346,8 @@
             {"id": "md_wardog",             "cost": 1,      "cost_id": "glory",  "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_guarddog",           "cost": 2,      "cost_id": "glory",  "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_mercydog",           "cost": 2,      "cost_id": "glory",  "limit_min": 0, "limit_max": 0, "equipment": ["eq_medikit"], "upgrades": []},
-            {"id": "md_mamlukfaris", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet","eq_jezzail","eq_alchemicalammunition"], "upgrades": []}
+            {"id": "md_mamlukfaris", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet","eq_jezzail","eq_alchemicalammunition"], "upgrades": []},
+            {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
     },
     {
@@ -498,7 +501,8 @@
             {"id": "md_communicantantitankhunter",  "cost":  5, "cost_id": "glory",  "limit_min": 0, "limit_max": 1, "equipment": ["eq_antimaterialrifle","eq_combathelmet","eq_trenchclub","eq_trenchclub"], "upgrades": []},
             {"id": "md_mendelistammomonk",          "cost":  2, "cost_id": "glory",  "limit_min": 0, "limit_max": 1, "equipment": ["eq_gasmask"], "upgrades": []},
             {"id": "md_observer",                   "cost":  3, "cost_id": "glory",  "limit_min": 0, "limit_max": 1, "equipment": ["eq_standardarmour","eq_combathelmet","eq_gasmask","eq_medikit","eq_polearm"], "upgrades": []},
-            {"id": "md_mamlukfaris", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet","eq_jezzail","eq_alchemicalammunition"], "upgrades": []}
+            {"id": "md_mamlukfaris", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet","eq_jezzail","eq_alchemicalammunition"], "upgrades": []},
+            {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
     },
     {
@@ -628,7 +632,8 @@
             {"id": "md_flythrall", "cost": 25, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_heraldofbeelzebub", "cost": 50, "cost_id": "ducats", "limit_min": 0, "limit_max": 4, "equipment": [], "upgrades": [{"id": "up_maddeningbuzz", "cost": 10, "cost_id": "ducats", "limit" : 1}]},
             {"id": "md_amalgam", "cost": 150, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []}
+            {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []},
+            {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
     },
     {
@@ -986,7 +991,8 @@
             {"id": "md_goeticwarlock", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_swordaxe","eq_swordaxe"], "upgrades": []},
             {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []},
             {"id": "md_wardog", "cost": 1, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
-            {"id": "md_hellhound", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []}
+            {"id": "md_hellhound", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
+            {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
     }
 ]

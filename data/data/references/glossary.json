@@ -591,5 +591,24 @@
             "glossary": [
                 ]
         }]
+    },
+    {
+        "id": "gl_golem",
+        "type": "Glossary",
+        "source": "core",
+        "tags": [
+            {"tag_name": "category", "val": "model"}
+        ],
+        "name": "Golem",
+        "description":  [{
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "As a GOLEM constructed by Kabbalistic knowledge, the model is exceedingly difficult to destroy. It treats Out of Action Injury results as Down unless the attack is done using the Bloodbath rule in which case Out of Action result removes the Scripture Guardian from the play as standard. It does not suffer additional Blood Markers from weapons with keyword GAS, and are not affected by the Keyword FEAR. The controlling player cannot remove BLOOD MARKERs from the Guardian by any means, though the opponent can use them as standard.",
+            "subcontent":   [],
+            "glossary": [
+                {"val": "GAS", "id": "gl_gas"},
+                {"val": "FEAR", "id": "gl_fear"},
+                {"val": "BLOOD MARKERs", "id": "gl_bloodmarker"}
+                ]
+        }]
     }
 ]

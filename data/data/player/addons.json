@@ -2733,5 +2733,60 @@
                 "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "BLESSING MARKER", "id": "gl_blessingmarker"}]
             }
                         ]
+    },
+    {
+        "id": "ab_scriptureguardian_golem",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_none",
+        "name": "Golem",
+        "eventtags": {"trait": true},
+        "description":  [{
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "As a GOLEM constructed by Kabbalistic knowledge, the Scripture Guardian is exceedingly difficult to destroy. It treats Out of Action Injury results as Down unless the attack is done using the Bloodbath rule in which case Out of Action result removes the Scripture Guardian from the play as standard. It does not suffer additional Blood Markers from weapons with keyword GAS, and are not affected by the Keyword FEAR. The controlling player cannot remove BLOOD MARKERs from the Guardian by any means, though the opponent can use them as standard.",
+            "subcontent":   [],
+            "glossary": [
+                {"val": "GAS", "id": "gl_gas"},
+                {"val": "FEAR", "id": "gl_fear"},
+                {"val": "BLOOD MARKERs", "id": "gl_bloodmarker"}
+                ]
+        }
+                        ]
+    },
+    {
+        "id": "ab_scriptureguardian_slow",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_none",
+        "name": "slow",
+        "eventtags": {"trait": true},
+        "description":  [{
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "Scripture Guardian has a half Dash distance (i.e. 3”)."
+        }
+    ]
+    },
+    {
+        "id": "ab_scriptureguardian_vengefulscripture",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_none",
+        "name": "Vengeful Scripture",
+        "eventtags": {"action": true},
+        "description":  [{
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "The Scripture Guardian reads words from the holy (or unholy!) text it carries. This is an attack ACTION with 18” range, and it can be used in either Melee or as a Ranged attack (though not both during the same Activation). Use Ranged and Melee Characteristics as appropriate. This attack ignores armour and cover. For each BLOOD MARKER the target has, add +1 to the Injury roll. Note that if armed with a melee weapon, both the Melee attack and the use of the Vengeageful Scripture can be used simultaneously.",
+            "glossary": [
+                {"val": "ACTION", "id": "gl_action"},
+                {"val": "BLOOD MARKER", "id": "gl_bloodmarker"}
+                ]
+        }
+    ]
     }
 ]

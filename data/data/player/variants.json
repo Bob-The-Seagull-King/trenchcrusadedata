@@ -231,7 +231,7 @@
         ],
         "removed_rules": [],
         "removed_equip": ["eq_hellboundsoulcontract","eq_infernalbrandmark"],
-        "removed_model": ["md_heretictrooper","md_warwolfassaultbeast","md_artillerywitch","md_anointedheavyinfantry","md_hereticpriest","md_sineater","md_goeticwarlock","md_wardog","md_guarddog","md_mercydog","md_hellhound"],
+        "removed_model": ["md_heretictrooper","md_warwolfassaultbeast","md_artillerywitch","md_anointedheavyinfantry","md_hereticpriest","md_sineater","md_goeticwarlock","md_wardog","md_guarddog","md_mercydog","md_hellhound","md_scriptureguardian"],
         "equipment": [ ],
         "models" : [
             {"id": "md_hereticpriest_fv_trenchghosts", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_tankpalanquin", "cost": 55, "cost_id": "ducats"}]},
