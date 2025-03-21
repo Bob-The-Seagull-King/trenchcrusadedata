@@ -1063,7 +1063,7 @@
             {"id": "eq_unholyrelic", "cost": 30, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_incendiarybullets", "cost": 15, "cost_id": "ducats", "limit": 1, "restriction": []},
             {"id": "eq_troopflag", "cost": 1, "cost_id": "glory", "limit": 1, "restriction": []},
-            {"id": "eq_restrainingmuzzle", "cost": 2, "cost_id": "glory", "limit": 3, "restriction": [{"type": "model", "val": "md_yokefiend"}]},  
+            {"id": "eq_restrainingmuzzle", "cost": 10, "cost_id": "ducats", "limit": 3, "restriction": [{"type": "model", "val": "md_yokefiend"}]},  
             {"id": "eq_cruelhelmet", "cost": 2, "cost_id": "glory", "limit": 2, "restriction": [{"type": "model", "val": "md_wretched"},{"type": "purchase", "val": "explore"}]},  
             {"id": "eq_koraktorthegreattomeofhell", "cost": 8, "cost_id": "glory", "limit": 1, "restriction": [{"type": "model", "val": "md_sorcerer"},{"type": "purchase", "val": "explore"}]},  
             {"id": "eq_lordshipofthisworld", "cost": 9, "cost_id": "glory", "limit": 1, "restriction": [{"type": "model", "val": "md_sorcerer"},{"type": "model", "val": "md_praetor"},{"type": "purchase", "val": "explore"}]},  
