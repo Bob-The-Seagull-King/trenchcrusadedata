@@ -334,5 +334,73 @@
             { "id": "sk_aureateskin", "roll_start": "choose", "roll_end": "choose"},
             { "id": "sk_eternaldebt", "roll_start": "choose", "roll_end": "choose"}
         ]
+    },
+    {
+        "id": "sg_antipopeofavignon",
+        "type": "SkillGroup",
+        "source": "core",
+        "tags": [
+            {"tag_name": "blackgrail", "val": ""},
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Patron: Anti-Pope of Avignon",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Your patron is the Anti-Pope of Avignon, the high priest of the Cult of the Black Grail. Whereas most strains of the Black Grail infect the body alone leaving the mind to suffer, the variant that is spread by Missionaries of Beelzebub infects the mind and brain above all else. This is why these Apostles of the Fly are startlingly successful in winning new converts to their cause despite the self-evident ruin caused by embracing the Lord of the Flies.",
+                "subcontent": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This type of Patron allows you to select one of the following when a Patron Skill rolled up on your Skill Chart:",
+                "subcontent": []
+            }
+        ],
+        "listtype": "skills",
+        "list_items": [
+            { "id": "sk_infectthemind", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_eyeofbeelzebub", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_silveredtongue", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_swinehybrid", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_beelzebubswisdom", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_specialassaulttraininggrail", "roll_start": "choose", "roll_end": "choose"}
+        ]
+    },
+    {
+        "id": "sg_temporallord",
+        "type": "SkillGroup",
+        "source": "core",
+        "tags": [
+            {"tag_name": "newantioch", "val": ""},
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Patron: Temporal Lord",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Your patron is a powerful noble, merchant prince, a high-ranking military officer, a minister or even the mighty Duke of New Antioch himself.",
+                "subcontent": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This type of Patron allows you to select one of the following when a Patron Skill rolled up on your Skill Chart:",
+                "subcontent": []
+            }
+        ],
+        "listtype": "skills",
+        "list_items": [
+            { "id": "sk_firearmprocurement", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_mendellistchemicals", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_armourandequipmentprocurement", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_meleeweaponprocurement", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_sniperschool", "roll_start": "choose", "roll_end": "choose"},
+            { "id": "sk_specialassaulttrainingantioch", "roll_start": "choose", "roll_end": "choose"}
+        ]
     }
 ]

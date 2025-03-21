@@ -547,11 +547,38 @@
         ],
         "rules": [
             {
-                "title": "Leader",
+                "title": "Order of the Fly",
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Your warband must include a Lord of Tumours or Plague Knight when it is created. If you select a Plague Knight leader, you can purchase a second Plague Knight as well, but cannot select a Lord of Tumors."
+                        "content": "When your warband is created, you must choose whether it will be led by a Lord of Tumours or a Plague Knight."
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "",
+                        "subcontent": [                            
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Lord of Tumors: ",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Your warband must include a Lord of Tumours when it is created. Your warband may include up to one Lord of Tumours and up to two Plague Knights."
+                                    }
+                                ]
+                            },                           
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Plague Knight: ",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Your warband must include a Plague Knight when it is created. Your warband may include up to three Plague Knights and it may not include a Lord of Tumours."
+                                    }
+                                ]
+                            }
+                            
+                        ]
                     }
                 ]
             },
@@ -579,9 +606,52 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Fighting against the Black Grail is a terrifying prospect. All Morale Tests taken when fighting against any Black Grail Warband are done with -1 DICE, unless the opposing warband is Black Grail or a Demonic Warband.",
+                        "content": "Fighting against the Black Grail is a terrifying prospect. Enemy Warbands roll Morale Tests with -1 DICE when fighting a Black Grail Warband. The Court Warbands and other Black Grail Warbands ignore this penalty.",
                         "glossary": [
                             {"val": "-1 DICE", "id": "gl_minusdice"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Plague Knight Ranks",
+                "description": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Each Plague Knight in your warband can purchase up to one rank."
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Ranks:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_knightcompanionoftheflyranged"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": ","
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_knightcompanionoftheflymelee"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": ","
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_knightoftherottencross"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": ","
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_knightplaguealmoner"
+                            }
                         ]
                     }
                 ]
@@ -594,9 +664,11 @@
             {"id": "eq_infestedrifle", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": [], "features":["Bayonet Lug"]},
             {"id": "eq_corruptionbelcher", "cost": 30, "cost_id": "ducats", "limit": 2, "restriction": []},
             {"id": "eq_putridshotgun", "cost": 20, "cost_id": "ducats", "limit": 2, "restriction": [], "features":["Shield Combo","Bayonet Lug"]},
+            {"id": "eq_shotgun", "cost": 10, "cost_id": "ducats", "restriction": [], "features":["Shield Combo","Bayonet Lug"]},
             {"id": "eq_gasgrenades", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_parasitegrenade", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": []},
-            {"id": "eq_visceracannon", "cost": 50, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"}]},
+            {"id": "eq_machinegun", "cost": 50, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "model", "val": "md_amalgam"}]},
+            {"id": "eq_visceracannon", "cost": 50, "cost_id": "ducats", "limit": 2, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_trenchknife", "cost": 1, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_bayonet", "cost": 2, "cost_id": "ducats", "limit": 0, "restriction": [], "features":["Shield Combo"]},
             {"id": "eq_trenchclub", "cost": 3, "cost_id": "ducats", "limit": 0, "restriction": []},
@@ -604,15 +676,17 @@
             {"id": "eq_polearm", "cost": 7, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_plagueknight"},{"type": "model", "val": "md_executor"},{"type": "model", "val": "md_plagueknight_fv_dirgeofthegreathegemon"}], "features":["Shield Combo"]},
             {"id": "eq_greatmaul", "cost": 10, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_greataxe", "cost": 12, "cost_id": "ducats", "limit": 0, "restriction": []},
-            {"id": "eq_plagueblade", "cost": 15, "cost_id": "ducats", "limit": 2, "restriction": [{"type": "keyword", "val": "Elite"}]},
+            {"id": "eq_plagueblade", "cost": 7, "cost_id": "ducats", "limit": 2, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_beelzebubsaxe", "cost": 30, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_standardarmour", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_reinforcedarmour", "cost": 40, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_trenchshield", "cost":  10, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_blackgrailshield", "cost": 20, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "keyword", "val": "Elite"}], "features":["Shield Combo"]},
             {"id": "eq_combathelmet", "cost": 5, "cost_id": "ducats", "limit": 0, "restriction": []},
+            {"id": "eq_compoundeyeshelmet", "cost": 10, "cost_id": "ducats", "limit": 3, "restriction": [{"type": "keyword", "val": "Elite"},{"type": "model", "val": "md_heraldofbeelzebub"}]},
             {"id": "eq_unholytrinket", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_unholyrelic", "cost": 30, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "keyword", "val": "Elite"}]},
+            {"id": "eq_graildevotee", "cost": 15, "cost_id": "ducats", "limit": 2, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_troopflag", "cost": 10, "cost_id": "ducats", "limit": 1, "restriction": []},
             {"id": "eq_fieldshrine", "cost": 2, "cost_id": "glory", "limit": 0, "restriction": []},
             {"id": "eq_cupoffilth", "cost": 2, "cost_id": "glory", "limit": 2, "restriction": [{"type": "purchase", "val": "explore"}]},
@@ -625,13 +699,18 @@
         ],
         "models": [
             {"id": "md_lordoftumours", "cost": 130, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_plagueknight", "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_corpseguard", "cost": 55, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": []},
+            {"id": "md_plagueknight", "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": [], "upgrades": [
+                {"id": "up_knightcompanionoftheflyranged", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightcompanionoftheflymelee", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightoftherottencross", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightplaguealmoner", "cost": 10, "cost_id": "ducats"}
+            ]},
+            {"id": "md_corpseguard", "cost": 55, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": [], "upgrades": []},
             {"id": "md_houndoftheblackgrail", "cost": 55, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": [], "upgrades": [{"id": "up_houndinfection", "cost": 5, "cost_id": "ducats"}]},
             {"id": "md_grailthrall", "cost": 25, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_flythrall", "cost": 25, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_heraldofbeelzebub", "cost": 50, "cost_id": "ducats", "limit_min": 0, "limit_max": 4, "equipment": [], "upgrades": [{"id": "up_maddeningbuzz", "cost": 10, "cost_id": "ducats", "limit" : 1}]},
-            {"id": "md_amalgam", "cost": 150, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
+            {"id": "md_amalgam", "cost": 140, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
             {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []},
             {"id": "md_scriptureguardian", "cost": 7, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_combathelmet"], "upgrades": []}
         ]
@@ -709,7 +788,25 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "You must select which of the Seven Deadly Sins the Warband is dedicated to: Choose either Wrath, Envy, Pride, Gluttony, Greed, Sloth or Lust. Wrath, Envy, Pride, and Lust have access to unique Goetic Powers."
+                        "content": "You must select which of the Seven Deadly Sins the Warband is dedicated to: Choose either Wrath, Envy, Pride, Gluttony, Greed, Sloth or Lust. Many of the warriors of the Court have access to a selection of devastating Spells and other Powers as detailed in the list below which can be purchased at the indicated cost when the model is initially purchased. Depending on the type of model and which Deadly Sin the warband is dedicated to, the selection available to you may vary. All such limitations are clearly marked below."
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Any Warband:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_goetic_burninginferno"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": ","
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_goetic_slavemaster"
+                            }
+                        ]
                     },
                     {
                         "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -864,6 +961,31 @@
                                 "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
                                 "content": "up_goetic_eateroftheflesh"
                             }]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Greed:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_goetic_bodyofgold"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": ","
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_goetic_blackheart"
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                "content": ","
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_goetic_universalgreed"
+                            }]
                     }
                 ]
             },
@@ -877,22 +999,33 @@
                 ]
             },
             {
-                "title": "Goetic Powers",
+                "title": "Goetic Powers and Spells",
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Many of the warriors of the Court have access to Goetic spells, abilities and powers which use the suffering of the mortals as spiritual energy to unleash reality-bending powers of the Demons. As God’s plan for the universe is disrupted and perverted, the Infernal sorcerers and other demonic creatures can use the released primordial energy of Creation to alter the reality. Demons have to be quick, however: God’s omnipotent will soon reasserts over the existence, and the opportunity for Demons to disturb the world is lost. Thus the Infernal creatures have a continuous and growing need for human sacrifices, pain and endless warfare to enable their supernatural powers.",
+                        "content": "Many of the warriors of the Court have access to Goetic abilities - Powers and Spells which use the suffering of the mortals as spiritual energy to unleash reality-bending powers of the Demons. As God’s plan for the universe is disrupted and perverted, the Infernal sorcerers and other demonic creatures can use the released primordial energy of Creation to alter the reality. Demons have to be quick, however: God’s omnipotent will soon reasserts over the existence, and the opportunity for Demons to disturb the world is lost. Thus the Infernal creatures have a continuous and growing need for human sacrifices, pain and endless warfare to enable their supernatural powers.",
                         "glossary": []
                     },
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Goetic Powers and Spells are marked with the keyword GOETIC (x) where the number in brackets indicates how many BLOOD MARKERS will have to be expanded to trigger the effect of the spell. These BLOOD MARKERS can be taken from any model currently taking part of the battle, be they friendly or enemy models, But they must come from models that do not have the Keyword DEMONIC or BLACK GRAIL. BLOOD MARKERs used this way are removed from the game, and the described effect of the Goetic Spell or ability then takes effect as described -no dice roll is needed. As with other Actions, each of these powers and spells can be used by the model only once per Activation, and they can be taken during any point of the Activation",
+                        "content": "Goetic Spells are marked with the Keyword GOETIC (x) where the number in brackets indicates how many BLOOD MARKERS will have to be spent to trigger the effect of the Spell. If multiple numbers or a range of numbers are listed in the brackets, any one of those numbers can be chosen. These BLOOD MARKERS can be taken from any model currently on the battlefield, be they friendly or enemy models, but they must come from models that do not have the Keyword DEMONIC or BLACK GRAIL.",
                         "glossary": [
                             {"val": "GOETIC", "id": "gl_goetic"},
                             {"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},
                             {"val": "BLOOD MARKERs", "id": "gl_bloodmarker"},
                             {"val": "DEMONIC", "id": "gl_demonic"},
                             {"val": "BLACK GRAIL", "id": "gl_blackgrail"}
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "BLOOD MARKERS used this way are removed from the game and the described effect of the Goetic Spell takes effect as described – no ACTION roll is needed, unless outlined in the spell. Despite not requiring an ACTION roll, Goetic Spells are ACTIONS and, as with other ACTIONS, Spells can only be used by the model once per Activation. Goetic Powers are not marked with the Keyword GOETIC (x). Powers are typically passive abilities.",
+                        "glossary": [
+                            {"val": "GOETIC", "id": "gl_goetic"},
+                            {"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},
+                            {"val": "BLOOD MARKERs", "id": "gl_bloodmarker"},
+                            {"val": "ACTION", "id": "gl_action"},
+                            {"val": "ACTIONS", "id": "gl_action"}
                         ]
                     }
                 ]
@@ -927,14 +1060,21 @@
             {"id": "eq_gasmask", "cost": 5, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_shovel", "cost": 5, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "model", "val": "md_yokefiend"},{"type": "model", "val": "md_wretched"}]},            
             {"id": "eq_unholytrinket", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": []},
-            {"id": "eq_unholyrelic", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": []},
+            {"id": "eq_unholyrelic", "cost": 30, "cost_id": "ducats", "limit": 0, "restriction": []},
             {"id": "eq_incendiarybullets", "cost": 15, "cost_id": "ducats", "limit": 1, "restriction": []},
             {"id": "eq_troopflag", "cost": 1, "cost_id": "glory", "limit": 1, "restriction": []},
+            {"id": "eq_restrainingmuzzle", "cost": 2, "cost_id": "glory", "limit": 3, "restriction": [{"type": "model", "val": "md_yokefiend"}]},  
+            {"id": "eq_cruelhelmet", "cost": 2, "cost_id": "glory", "limit": 2, "restriction": [{"type": "model", "val": "md_wretched"},{"type": "purchase", "val": "explore"}]},  
+            {"id": "eq_koraktorthegreattomeofhell", "cost": 8, "cost_id": "glory", "limit": 1, "restriction": [{"type": "model", "val": "md_sorcerer"},{"type": "purchase", "val": "explore"}]},  
+            {"id": "eq_lordshipofthisworld", "cost": 9, "cost_id": "glory", "limit": 1, "restriction": [{"type": "model", "val": "md_sorcerer"},{"type": "model", "val": "md_praetor"},{"type": "purchase", "val": "explore"}]},  
+            {"id": "eq_bestialskincloak", "cost": 6, "cost_id": "glory", "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"},{"type": "purchase", "val": "explore"}]},  
+            {"id": "eq_pieceofsilver", "cost": 12, "cost_id": "glory", "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"},{"type": "purchase", "val": "explore"}]},  
             {"id": "eq_crownofhellfire", "cost": 15, "cost_id": "ducats", "limit": 0, "restriction": [{"type": "keyword", "val": "Elite"},{"type": "model", "val": "md_pitlocust"}]},
             {"id": "eq_musicalinstrument", "cost": 15, "cost_id": "ducats", "limit": 1, "restriction": []}
         ],
         "models": [
             {"id": "md_praetor", "cost": 115, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": [
+                    {"id": "up_goetic_slavemaster", "cost": 10, "cost_id": "ducats"},
                     {"id": "up_goetic_chargeofhatred", "cost": 10, "cost_id": "ducats", "limit" : 3, "restriction": [{"type": "sin", "val": "Wrath"}]},
                     {"id": "up_goetic_lessermarkofcain", "cost": 20, "cost_id": "ducats", "limit" : 1, "restriction": [{"type": "sin", "val": "Wrath"}]},
                     {"id": "up_goetic_blindrage", "cost": 10, "cost_id": "ducats", "limit" : 3, "restriction": [{"type": "sin", "val": "Wrath"}]},
@@ -944,16 +1084,20 @@
                     {"id": "up_goetic_forbiddenpleasures", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
                     {"id": "up_goetic_exquisitepain", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
                     {"id": "up_goetic_callofflesh", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
-                    {"id": "up_goetic_morpheanmind", "cost": 5, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
+                    {"id": "up_goetic_morpheanmind", "cost": 15, "limit" : 2, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_charmofacedia", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_daemoniummerdianum", "cost": 20, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_bellyofthebeast", "cost": 5, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
                     {"id": "up_goetic_uncaringgluttony", "cost": 10, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
                     {"id": "up_goetic_eateroftheflesh", "cost": 10, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
+                    {"id": "up_goetic_bodyofgold", "cost": 20, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
+                    {"id": "up_goetic_blackheart", "cost": 20, "limit": 3, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
+                    {"id": "up_goetic_universalgreed", "cost": 15, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
                     {"id": "up_goetic_prouddefiance", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]},
                     {"id": "up_goetic_iwillnotkneel", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]},
                     {"id": "up_goetic_lightofthemorningstar", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]}]},
             {"id": "md_sorcerer", "cost": 75, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": [
+                    {"id": "up_goetic_slavemaster", "cost": 10, "cost_id": "ducats"},
                     {"id": "up_goetic_burninginferno", "cost": 15, "cost_id": "ducats"},
                     {"id": "up_goetic_chargeofhatred", "cost": 10, "cost_id": "ducats", "limit" : 3, "restriction": [{"type": "sin", "val": "Wrath"}]},
                     {"id": "up_goetic_lessermarkofcain", "cost": 20, "cost_id": "ducats", "limit" : 1, "restriction": [{"type": "sin", "val": "Wrath"}]},
@@ -964,30 +1108,38 @@
                     {"id": "up_goetic_forbiddenpleasures", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
                     {"id": "up_goetic_exquisitepain", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
                     {"id": "up_goetic_callofflesh", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
-                    {"id": "up_goetic_morpheanmind", "cost": 5, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
+                    {"id": "up_goetic_morpheanmind", "cost": 15, "limit" : 2, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_charmofacedia", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_daemoniummerdianum", "cost": 20, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_bellyofthebeast", "cost": 5, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
                     {"id": "up_goetic_uncaringgluttony", "cost": 10, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
                     {"id": "up_goetic_eateroftheflesh", "cost": 10, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
+                    {"id": "up_goetic_bodyofgold", "cost": 20, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
+                    {"id": "up_goetic_blackheart", "cost": 20, "limit": 3, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
+                    {"id": "up_goetic_universalgreed", "cost": 15, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
                     {"id": "up_goetic_prouddefiance", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]},
                     {"id": "up_goetic_iwillnotkneel", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]},
                     {"id": "up_goetic_lightofthemorningstar", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]}]},
             {"id": "md_hunterofthelefthandpath", "cost": 110, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": ["eq_bowoflethe"], "upgrades": []},
             {"id": "md_hellknight", "cost": 100, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": ["eq_infernalarmour"], "upgrades": [
+                    {"id": "up_goetic_slavemaster", "cost": 10, "cost_id": "ducats"},
                     {"id": "up_goetic_chargeofhatred", "cost": 10, "cost_id": "ducats", "limit": 3, "restriction": [{"type": "sin", "val": "Wrath"}]},
                     {"id": "up_goetic_lessermarkofcain", "cost": 20, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "sin", "val": "Wrath"}]},
                     {"id": "up_goetic_blindrage", "cost": 10, "cost_id": "ducats", "limit": 3, "restriction": [{"type": "sin", "val": "Wrath"}]},
                     {"id": "up_goetic_whatisyoursismine", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Envy"}]},
                     {"id": "up_goetic_exquisitepain", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Lust"}]},
+                    {"id": "up_goetic_morpheanmind", "cost": 15, "limit" : 2, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_charmofacedia", "cost": 10, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_daemoniummerdianum", "cost": 20, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Sloth"}]},
                     {"id": "up_goetic_uncaringgluttony", "cost": 10, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Gluttony"}]},
+                    {"id": "up_goetic_bodyofgold", "cost": 20, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
+                    {"id": "up_goetic_blackheart", "cost": 20, "limit": 3, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
+                    {"id": "up_goetic_universalgreed", "cost": 15, "limit": 1, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Greed"}]},
                     {"id": "up_goetic_prouddefiance", "cost": 15, "cost_id": "ducats", "restriction": [{"type": "sin", "val": "Pride"}]}]},
             {"id": "md_yokefiend", "cost": 30, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_wretched", "cost": 20, "cost_id": "ducats", "limit_min": "Must be outnumbered by DEMONIC models", "limit_max": "Must be outnumbered by DEMONIC models", "equipment": [], "upgrades": []},
             {"id": "md_pitlocust", "cost": 90, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": ["eq_reinforcedarmour"], "upgrades": []},
-            {"id": "md_desecratedsaint", "cost": 145, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
+            {"id": "md_desecratedsaint", "cost": 140, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
             {"id": "md_goeticwarlock", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_swordaxe","eq_swordaxe"], "upgrades": []},
             {"id": "md_sineater", "cost": 6, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_tenderizermaul"], "upgrades": []},
             {"id": "md_wardog", "cost": 1, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},

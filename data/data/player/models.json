@@ -2560,7 +2560,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "A Plague Knight must always wear a suit of armour of some kind. In addition, it can be equipped with any weapon, armour and equipment from the Black Grail Armoury.",
+                "content": "A Plague Knight  cannot be fielded, unless it is equipped with a suit of armour. In addition, it can be equipped with any weapon, armour and equipment from the Black Grail Armoury.",
                 "glossary": []
             }
             ],
@@ -2769,7 +2769,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Hounds never carry any type of weapons, armour or equipment. They do not suffer penalties for fighting unarmed.",
+                "content": "The Hounds cannot be equipped with any weapons, armour or equipment. They do not suffer penalties for fighting unarmed.",
                 "glossary": []
             }
             ],
@@ -2785,6 +2785,10 @@
             {
                 "tags": [{"tag_name": "desc_type", "val": "addon"}],
                 "content": "ab_unholyhorror"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_diseasecarrier"
             }
         ]
     },
@@ -2875,6 +2879,10 @@
             {
                 "tags": [{"tag_name": "desc_type", "val": "addon"}],
                 "content": "ab_unholyhorror"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_toxic"
             }
         ]
     },
@@ -2953,7 +2961,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Thrall can use ranged weapons from the Black Grail List (though not any other weapons armour and equipment except Standards and Musical Instruments). They suffer no penalties to their combat ability for being unarmed.",
+                "content": "The Thrall never carries any type of weapons, armour or equipment. They suffer no penalties to their combat ability for being unarmed.",
                 "glossary": []
             }
             ],
@@ -3001,7 +3009,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Each herald may purchase ranged weapons from the Black Grail Armoury but may not wear armour or carry any equipment. They can only attack in melee combat with its proboscis as detailed below.",
+                "content": "Heralds can be equipped with any ranged weapon from the Black Grail Armoury. They cannot be equipped with any other items, except for Compound Eyes Helmets or a single Grail Devotee. When they fight unarmed in Melee Combat, the attack is always modified by Infected Proboscis. One Herald can have the Maddening Buzz ability (see below) at the cost of +10 ducats.",
                 "glossary": []
             }
             ],
@@ -3054,7 +3062,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The amalgam has six functional arms. They can carry six one-handed weapons or three double-handed weapons, or any combination thereof, as long as the six arms can carry them. The amalgam uses the Black Grail Armoury for weapons – it never carries any other gear except weapons, though one of its arms may carry a single trench shield (representing pieces of armour it has absorbed). It may not carry grenades or more than two weapons of the same type. It can execute any ranged and melee attacks with each of the weapons it carries during its Activation. Each count as a separate ACTION and suffer no off-hand penalties in melee. The amalgam cannot benefit from Shield Combo.",
+                "content": "The Amalgam has six functional arms. They can carry six one-handed weapons or three double-handed weapons, or any combination thereof, as long as the six arms can carry them simultaneously. The Amalgam uses the Black Grail Armoury for weapons – it never carries any other gear except weapons, though one of its arms may carry a single Trench Shield. It may not carry Grenades and it can only wield up to two weapons with the same name. The Amalgam can take a Ranged Attack ACTION once per Activation with each ranged weapon it is equipped with and it can take a Melee Attack ACTION once per Activation with each melee weapon it is equipped with. None of its weapons are off-hand weapons. The Amalgam cannot benefit from Shield Combo.",
                 "glossary": [{"val": "ACTION", "id": "gl_action"}]
             }
             ],
@@ -3082,6 +3090,10 @@
             {
                 "tags": [{"tag_name": "desc_type", "val": "addon"}],
                 "content": "ab_unholyhorror"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_amalgamstrong"
             }
         ]
     },
@@ -3569,6 +3581,7 @@
         "source": "core",
         "tags": [
             {"tag_name":"demonic", "val": "gl_demonic"},
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"elite", "val": "gl_elite"},
             {"tag_name":"tough", "val": "gl_tough"},
             {"tag_name":"fear", "val": "gl_fear"},
@@ -3624,6 +3637,7 @@
         "tags": [
             {"tag_name":"demonic", "val": "gl_demonic"},
             {"tag_name":"elite", "val": "gl_elite"},
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"fear", "val": "gl_fear"}
                 ],
         "promotion": 0,
@@ -3672,6 +3686,7 @@
         "tags": [
             {"tag_name":"demonic", "val": "gl_demonic"},
             {"tag_name":"elite", "val": "gl_elite"},
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"infiltrator", "val": "gl_infiltrator"}
                 ],
         "promotion": 0,
@@ -3720,6 +3735,7 @@
         "tags": [
             {"tag_name":"demonic", "val": "gl_demonic"},
             {"tag_name":"elite", "val": "gl_elite"},
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"strong", "val": "gl_strong"}
                 ],
         "promotion": 0,
@@ -3742,7 +3758,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Hell Knights are always equipped with a suit of Infernal Iron Armour which is included in their cost. This armour can never be removed. Hell Knights can be equipped with any weapons and equipment from the Court Armoury.",
+                "content": "The Hell Knights are always equipped with a suit of Infernal Iron Armour which is included in their cost. This armour can never be removed. Hell Knights can be equipped with any weapons, armour, and equipment from the Court Armoury.",
                 "glossary": []
             }
             ],
@@ -3766,6 +3782,7 @@
         "type": "Model",
         "source": "core",
         "tags": [
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"demonic", "val": "gl_demonic"}
                 ],
         "promotion": 2,
@@ -3808,6 +3825,7 @@
         "type": "Model",
         "source": "core",
         "tags": [
+            {"tag_name":"court", "val": "gl_thecourt"}
                 ],
         "promotion": 2,
         "movement": [6],
@@ -3906,6 +3924,7 @@
         "source": "core",
         "tags": [
             {"tag_name":"demonic", "val": "gl_demonic"},
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"fear", "val": "gl_fear"}
                 ],
         "promotion": 1,
@@ -3951,6 +3970,7 @@
             {"tag_name":"demonic", "val": "gl_demonic"},
             {"tag_name":"fear", "val": "gl_fear"},
             {"tag_name":"tough", "val": "gl_tough"},
+            {"tag_name":"court", "val": "gl_thecourt"},
             {"tag_name":"strong", "val": "gl_strong"}
                 ],
         "promotion": 1,
@@ -3973,7 +3993,7 @@
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Desecrated Saint is encased in nigh-impregnable Cocytus Armour reflected on the profile above. This armour cannot be removed or lost. The Desecrated Saint has three functional arms. They can carry up to three melee weapons, only one of which can be a two-handed weapon. When the Desecrated Saint makes a melee attack, it can make an attack ACTION with each arm. It does not suffer Off-Hand penalties. The Desecrated Saint can be equipped with any melee weapons from the Court Armoury.",
+                "content": "The Desecrated Saint is encased in nigh-impregnable Cocytus Armour reflected on the profile above. This armour cannot be removed or lost. The Desecrated Saint has three functional arms. They can carry up to three melee weapons, only one of which can be a two-handed weapon. When the Desecrated Saint makes a melee attack, it can make an attack ACTION with each arm. It does not suffer Off-Hand penalties. The Desecrated Saint can be equipped with any melee weapons from the Court Armoury, and can make a Melee Attack ACTION once per Activation with each melee weapon it is equipped with without off-hand penalties.",
                 "glossary": []
             }
             ],

@@ -108,7 +108,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "All attacks against all models in the Trench Ghost Warband roll injuries with -1 DICE – the Undead are hard to kill!",
+                                "content": "Any Ranged attacks against all models in the Trench Ghost Warband roll injuries with -1 DICE – the Undead are hard to kill with bullets! Melee Attacks do not suffer this penalty.",
                                 "glossary":  [{"val": "-1 DICE", "id": "gl_minusdice"}]
                             }
 
@@ -144,18 +144,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "All models in Trench Ghost Warband have a half Dash distance (ie. 3”)"
-                            }
-
-                        ]
-                    },
-                    {
-                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                        "content": "Battlefield Looters",
-                        "subcontent": [
-                            {
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "When this warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your warband."
+                                "content": "All models in Trench Ghost Warband have a half Dash distance (ie. 3”). All models in the Warband suffer -1 DICE to all attacks against models Retreating from Melee combat."
                             }
 
                         ]
@@ -167,17 +156,6 @@
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                 "content": "Trench Ghosts cannot use Mercenaries."
-                            }
-
-                        ]
-                    },
-                    {
-                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                        "content": "Battlefield Looters",
-                        "subcontent": [
-                            {
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "When this Warband is created, select one item with LIMIT in the Heretic Legions Armoury. Its LIMIT is increased by one for your Warband."
                             }
 
                         ]
@@ -199,7 +177,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "At the cost of +35 ducats, up to two of the Troopers can be turned into Sarcophagus Mines. These models can carry no other equipment from the Armoury."
+                                "content": "At the cost of +30 ducats, up to two of the Troopers can be turned into Sarcophagus Mines. These models can carry no other equipment from the Armoury."
                             }
 
                         ]
@@ -221,7 +199,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "At the cost of 55 ducats, the Heretic Priest of the warband can ride ghostly Tank Palanquin."
+                                "content": "At the cost of 60 ducats, the Heretic Priest of the warband can ride ghostly Tank Palanquin."
                             }
 
                         ]
@@ -234,10 +212,10 @@
         "removed_model": ["md_heretictrooper","md_warwolfassaultbeast","md_artillerywitch","md_anointedheavyinfantry","md_hereticpriest","md_sineater","md_goeticwarlock","md_wardog","md_guarddog","md_mercydog","md_hellhound","md_scriptureguardian"],
         "equipment": [ ],
         "models" : [
-            {"id": "md_hereticpriest_fv_trenchghosts", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_tankpalanquin", "cost": 55, "cost_id": "ducats"}]},
+            {"id": "md_hereticpriest_fv_trenchghosts", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_tankpalanquin", "cost": 60, "cost_id": "ducats"}]},
             {"id": "md_anointedheavyinfantry", "cost": 95, "cost_id": "ducats", "limit_min": 0, "limit_max": 5, "equipment": ["eq_reinforcedarmour"], "upgrades": []} ,
             {"id": "md_barbedwirebanshee", "cost": 65, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_heretictrooper", "cost": 30, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_heretictroopertolegionnareranged", "cost": 10, "cost_id": "ducats"},{"id": "up_heretictroopertolegionnaremelee", "cost": 10, "cost_id": "ducats"},{"id": "up_heretictroopersarcopaghusmine", "cost": 35, "cost_id": "ducats"}]}
+            {"id": "md_heretictrooper", "cost": 30, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_heretictroopertolegionnareranged", "cost": 10, "cost_id": "ducats"},{"id": "up_heretictroopertolegionnaremelee", "cost": 10, "cost_id": "ducats"},{"id": "up_heretictroopersarcopaghusmine", "cost": 30, "cost_id": "ducats"}]}
         ]
             
     },
@@ -2031,19 +2009,26 @@
         "removed_equip": ["eq_blackgrailshield","eq_beelzebubsaxe","eq_plagueblade","eq_putridshotgun","eq_visceracannon"],
         "removed_model": ["md_lordoftumours","md_amalgam","md_plagueknight","md_houndoftheblackgrail","md_heraldofbeelzebub","md_grailthrall"],
         "equipment": [
-            {"id": "eq_plagueblade", "cost": 15, "cost_id": "ducats", "limit": 3, "restriction": [{"type": "keyword", "val": "Elite"}]},
+            {"id": "eq_plagueblade", "cost": 7, "cost_id": "ducats", "limit": 3, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_putridshotgun", "cost": 20, "cost_id": "ducats", "limit": 3, "restriction": [], "features":["Shield Combo","Bayonet Lug"]},
             {"id": "eq_blunderbuss", "cost": 5, "cost_id": "ducats", "limit": 0, "restriction": [], "features":["Shield Combo"]},
             {"id": "eq_brokencrown", "cost": 25, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"}]},
             {"id": "eq_urnofbitterashes", "cost": 40, "cost_id": "ducats", "limit": 1, "restriction": [{"type": "keyword", "val": "Elite"}]},
-            {"id": "eq_visceracannon", "cost": 50, "cost_id": "ducats", "limit": 2, "restriction": []}
+            {"id": "eq_visceracannon", "cost": 50, "cost_id": "ducats", "limit": 3, "restriction": []}
         ],
         "models" : [
-            {"id": "md_executor", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_plagueknight_fv_dirgeofthegreathegemon", "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": []},
+            {"id": "md_executor", "cost": 80, "cost_id": "ducats", "limit_min": 1, "limit_max": 1, "equipment": [], "upgrades": [
+                {"id": "up_knightcompanionoftheflyranged", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightcompanionoftheflymelee", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightoftherottencross", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightplaguealmoner", "cost": 10, "cost_id": "ducats"}]},
+            {"id": "md_plagueknight_fv_dirgeofthegreathegemon", "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": [
+                {"id": "up_knightcompanionoftheflyranged", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightcompanionoftheflymelee", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightoftherottencross", "cost": 5, "cost_id": "ducats"},
+                {"id": "up_knightplaguealmoner", "cost": 10, "cost_id": "ducats"}]},
             {"id": "md_houndoftheblackgrail", "cost": 55, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": [{"id": "up_houndinfection", "cost": 5, "cost_id": "ducats"}]},
-            {"id": "md_thebereaved", "cost": 35, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
-            {"id": "md_theflybereaved", "cost": 25, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
+            {"id": "md_thebereaved", "cost": 30, "cost_id": "ducats", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": []},
             {"id": "md_heraldofbeelzebub", "cost": 50, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": [{"id": "up_maddeningbuzz", "cost": 10, "cost_id": "ducats", "limit" : 3}]}
         ]
     }

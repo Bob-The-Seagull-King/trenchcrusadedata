@@ -110,7 +110,7 @@
                                     "subcontent": [
                                         {
                                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                            "content": "The Thrall makes the standard Move ACTION.",
+                                            "content": "The Thrall takes the standard Move ACTION.",
                                             "glossary": [{"val": "ACTION", "id": "gl_action"}]
                                         }
                                     ]
@@ -121,7 +121,7 @@
                                     "subcontent": [
                                         {
                                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                            "content": "The Thrall performs a Ranged Attack ACTION with any Ranged weapon it has.",
+                                            "content": "The Thrall takes a Ranged Attack ACTION with any Ranged weapon it has.",
                                             "glossary": [{"val": "ACTION", "id": "gl_action"}]
                                         }
                                     ]
@@ -132,7 +132,7 @@
                                     "subcontent": [
                                         {
                                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                            "content": "The Thrall makes a standard Charge ACTION.",
+                                            "content": "The Thrall takes a standard Charge ACTION.",
                                             "glossary": [{"val": "ACTION", "id": "gl_action"}]
                                         }
                                     ]
@@ -143,7 +143,7 @@
                                     "subcontent": [
                                         {
                                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                            "content": "The Thrall performs a Melee Attack ACTION.",
+                                            "content": "The Thrall takes a Melee Attack ACTION.",
                                             "glossary": [{"val": "ACTION", "id": "gl_action"}]
                                         }
                                     ]
@@ -651,7 +651,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "If any BLACK GRAIL model within 1” of the Corpse Guard is hit by a ranged or melee weapon (excluding BLAST weapons), you can choose to redirect the hit against the Corpse Guard instead. Determine the injuries exactly as if the weapon just hit the Corpse Guard.",
+                "content": " If a BLACK GRAIL model within 1\" of the Corpse Guard is hit, the Corpse Guard can redirect the hit to itself. The injury and any additional effects of the attack are resolved against the Corpse Guard instead of the original target. This ability cannot be used against BLAST weapons.",
                 "glossary": [{"val": "BLACK GRAIL", "id": "gl_blackgrail"}]
             }
         ]
@@ -1534,8 +1534,8 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "As long as the Lord of Tumours has one free hand (which carries no weapons or a shield), it can make an ACTION against any non-BLACK GRAIL model it is fighting in melee combat. If successful, the target model gains +D3 INFECTION MARKERS. It can still fight with the other hand as normal.",
-                "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLACK GRAIL", "id": "gl_blackgrail"},{"val": "+D3 INFECTION MARKERS", "id": "gl_infectionmarker"}]
+                "content": "If a melee attack by the Lord of Tumours hits the target and causes at least one BLOOD MARKER or INFECTION MARKER, the Lord of Tumours inflicts an additional INFECTION MARKER on the target. Additionally, the Lord of Tumours is never considered unarmed and any of its empty hands count as Trench Clubs.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "INFECTION MARKERS", "id": "gl_infectionmarker"}]
             }
         ]
     },
@@ -1551,7 +1551,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "All injury rolls against the model are made with -1 DICE, unless the attack has the Keyword FIRE, in which case it works normally. This model does not suffer additional BLOOD MARKERS from attacks with Keyword GAS.",
+                "content": " Non-FIRE injuries against the Lord of Tumours are rolled with -1 DICE. Additionally, this model ignores any additional BLOOD MARKERS caused by the Keyword GAS.",
                 "glossary": [{"val": "-1 DICE", "id": "gl_minusdice"},{"val": "FIRE", "id": "gl_fire"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "GAS", "id": "gl_gas"}]
             }
         ]
@@ -1568,7 +1568,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "If a Corpse Guard melee attack causes a BLOOD or INFECTION MARKER on a creature without the Keyword BLACK GRAIL, the Corpse Guard can remove one of their own BLOOD or INFECTION MARKERS.",
+                "content": "If the Corpse Guard inflicts one or more BLOOD or INFECTION MARKERS with a melee attack on a non-BLACK GRAIL model, it can remove one of its own BLOOD or INFECTION MARKERS.",
                 "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "BLACK GRAIL", "id": "gl_blackgrail"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "INFECTION MARKER", "id": "gl_infectionmarker"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "INFECTION MARKERS", "id": "gl_infectionmarker"}]
             }
         ]
@@ -1585,7 +1585,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The model take Dash actions with +1 DICE. In addition, they can get up from being Down without any movement penalty.",
+                "content": "Hounds roll to Dash with +1 DICE and they do not suffer any penalties to movement after they Stand from being Down.",
                 "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
             }
         ]
@@ -1636,7 +1636,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "This model does not suffer additional BLOOD MARKERS from attacks with Keyword GAS.",
+                "content": "This model ignores any additional BLOOD MARKERS caused by the Keyword GAS.",
                 "glossary": [{"val": "GAS", "id": "gl_gas"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"}]
             }
         ]
@@ -1659,6 +1659,23 @@
         ]
     },
     {
+        "id": "ab_diseasecarrier",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_blackgrail",
+        "name": "Disease Carrier",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "If an enemy model is Activated while in Melee Combat with a Hound, that model suffers one INFECTION MARKER.",
+                "glossary": [{"val": "INFECTION MARKER", "id": "gl_infectionmarker"}]
+            }
+        ]
+    },
+    {
         "id": "ab_trampleamalgam",
         "type": "Addon",
         "source": "core",
@@ -1670,7 +1687,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Whenever the Amalgam is fighting any enemy model on a 32mm or smaller base in melee that is Down, it can make a single additional Melee Attack ACTION any time during its Activation against one Downed opponent. Resolve the attack as if the Amalgam was armed with a Trench Club. This attack Ignores armour as the Amalgam stomps their enemies into pulp.  If it takes the target Out of Action, the Amalgam can heal 1 BLOOD MARKER it has suffered.",
+                "content": "Once during its Activation, the Amalgam may make an extra Melee Attack ACTION against a Downed enemy model on a 32mm or smaller base. Resolve the attack as if the Amalgam was armed with a Trench Club. This attack ignores armour as the Amalgam stomps their enemies into pulp.",
                 "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "1 BLOOD MARKER", "id": "gl_bloodmarker"}]
             }
         ]
@@ -1687,8 +1704,25 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "An Amalgam can always move out of melee combat with any enemy without the enemy having a chance to attack it. It can use Dash, Move or Charge to do so.",
+                "content": "Enemy models never get free attacks against the Amalgam when it Retreats. Additionally, the Amalgam can move out of Melee Combat using its Standard Move, Charge and Dash.",
                 "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "ab_amalgamstrong",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "fc_blackgrail",
+        "name": "Strong",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Two of the arms of the Amalgam have the Keyword STRONG. Can wield any 2 HEAVY weapons of its choice, each using 1 hand.",
+                "glossary": [{"val": "STRONG", "id": "gl_strong"},{"val": "HEAVY", "id": "gl_heavy"}]
             }
         ]
     },
@@ -2046,7 +2080,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "You may buy up to two GOETIC Powers or Spells for the Praetor (or only one if you command a Wrath Warband).",
+                "content": "You may purchase up to two GOETIC Powers or Spells for the Praetor (or only one if you command a Wrath Warband).",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"}
                 ]
@@ -2086,7 +2120,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "You may buy one GOETIC power/spell for the Hell Knight.",
+                "content": "You may purchase one GOETIC power/spell for the Hell Knight.",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"}
                 ]
@@ -2106,7 +2140,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "GOETIC (2-6) power: Before an injury roll is made against the Sorcerer, you may use this Goetic power to deduct one from that injury roll per two BLOOD MARKERS used.",
+                "content": "This GOETIC (2/4/6) Spell can be cast immediately before an injury is rolled for the Sorcerer. If it is, deduct 1 from the injury result for every two BLOOD MARKERS spent. This Spell can be cast outside of this model’s Activation.",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}
                 ]
@@ -2126,7 +2160,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using GOETIC (1), the Hunter can retreat from melee combat without any of its opponents getting the chance to make attacks against it.",
+                "content": "As a Retreat ACTION with GOETIC (2), the Hunter Retreats from Melee Combat without enemy models getting any free attacks against it.",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"}
                 ]
@@ -2146,7 +2180,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Once per Activation, as part of any single movement that the Hunter takes during its Activation (Standard Move, Retreat, Charge, Dash etc.), it can use a GOETIC (1) power to walk the path between Hell and Creation. The Hunter must be touching a piece of terrain when it uses this power. When it does, it is immediately placed in contact with any other piece of terrain on the battlefield, including on top of or inside terrain, if legal positions exist. Its movement then continues as normal. All usual movement rules persist for this movement (moving into or out of Melee Combat, for example).",
+                "content": "Once during its Activation, when the Hunter moves into contact with a piece of scenery at least 2” wide, it can cast this GOETIC (2) Spell to walk the path between Hell and Creation. Remove the Hunter and immediately place it into contact with any other piece of scenery over 2” wide on the battlefield, including on top of or inside it. The Hunter then continues its movement as normal. ",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}
                 ]
@@ -2157,7 +2191,7 @@
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Hunter can do this multiple times during its chosen move, though it has to pay the BLOOD MARKER cost for each such jump between terrain pieces. If the Hunter uses this ability during a Charge, it does not need to take the most direct route possible toward its target, but it still selects its target as normal (i.e. it can see the target when declaring a Charge).",
+                "content": "It can cast this Spell again as part of the same movement, spending a BLOOD MARKER each time, but it cannot cast it later as part of a different movement during the same Activation. This spell can be cast as part of any movement the Hunter takes during its Activation (Standard Move, Retreat, Charge, Dash etc.). If it is cast as part of a Charge, it does not need to take the most direct route possible, but it still selects the target as normal (Line of Sight, within 12” etc.).",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}
                 ]
@@ -2198,7 +2232,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Before rolling an injury caused by the Hell Knight’s melee or ranged attack, it can use this GOETIC(1) power to roll that injury with +1 DICE. When this power is used on an injury caused by a BLAST weapon, it applies to every injury caused by that attack ACTION.",
+                "content": "Before rolling an injury caused by the Hell Knight’s melee or ranged attack, it can cast this GOETIC(1) spell to roll that injury with +1 DICE. When this spell is used on an injury caused by a BLAST weapon, it applies to every injury caused by that attack ACTION.",
                 "glossary": [
                     {"val": "GOETIC", "id": "gl_goetic"},{"val": "+1 DICE", "id": "gl_plusdice"}
                 ]
@@ -2236,7 +2270,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Yoke Fiend can make 1 melee attack against any friendly model with 1” as long as they don’t have the keyword DEMONIC. When doing so, they can only make a single attack.",
+                "content": "The Yoke Fiend can target friendly non-DEMONIC models within 1” with melee attacks. When it does, it can only make a single melee attack during its Activation.",
                 "glossary": [
                     {"val": "DEMONIC", "id": "gl_demonic"}
                 ]
@@ -2391,6 +2425,17 @@
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                 "content": "Enemy models within 8” of the Saint treat Minor Hit results as a Down result instead. This affects models that normally treat Down results as a Minor Hit result (such as models wearing Machine Armour).",
+                                "glossary": []
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Aura of Greed: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": " When an enemy model declares a Charge, they must Charge the Desecrated Saint if it is visible, not in cover and within 12” of the Saint. The charging model must be able to reach this model without Climbing, Jumping or crossing Dangerous Terrain.",
                                 "glossary": []
                             }
                         ]

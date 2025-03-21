@@ -716,6 +716,17 @@
         "modifiers": ["+1D to Injury"],
         "eventtags": {"action": true},
         "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "This weapon rolls for injuries with +1 DICE. Because this weapon has the Keyword FIRE, it inflicts an additional BLOOD MARKER on a hit.",
+                        "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "FIRE", "id": "gl_fire"},{"val": "+1 DICE", "id": "gl_plusdice"}]
+                    }
+                ]
+            }
                         ]
     },
     {
@@ -903,6 +914,62 @@
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                         "content": "Ignores additional BLOOD MARKERS caused by the Keyword SHRAPNEL.",
                                         "glossary": [{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "SHRAPNEL", "id": "gl_shrapnel"}]
+                                    }
+                                ]
+                            }
+                        ]
+    },
+    {
+        "id": "eq_compoundeyeshelmet",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+            {"tag_name": "Shrapnel", "val": "gl_shrapnel"},
+            {"tag_name": "Headgear", "val": "gl_headgear"}
+                ],
+        "category": "equipment",
+        "name": "Compound Eyes Helmet",
+        "equip_type": null,
+        "range": null,
+        "blurb": "This ancient helmet fuses itself to its wearer, connecting its nerves into the compound eyes of the helmet, granting enhanced vision.",
+        "modifiers": null,
+        "eventtags": {"trait": true},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Ignores additional BLOOD MARKERS caused by the Keyword SHRAPNEL. Additionally, this model increases its Ranged characteristic by +1 DICE.",
+                                        "glossary": [{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "SHRAPNEL", "id": "gl_shrapnel"},{"val": "+1 DICE", "id": "gl_plusdice"}]
+                                    }
+                                ]
+                            }
+                        ]
+    },
+    {
+        "id": "eq_graildevotee",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Grail Devotee",
+        "equip_type": null,
+        "range": null,
+        "blurb": "Given birth by Matagot Hags after devouring living victims whole, these diminutive thralls are driven by an unspeakable thirst for fluids tainted by the Black Grail. They attach themselves to the nobles of the Order of the Fly, endlessly grovelling and begging for any secretion or discharge of fluid their master might be able to spare. Devotees can even be conjoined with their host. The nobles of the Fly pass their ammunition and blades through the devotee’s digestive system to enhance the deadliness of their weapons.",
+        "modifiers": null,
+        "eventtags": {"trait": true},
+        "description":  [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                                "content": "Rule:",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "A single model may be accompanied by up to two Grail Devotees. For each Devotee a model is accompanied by, it rolls injuries with a flat +1 bonus with all of its attack ACTIONS. Note that although Grail Devotees can be represented by a model, they are not treated as models for any rules purposes. As equipment, they must remain stationary and wholly on the base of the model that they accompany.",
+                                        "glossary": [{"val": "ACTIONS", "id": "gl_action"}]
                                     }
                                 ]
                             }
@@ -2530,7 +2597,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Works exactly as a trench shield, including Shield Combo capability. In addition, if a model carrying a Black Grail Shield is targeted by a ranged attack, before rolling to hit it can immediately take an ACTION without an Activation. If successful, the Ranged attack suffers -2 DICE to the roll determining whether the attack hits, as the power of the Black Grail disturbs the flow of reality. If the roll is a Critical, the attack misses automatically.",
+                            "content": "This counts as a Trench Shield. In addition, when this model is targeted by a ranged attack, it can draw on the power of the Black Grail to disturb the flow of reality as an ACTION. If successful, the ranged attack is rolled with -2 DICE. If this ACTION is a Critical, the ranged attack automatically misses. This can be done outside of the model's Activation and can be done each time the model is targeted by a ranged attack.",
                             "glossary": [{"val": "-2 DICE", "id": "gl_minusdice"},{"val": "ACTION", "id": "gl_action"}]
                         }
                     ]
@@ -2575,7 +2642,7 @@
         "name": "Beelzebub's Axe",
         "equip_type": "2-Handed",
         "range": "Melee",
-        "blurb": "Carrying the viral strain of Beelzebub himself, these weapons are the terror of all mortals. Even the tiniest nick or scratch usually leads to an agonising death and eternal servitude to the Lord of Flies as a ghastly walking corpse.",
+        "blurb": "With blades crafted in the form of a fly spreading its wings, this enormous axe is eternally covered with the corruption and filth of Beelzebub.",
         "modifiers": ["+2D to Injury"],
         "eventtags": {"action": true},
         "description":  [
@@ -2642,7 +2709,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Reduces the injury roll penalty from armour and shields by 1. Thus Reinforced Armour only offers a -1 modifier to injury rolls caused by this weapon.",
+                            "content": "When resolving injuries for this weapon, the total modifier to injuries from a model’s armour (including shields) is reduced by 1. Thus Reinforced Armour only offers a -1 modifier to injury rolls caused by this weapon.",
                             "glossary": []
                         }
                     ]
@@ -2670,8 +2737,8 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "A Corruption Belcher hits one model within range automatically with its ranged attack ACTION. It ignores Armour. It also has the Keyword GAS, so it inflicts an additional +1 BLOOD MARKER on enemies it hits.",
-                            "glossary": [{"val": "+1 BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "GAS", "id": "gl_gas"},{"val": "ACTION", "id": "gl_action"},{"val": "-1 DICE", "id": "gl_minusdice"}]
+                            "content": "This weapon automatically hits and it ignores armour. Because this weapon has the Keyword GAS, it inflicts an additional BLOOD MARKER on a hit.",
+                            "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "GAS", "id": "gl_gas"},{"val": "ACTION", "id": "gl_action"},{"val": "-1 DICE", "id": "gl_minusdice"}]
                         }
                     ]
                 }
@@ -2698,7 +2765,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": " This weapon causes INFECTION MARKERS instead of BLOOD MARKERS. The putrid shotgun adds +1 DICE to hit on its ranged attacks.",
+                            "content": "This weapon rolls attacks with +1 DICE and causes INFECTION MARKERS instead of BLOOD MARKERS.",
                             "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "INFECTION MARKER", "id": "gl_infectionmarker"},{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "-1 DICE", "id": "gl_minusdice"}]
                         }
                     ]
@@ -2727,7 +2794,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "If Parasite Grenade hits a model, the Black Grail player can move this model up 3” into any direction they wish. This can be used to move the model out of cover, to fall from a high position, or even into Melee with their enemies. This additional effect does not work on models with the Keyword FEAR or ones not affected by FEAR.",
+                            "content": "If this weapon hits a model, the target is moved up to 3\" in a single direction of the attacker's choosing. This can be used to move the model out of cover, to fall from a high position or even into Melee Combat with their enemies. Models that are immune to FEAR cannot be moved by this weapon.",
                             "glossary": [{"val": "FEAR", "id": "gl_fear"}]
                         }
                     ]
@@ -2755,7 +2822,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "The Viscera Cannon has additional +2 DICE on Ranged Attack rolls as even the slightest splash can kill. If it hits the enemy, roll to injure as normal. After rolling for injuries, you can boost the damage by up to three additional INFECTION MARKERS per hit by taking the same number of BLOOD MARKERS on the shooter itself.",
+                            "content": "This weapon rolls attacks with +2 DICE, as even the slightest splash can kill. After resolving an injury caused by this weapon, this model may choose to suffer up to three BLOOD MARKERS to inflict the same number of additional BLOOD MARKERS upon the target of the attack.",
                             "glossary": [{"val": "INFECTION MARKERS", "id": "gl_infectionmarker"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},{"val": "+2 DICE", "id": "gl_plusdice"}]
                         }
                     ]
@@ -3119,7 +3186,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "In the beginning of the Activation of the model wearing the Crown, it causes 1 INFECTION MARKER on any enemy model in melee combat with it. Despite its name, this item is not Hedgear.",
+                            "content": "When this model is Activated, each enemy model in Melee Combat with it suffers one INFECTION MARKER. Despite its name, this item is not Hedgear.",
                             "glossary": [{"val": "INFECTION MARKER", "id": "gl_infectionmarker"}]
                         }
                     ]
@@ -3146,7 +3213,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "All ranged attacks against a model carrying the Urn and any other models fully with 3” acquire -1 DICE penalty against any Ranged Attack ACTIONS targeting them which stacks with any other ranged modifiers such as Long Range. This applies even to weapons that ignore Cover such as Grenade Launchers.",
+                            "content": "Ranged attacks against this model and other models within 3” of it are rolled with -1 DICE.",
                             "glossary": [{"val": "-1 DICE", "id": "gl_minusdice"},{"val": "ACTIONS", "id": "gl_action"}]
                         }
                     ]
@@ -3749,8 +3816,8 @@
                 "subcontent": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Ranged Attacks with the Ophidian rifle do not suffer Long Range or Cover penalties and instead gain +1 DICE bonus to Hit at Long range, +1 DICE to hit against enemies in cover.",
-                        "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+                        "content": "This weapon ignores the penalties for Cover and Long Range, and rolls attacks against models at Long Range or in Cover with +1 DICE. These bonuses stack for a possible total of +2 DICE.",
+                        "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "+2 DICE", "id": "gl_plusdice"}]
                     }
                 ]
             }
@@ -3807,7 +3874,7 @@
                 "subcontent": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "When shooting the Bow of Lethe, choose one of the following effects:",
+                        "content": "Before rolling an injury for this weapon, choose one of the following effects to apply to that roll",
                         "glossary": []
                     },
                     {
@@ -3850,7 +3917,7 @@
                 "subcontent": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "If you trigger Bloodbath with this weapon, roll 2d6 instead of 3d6. Roll D6 on the Injury table instead of 2D6. Causes and additional BLOOD MARKER for each Blood Marker it inflicts in combat.",
+                        "content": "This weapon rolls D6 on the Injury Chart, or 2D6 on a BLOODBATH. This weapon causes an additional BLOOD MARKER for each BLOOD MARKER it inflicts from an injury result.",
                         "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
                     }
                 ]
@@ -4636,5 +4703,176 @@
                                 ]
                             }
                         ]
+    },
+    {
+        "id": "eq_restrainingmuzzle",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Restraining Muzzle",
+        "equip_type": null,
+        "range": null,
+        "blurb": "Yoke Fiends are unruly beasts, and almost impossible to control whenever they smell mortal blood. The Court nobles use cruel barbed muzzles to bring their footsoldiers to heel. Attuned to the will of a the noble in the charge who can constrict them until the pain becomes so unbearable that even the most bestial Yoke Fiend is brought to heel.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Any Yoke Fiend equipped with a restraining Muzzle is not affected by the Hateful Ability and therefore do not have to charge certain enemies within Charge range. With this device in place, the unruly Yoke Fiends can be trained better and add +1 DICE to their Ranged Attack charactersitic.",
+                        "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "ATTACKs", "id": "gl_action"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "eq_cruelhelmet",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Cruel Helmet",
+        "equip_type": null,
+        "range": null,
+        "blurb": "This heavy, cumbersome helmet always includes a gruesome mask. It is made from iron of Dis, and retains some of the searing heat of the Inferno. Its touch causes skin to blister and peel. Due to its weight, it is almost impossible for its wearer to stand up for long periods of time. Praetors and Sorcerers often put these awful devices on their Wretched slaves, wearing the keys in chains in their person to taunt their miserable thralls.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Ignores the additional BLOOD MARKER caused by the Keyword SHRAPNEL. Any model wearing this helmet starts the battle Down. During the first term, If attacked before it is Activated, the Wretched suffers an extra BLOOD MARKER from the first attack that hits it.",
+                        "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "SHRAPNEL", "id": "gl_shrapnel"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "eq_bestialskincloak",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Beastial Skin Cloak",
+        "equip_type": null,
+        "range": null,
+        "blurb": "The proud nobles of the Court hunt the mighty creatures of the Path of the Beast for sport, as a trophy hunter might kill a lion or a tiger for the sake of pride or vanity. Wearing a skin of such beast’s hide as a cloak is the hight of fashion within the infernal realm, and the ferocious malignant spirit of the Path that still lingers in the skin its wearer becomes more bestial in combat. The cloak still brisrles and moves on its own, seeping blood that covers its wearer.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Once per Activation, the model may add +1 DICE to one of the following: Melee Attack ACTION, Injury roll the model causes in melee, or Dash ACTION. After doing this and after the roll is resolved, the model gains 1 BLOOD MARKER.",
+                        "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "ACTION", "id": "gl_action"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                        "content": ""},
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "If a Hunter of the Left-hand path wears this Cloak, it cannot wear its Oracle Beast Cloak."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "eq_koraktorthegreattomeofhell",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Koraktor - The Great Tome of Hell",
+        "equip_type": null,
+        "range": null,
+        "blurb": "Each Auxia Sorcerer carries a book copied from the Koraktor, the original book of Goetic Magic, said to have been written by angel Samael, who is also known as ‘Venom of God’. Why an Angel would have written the book is unknown, if the story is even true at all.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "A warband in possession of this book may purchase a single Goetic Power to one model in addition to the ones normally available to them, and this Power does not count towards the limit in the number of Goetic Powers they may normally have. You still have to pay the cost of acquiring the Goetic power, though this can be done at any Post-Battle sequence. It ignores other limitations of the Goetic Power, so normal limits (such as the Goetic Power belonging to a different Sin or limited to a different model) do not apply."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "eq_lordshipofthisworld",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Lordship of this World",
+        "equip_type": null,
+        "range": null,
+        "blurb": "It is written that the powers of evil hold the greatest sway over the material world. The greatest servants of the Pit who bear a special mark can torture the very earth and make it do their bidding.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "This model carries a mark such as a living tattoo or painted rune carved by the hand of its infernal patron. After both sides have completely finished their deployment but before starting the battle, you may select one piece of terrain without any of your own models placed on it. It can be no bigger than 8” x 8” (an 8” section of trench, a wall, a tree, a building etc). You can move this piece of terrain, and any enemy models set upon it up to 6” in any direction, though it cannot be moved out of the battlefield even partially. If it touches any models when you move it the models it touches are set aside and the player controlling them can redeploy them as if they had not been deployed at all thus far."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "eq_pieceofsilver",
+        "type": "Equipment",
+        "source": "core",
+        "tags": [
+                ],
+        "category": "equipment",
+        "name": "Piece of Silver",
+        "equip_type": null,
+        "range": null,
+        "blurb": "Said to be a sliver of one of the thirty pieces of silver that was the payment which Judas Iscariot accepted to betray the Redemeer, there can be no talisman more potent to the servants of Hell.",
+        "modifiers": [],
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Rule:",
+                "subcontent": [
+                    
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "In the beginning of each Battle, take 3 six-sided dice, set them at 6, and set them aside. During the battle whenever any other D6 roll is taken (save for Injury rolls), you can replace any one dice with one of the 6s before rolling the rest. Only one dice can be used to influence a single dice roll. Note that if the model in possession of this item is takein Out of Action, discard these dice immediately."
+                    }
+                ]
+            }
+        ]
     }
 ]

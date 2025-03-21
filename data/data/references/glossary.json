@@ -317,9 +317,11 @@
         "name": "Demonic",
         "description":  [{
             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-            "content": "This model is a part of the Court Of The Seven-Headed Serpent faction. Due to their infernal origins, no model with the Keyword DEMONIC suffers additional blood markers from any attack with the Keyword FIRE.",
+            "content": "Due to their infernal origins, a model with this Keyword ignores any additional BLOOD MARKERS caused by the Keyword FIRE.",
             "subcontent":   [],
             "glossary": [
+                {"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},
+                {"val": "FIRE", "id": "gl_fire"}
             ]
         }]
     },
@@ -382,6 +384,22 @@
         "description":  [{
             "tags": [{"tag_name": "desc_type", "val": "desc"}],
             "content": "This model is a part of the New Antioch faction.",
+            "subcontent":   [],
+            "glossary": [
+            ]
+        }]
+    },
+    {
+        "id": "gl_thecourt",
+        "type": "Glossary",
+        "source": "core",
+        "tags": [
+            {"tag_name": "category", "val": "faction"}
+        ],
+        "name": "The Court",
+        "description":  [{
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "This model is a part of the Court of the Seven Headed Serpent faction.",
             "subcontent":   [],
             "glossary": [
             ]

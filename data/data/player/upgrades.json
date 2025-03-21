@@ -733,7 +733,7 @@
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Every ACTION taken by a model without Keyword BLACK GRAIL within 8” of a Herald is considered a RISKY ACTION. Note: This does not affect non-ACTION rolls such as Charge distance rolls, nor does it affect ACTIONS that do not require a roll on the Action Success Chart.",
+                            "content": "Every ACTION taken by non-BLACK GRAIL models within 8” of a Herald is considered a RISKY ACTION. Note: This does not affect non-ACTION rolls such as Charge distance rolls nor does it affect ACTIONS that do not require a roll on the Action Success Chart.",
                             "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "ACTIONS", "id": "gl_action"},{"val": "BLACK GRAIL", "id": "gl_blackgrail"},{"val": "RISKY ACTION", "id": "gl_riskyaction"}]
                         }
                         ]
@@ -746,7 +746,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (1-3) spell the Sorcerer opens a portal to the Lake of Fire, and draws forth a great screaming ball of fire. Select a 1x1mm point within 36” the Sorcerer can see. Next, take a Ranged Attack ACTION: this attack suffers penalties for range but not for Cover. If the roll fails (ie. you roll 6 or less), the fireball lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the bombard shot lands 2” away, as 7-5=2). The direction is decided by your opponent. For each Blood Marker used, the Burning Inferno adds +1” BLAST to the attack. Additionally, if the Burning Inferno lands directly on top of a model, it ignores that model’s armour. This attack has the Keyword FIRE.",
+                "content": "As a Make a Ranged Attack ACTION with GOETIC (1-3), the Sorcerer opens a portal to the Lake of Fire, drawing forth a great screaming ball of infernal lava mixed with damned souls. Select a 1x1mm point within 36” that the Sorcerer can see. Next, make a Ranged Attack ACTION: this attack suffers penalties for Long Range but not for Cover. If the roll fails (i.e. you roll 6 or less), the fireball lands 1” away from its intended location, multiplied by the number representing the degree of failure (for example, if you rolled 5, the fireball lands 2” away, as 7-5=2). The direction is decided by your opponent. The Burning Inferno has the Keyword BLAST X”, where X is the amount of BLOOD MARKERS spent. Additionally, if the Burning Inferno lands directly on top of a model, it ignores that model’s armour. This attack has the Keyword FIRE.",
                 "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLAST", "id": "gl_blastx"},{"val": "FIRE", "id": "gl_fire"},{"val": "GOETIC", "id": "gl_goetic"}]
             },
             {
@@ -756,6 +756,70 @@
                         ]
     },
     {
+        "id": "up_goetic_slavemaster",
+        "type": "Upgrade",
+        "name": "Slavemaster",
+        "eventtags": {"action": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "As a GOETIC (1) spell, this model can command any friendly Yoke Fiend within 12” to do one of the following:",
+                "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Move:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The Yoke Fiend takes a Standard Move ACTION of up to 6”.",
+                                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Ranged Attack:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The Yoke Fiend takes a Ranged Attack ACTION with any Ranged weapon it has.",
+                                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Sacrifice:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The Yoke Fiend kills itself (it is removed from the board immediately as a casualty).",
+                                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Melee Attack:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The Yoke Fiend takes a Melee Attack ACTION.",
+                                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+                            }
+                        ]
+                    }
+
+                ]
+            }
+            ]
+    },
+    {
         "id": "up_goetic_chargeofhatred",
         "type": "Upgrade",
         "name": "Charge Of Hatred",
@@ -763,7 +827,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "This model’s Charge move is always the maximum of 12”, though it still suffers penalties for Difficult Terrain as standard.  If this model does not charge the closest target, it must first pass a RISKY ACTION test."
+                "content": "When this model Charges, it can always move the maximum distance of 12”, although it suffers penalties to this movement as standard (Difficult Terrain, Standing etc.). Additionally, it must make a RISKY ACTION to Charge an enemy model other than the closest one."
             }
                         ]
     },
@@ -805,7 +869,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "This model can be equipped with one weapon or suit of armour (excluding shields) from Trench Pilgrim, New Antioch or Iron Sultanate warband armouries. You must pay the cost of this item as standard and, if it is lost, it must be purchased again as soon as you have the funds. This item follows the normal limitations. The model will never willingly trade this item away or allow it to be removed.",
+                "content": "This model can be equipped with one weapon or suit of armour (excluding shields) from Trench Pilgrim, New Antioch or Iron Sultanate warband armouries. You must pay the cost of this item as standard and, if it is lost, it must be purchased again as soon as you have the funds. This item follows the normal limitations. The model will never willingly trade this item away or allow it to be removed. A Sorcerer with this Power can be equipped with a ranged weapon purchased in this way, even though they can normally only equip melee weapons.",
                 "glossary": []
             }
                         ]
@@ -818,7 +882,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (2) spell allows the model using this spell to change positions with any model it sees within 12”. This cannot be done if either model engaged is in Melee combat.",
+                "content": "As a GOETIC (2) Spell, this model changes positions with any other model it can see within 12”, as long as the bases of the models fit into their positions. This cannot be done if either model is engaged in Melee Combat.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
             }
                         ]
@@ -831,7 +895,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (1) spell allows the model with this power to take one BLOOD or BLESSING MARKER from any model on the battlefield that it can see, removing it from the target and gaining that kind of marker for itself. This can even come from a model with a Keyword BLACK GRAIL or DEMONIC. The cost of the spell must still be paid as normal and it is separate from the MARKER it moves.",
+                "content": "As a GOETIC (1) Spell, this model can remove a BLOOD MARKER or BLESSING MARKER from any model that it can see. This model then gains a marker of that type. This marker can come from models regardless of their Keywords and is separate from the BLOOD MARKER used to cast this spell.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "BLESSING MARKER", "id": "gl_blessingmarker"},{"val": "DEMONIC", "id": "gl_demonic"},{"val": "BLACK GRAIL", "id": "gl_blackgrail"}]
             }
                         ]
@@ -857,7 +921,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (1-2) spell allows you to give any one enemy model you can see +1 BLOOD MARKER (up to a maximum of 2) for each BLOOD MARKER used to power this spell (up to a maximum of two).",
+                "content": "As a GOETIC (1-2) Spell, this model inflicts X BLOOD MARKERS on an enemy model that it can see, where X is the amount of BLOOD MARKERS spent.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
             }
                         ]
@@ -870,7 +934,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (2) spell ends the activation of the model using it. The model the enemy activates next this Turn must take its Move action as its first action, and move as directly towards the user of this power as it can through any passable terrain, including dangerous terrain, jumping down etc. taking damage on the way. It can then move and act normally with rest of its Actions, but cannot target the user of this spell during this activation with any Action.",
+                "content": "As a GOETIC (2) Spell that ends this model’s Activation, beckoning magic fills the air. When the enemy next Activates a model during this Turn, that model must Move as its first ACTION. This Move must be a Retreat if the model started its Activation in Melee Combat with a model other than the caster of this Spell. If that model is Down, it instead Stands and then Moves. During this movement, it moves in a direct path toward the caster of this Spell through any passable terrain, including Dangerous Terrain, Jumping Down etc. The model suffers injuries as normal. It can act normally after taking the prescribed ACTION(S), or attempting to take the prescribed ACTION(S) if it couldn’t, but cannot target the caster of this Spell during this Activation with ranged or melee attacks.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
             }
                         ]
@@ -883,7 +947,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The Warband with this model automatically succeeds when it has to make Morale tests as long as this model is on the battlefield.",
+                "content": "While this model is on the battlefield, its Warband automatically succeeds Morale Tests.",
                 "glossary": []
             }
                         ]
@@ -896,7 +960,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (2) spell allows the model to negate a Down state or ignore any Injury, attack or power that would have caused the model to fall Down. Note that a TOUGH model suffers Out of Action result which is then convered into Down, this power can be used, but the TOUGH ability is considered to have been used.",
+                "content": "As a GOETIC (2) Spell, when this model would otherwise fall Down for any reason, it instead doesn’t. If used to negate a Down result, this model still suffers any BLOOD MARKER as normal. This Spell can be cast outside of this model’s Activation. Note that if a TOUGH model suffers an Out of Action result, which is then converted into Down, this Spell can be used, but TOUGH is considered to have been used.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"},{"val": "TOUGH", "id": "gl_tough"}]
             }
                         ]
@@ -904,12 +968,12 @@
     {
         "id": "up_goetic_lightofthemorningstar",
         "type": "Upgrade",
-        "name": "Light of the Morning Star",
+        "name": "Light of Samael",
         "eventtags": {"action": true},
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Using this GOETIC (2) Spell hits any enemy the model sees within 24”. The target must immediately roll on the Injury Chart. If this does not take it Out of Action, the target is pushed back by 1D6” directly away from the user of this power if it is on a 32mm or smaller base. If they hit another model or a solid object, they stop. They also stop if they would enter Impassable Terrain or if they would be pushed out of the battlefield.",
+                "content": "As a GOETIC (2) Spell, this model can hit an enemy model it can see within 24” with punishing light. That model rolls on the Injury Chart. If the target is on a 32mm or smaller base and was not taken Out of Action, it is pushed D6” directly away from the caster of this Spell, stopping if it hits another model or a solid object. They also stop if they would otherwise enter Impassable Terrain or if they would be pushed out of the battlefield.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
             }
                         ]
@@ -922,7 +986,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "When this model takes an ACTION or causes an Injury, it can choose to wait until after the roll is made to modify it with BLOOD/BLESSING MARKERS. If it chooses to do so, the opponent commits whether or not they will apply BLOOD/BLESSING MARKERS and how many. Then, the model rolls an unmodified roll, typically 2d6. After seeing the result, the model may choose to apply BLOOD/BLESSING MARKERS, including to trigger Bloodbath. Roll additional dice so that the dice roll reflects all appropriate bonuses/penalties, including BLOOD/BLESSING MARKERS, any modifiers to the ACTION or to injure that the model might have, etc.",
+                "content": "No more than one BLOOD MARKER at a time can be used to negatively affect an ACTION or RISKY ACTION this model takes.",
                 "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLOOD", "id": "gl_bloodmarker"},{"val": "BLESSING", "id": "gl_blessingmarker"}]
             }
                         ]
@@ -948,7 +1012,7 @@
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "For any enemy model 6” area around this model is considered Difficult Terrain.",
+                "content": "Open Terrain within 6” of this model is considered Difficult Terrain for enemy models. Dangerous Terrain within 6” of this model is considered both Dangerous Terrain and Difficult Terrain for enemy models.",
                 "glossary": []
             }
                         ]
@@ -969,7 +1033,8 @@
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "All the Yoke Fiends of the Warband ignore the Hateful rule."
+                "content": "Whenever an enemy model inflicts one or more BLOOD MARKERS on this model with a melee attack, that model suffers one BLOOD MARKER.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
             }
                         ]
     },
@@ -989,7 +1054,7 @@
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "This GOETIC (2) Spell can be cast at any enemy model that has not yet been Activated in the battle at all. Pick any one equipment item the model is carrying. This item is discarded for the duration of the battle as the model has been chewing on it before the battle, rendering the item temporarily unusable.",
+                "content": "As a GOETIC (2) Spell, this model can curse any enemy model that has not been Activated during the Battle with ravenous hunger. Pick any one equipment item (i.e. not weapon or armour) the model is carrying. This item is discarded for the duration of the battle as the model has been chewing on it, rendering the item temporarily unusable.",
                 "glossary": [{"val": "GOETIC", "id": "gl_goetic"}]
             }
                         ]
@@ -1010,8 +1075,116 @@
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Whenever a model without a keyword DEMONIC or BLACK GRAIL suffers one or more BLOOD MARKERS in melee combat against this model, you can remove those markers and heal the equal number of BLOOD MARKERS from this model. This model may charge and engage friendly models in melee combat.",
+                "content": "Whenever a model without the keyword DEMONIC or BLACK GRAIL suffers one or more BLOOD MARKERS in melee combat from the model with this power, you can remove any number of those markers and heal an equal number of BLOOD MARKERS from the model with the Eater of the Flesh power.",
                 "glossary": [{"val": "DEMONIC", "id": "gl_demonic"},{"val": "BLACK GRAIL", "id": "gl_blackgrail"},{"val": "BLOOD MARKERS", "id": "gl_bloodmarker"}]
+            }
+        ]
+    },
+    {
+        "id": "up_knightcompanionoftheflyranged",
+        "type": "Upgrade",
+        "name": "Knight Companion of the Fly (Ranged)",
+        "eventtags": {"trait": true, "ranged": 1},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Add +1 DICE to Ranged.",
+                "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+            }
+        ]
+    },
+    {
+        "id": "up_knightcompanionoftheflymelee",
+        "type": "Upgrade",
+        "name": "Knight Companion of the Fly (Melee)",
+        "eventtags": {"trait": true, "melee": 1},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Add +1 DICE to Melee.",
+                "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+            }
+        ]
+    },
+    {
+        "id": "up_knightoftherottencross",
+        "type": "Upgrade",
+        "name": "Knight of the Rotten Cross",
+        "eventtags": {"trait": true, "melee": 1},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "When acquired, this model may purchase any Weapon from the New Antioch or Heretic Legion list. It may re-purchase this same weapon during the Campaign.",
+                "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+            }
+        ]
+    },
+    {
+        "id": "up_knightplaguealmoner",
+        "type": "Upgrade",
+        "name": "Plague Almoner",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": " This model requires 1 less BLOOD MARKER/INFECTION MARKER to cause Bloodbath.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "INFECTION MARKER", "id": "gl_infectionmarker"}]
+            }
+        ]
+    },
+    {
+        "id": "up_goetic_bodyofgold",
+        "type": "Upgrade",
+        "name": "Body of Gold",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "So great is the devotion of this servant of greed that their entire body takes on the aspect of the precious metal.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLAST", "id": "gl_blastx"},{"val": "FIRE", "id": "gl_fire"},{"val": "GOETIC", "id": "gl_goetic"}]
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""},
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This model gains the Keyword GOLEM. If the model has the Keyword TOUGH it loses it",
+                "glossary": [{"val": "GOLEM", "id": "gl_golem"},{"val": "TOUGH", "id": "gl_tough"}]
+            }
+                        ]
+    },
+    {
+        "id": "up_goetic_blackheart",
+        "type": "Upgrade",
+        "name": "Black Heart",
+        "eventtags": {"action": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Greed has corrupted the heart of this fallen creature to such an extent that within their chest there is a gaping hole. When it desires something enough, it bleeds black tar that empowers this servant of avarice.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"},{"val": "BLAST", "id": "gl_blastx"},{"val": "FIRE", "id": "gl_fire"},{"val": "GOETIC", "id": "gl_goetic"}]
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""},
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "This GOETIC (1) power allows the model to add +1 DICE to any ACTION it takes. Can be used multiple times per activation, but only once per each ACTION.",
+                "glossary": [{"val": "GOETIC", "id": "gl_goetic"},{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "ACTION", "id": "gl_action"}]
+            }
+                        ]
+    },
+    {
+        "id": "up_goetic_universalgreed",
+        "type": "Upgrade",
+        "name": "Universal Greed",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Greed of others is just as welcome to Hell as that displayed by its own servants."
+            },
+            { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": ""},
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "For every model in the opposing force that is worth 150 ducats or more, this model gains +1 BLESSING DICE at the start of the Battle.",
+                "glossary": [{"val": "BLESSING DICE", "id": "gl_blessingmarker"}]
             }
                         ]
     }

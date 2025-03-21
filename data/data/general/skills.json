@@ -1240,5 +1240,203 @@
                 "content": "The Wretched of this Warband are never lost as casualties, as their heads (kept as surety by Mammo) are used to re-grown the lost bodies. All Wretched models of the Warband are considered to make a full recovery after the battle if taken Out of Action."
             }
         ]
+    },
+    {
+        "id": "sk_infectthemind",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Infect The Mind",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "At the start of the battle, after the deployment, select one enemy model. You can move this model up to 6” in any direction you wish, though not into Melee combat, into impassable terrain or out of the battlefield."
+            }
+        ]
+    },
+    {
+        "id": "sk_eyeofbeelzebub",
+        "type": "Skill",
+        "eventtags" : {"action" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Eye of Beelzebub",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The overwhelming mental pressure of this emissary of Beelzebub overwhelms any mind. Witha successful ACTION this model can force any single enemy model with 24” that is in cover (but not in Melee combat) to move 1”to leave the cover. This model is moved by your opponent, and cannot take the model into Melee combat or into another cover.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_silveredtongue",
+        "type": "Skill",
+        "eventtags" : {"action" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Silvered Tongue",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "With a successful ACTION this model can force any opponent it is melee combat with to make one of its own Melee attacks against itself. You can choose which weapon to use.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_swinehybrid",
+        "type": "Skill",
+        "eventtags" : {"trait" : true, "movement": 2},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Swine Hybrid",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The Movement Characteristic of this model is increased by 2”."
+            }
+        ]
+    },
+    {
+        "id": "sk_beelzebubswisdom",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Beelzebub's Wisdom",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Infested with the Black Grail, the head of this model is distended and liquid matter oozes out of its many trepanned holes. So great is the sheer willpower of this model that any enemy Charging it can only use their base Movment characteristics and not add D6 to determine if they reach the model or not."
+            }
+        ]
+    },
+    {
+        "id": "sk_specialassaulttraininggrail",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Special Assault Training",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "As long as the target has at least 1 INFECTION MARKER when the attack is mad, all attacks of this model need 1 less BLOOD MARKER/INFECTION MARKER to cause a Bloodbath.",
+                "glossary": [{"val": "INFECTION MARKER", "id": "gl_infectionmarker"},{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_firearmprocurement",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Firearm Procurement",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The cost of any ranged weapon worth 20 ducats or more is reduced by 5 ducats."
+            }
+        ]
+    },
+    {
+        "id": "sk_mendellistchemicals",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Mendellist Chemicals",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "BLOOD MARKERs of this model cannot be added to the Injury rolls against this model. Other bonuses to the Injury rolls apply, and Bloodbath against this model works as normal.",
+                "glossary": [{"val": "BLOOD MARKERs", "id": "gl_bloodmarker"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_armourandequipmentprocurement",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Armour & Equipment Procurement",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The cost of any suit of armour or equipment worth 20 ducats or more is reduced by 5 ducats."
+            }
+        ]
+    },
+    {
+        "id": "sk_meleeweaponprocurement",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Melee Weapon Procurement",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The cost of any melee weapon worth 20 ducats or more is reduced by 5 ducats."
+            }
+        ]
+    },
+    {
+        "id": "sk_sniperschool",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Sniper School",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "All Ranged attacks of this model need 1 less BLOOD MARKER to cause a Bloodbath.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+            }
+        ]
+    },
+    {
+        "id": "sk_specialassaulttrainingantioch",
+        "type": "Skill",
+        "eventtags" : {"trait" : true},
+        "source": "core",
+        "tags": [
+            {"tag_name": "patron", "val": ""}
+            ],
+        "name": "Special Assault Training",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "All Melee attacks of this model need 1 less BLOOD MARKER to cause a Bloodbath.",
+                "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"}]
+            }
+        ]
     }
 ]
