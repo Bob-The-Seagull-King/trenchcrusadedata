@@ -933,7 +933,7 @@
         "range": null,
         "blurb": "This ancient helmet fuses itself to its wearer, connecting its nerves into the compound eyes of the helmet, granting enhanced vision.",
         "modifiers": null,
-        "eventtags": {"trait": true},
+        "eventtags": {"trait": true, "ranged": 1},
         "description":  [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "effect"}],
