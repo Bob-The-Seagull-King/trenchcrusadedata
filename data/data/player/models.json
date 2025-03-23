@@ -6,7 +6,8 @@
         "tags": [
                     {"tag_name": "heretic", "val": "gl_heretic"},
                     {"tag_name": "elite", "val": "gl_elite"},
-                    {"tag_name": "tough", "val": "gl_tough"}
+                    {"tag_name": "tough", "val": "gl_tough"},
+                    {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -44,7 +45,8 @@
         "tags": [
                     {"tag_name": "heretic", "val": "gl_heretic"},
                     {"tag_name": "elite", "val": "gl_elite"},
-                    {"tag_name": "tough", "val": "gl_tough"}
+                    {"tag_name": "tough", "val": "gl_tough"},
+                    {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -83,7 +85,8 @@
         "tags": [
                     {"tag_name": "heretic", "val": "gl_heretic"},
                     {"tag_name": "elite", "val": "gl_elite"},
-                    {"tag_name": "tough", "val": "gl_tough"}
+                    {"tag_name": "tough", "val": "gl_tough"},
+                    {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -526,7 +529,8 @@
         "source": "core",
         "tags": [
             {"tag_name": "trenchpilgrim", "val": "gl_pilgrim"},
-            {"tag_name": "elite", "val": "gl_elite"}
+            {"tag_name": "elite", "val": "gl_elite"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -572,7 +576,8 @@
         "source": "core",
         "tags": [
             {"tag_name": "trenchpilgrim", "val": "gl_pilgrim"},
-            {"tag_name": "elite", "val": "gl_elite"}
+            {"tag_name": "elite", "val": "gl_elite"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -1057,7 +1062,8 @@
         "tags": [
             {"tag_name": "ironsultanate", "val": "gl_sultanate"},
             {"tag_name": "elite", "val": "gl_elite"},
-            {"tag_name": "tough", "val": "gl_tough"}
+            {"tag_name": "tough", "val": "gl_tough"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -1785,7 +1791,8 @@
         "tags": [
             {"tag_name": "newantioch", "val": "gl_newantioch"},
             {"tag_name": "tough", "val": "gl_tough"},
-            {"tag_name": "elite", "val": "gl_elite"}
+            {"tag_name": "elite", "val": "gl_elite"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -1838,7 +1845,8 @@
             {"tag_name": "newantioch", "val": "gl_newantioch"},
             {"tag_name": "tough", "val": "gl_tough"},
             {"tag_name": "elite", "val": "gl_elite"},
-            {"tag_name": "strong", "val": "gl_strong"}
+            {"tag_name": "strong", "val": "gl_strong"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -1895,7 +1903,8 @@
             {"tag_name": "newantioch", "val": "gl_newantioch"},
             {"tag_name": "tough", "val": "gl_tough"},
             {"tag_name": "elite", "val": "gl_elite"},
-            {"tag_name": "skirmisher", "val": "gl_skirmisher"}
+            {"tag_name": "skirmisher", "val": "gl_skirmisher"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -2481,7 +2490,8 @@
             {"tag_name": "elite", "val": "gl_elite"},
             {"tag_name": "tough", "val": "gl_tough"},
             {"tag_name": "strong", "val": "gl_strong"},
-            {"tag_name": "fear", "val": "gl_fear"}
+            {"tag_name": "fear", "val": "gl_fear"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [6],
@@ -3585,7 +3595,8 @@
             {"tag_name":"elite", "val": "gl_elite"},
             {"tag_name":"tough", "val": "gl_tough"},
             {"tag_name":"fear", "val": "gl_fear"},
-            {"tag_name":"strong", "val": "gl_strong"}
+            {"tag_name":"strong", "val": "gl_strong"},
+            {"tag_name": "leader", "val": "gl_leader"}
                 ],
         "promotion": 0,
         "movement": [8],

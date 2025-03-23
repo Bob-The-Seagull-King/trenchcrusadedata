@@ -628,5 +628,22 @@
                 {"val": "BLOOD MARKERs", "id": "gl_bloodmarker"}
                 ]
         }]
+    },
+    {
+        "id": "gl_leader",
+        "type": "Glossary",
+        "source": "core",
+        "tags": [
+            {"tag_name": "category", "val": "model"}
+        ],
+        "name": "Leader",
+        "description":  [{
+            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "content": "As long as this model is not taken Out of Action, add +1 DICE to any Morale tests the warband has to take.",
+            "subcontent":   [],
+            "glossary": [
+                {"val": "+1 DICE", "id": "gl_plusdice"}
+                ]
+        }]
     }
 ]
