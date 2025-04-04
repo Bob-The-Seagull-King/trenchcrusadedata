@@ -1110,7 +1110,7 @@
         "id": "up_knightoftherottencross",
         "type": "Upgrade",
         "name": "Knight of the Rotten Cross",
-        "eventtags": {"trait": true, "melee": 1},
+        "eventtags": {"trait": true},
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
