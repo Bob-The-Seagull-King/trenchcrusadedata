@@ -32,7 +32,7 @@
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "The enemy captures the Character. Players can negotiate a ransom price in Gold for the release of the character. As long as this is not paid, the Character remains in the hands of the opposing player. Otherwise, treat this result as Full Recovery. The Equipment of the Character is gained by the opposing Warband.",
+                "content": "The enemy captures the model. Players can negotiate a ransom price in ducats for the release of the model: if this is not paid, the captured model is executed. If the ransom is paid, treat this result as a Full Recovery.The Equipment of the model is lost in either case.",
                 "subcontent": []
             }
         ]

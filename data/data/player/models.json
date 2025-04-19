@@ -1579,7 +1579,7 @@
         "tags": [
             {"tag_name": "ironsultanate", "val": "gl_sultanate"}
                 ],
-        "promotion": 2,
+        "promotion": 1,
         "movement": [8],
         "ranged": [],
         "melee": [1],
@@ -1733,7 +1733,7 @@
         "tags": [
             {"tag_name": "ironsultanate", "val": "gl_sultanate"}
                 ],
-        "promotion": 2,
+        "promotion": 1,
         "movement": [6],
         "ranged": [0],
         "melee": [0],
@@ -3122,28 +3122,32 @@
         "faction_id": "fc_none",
         "variant_id": "fv_basic",
         "eventtags": {},
-        "name": "War Dog",
+        "name": "Trench Dog",
         "blurb": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Great many animals serve in the trenches alongside the soldiers. Wardogs are by far the most common, but tame ocelots, barbary apes, small bears, and other exotic pets abound, while the forces of Hell keep Hellhounds and other infernal creatures as pets."
+                "content": "A great many animals serve in the trenches alongside the soldiers. Wardogs are by far the most common, but tame ocelots, barbary apes, small bears, and other unusual pets abound, while the forces of Hell keep Hellhounds and other infernal beasts as pets."
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "These loyal canines can be trained to serve in multiple roles: as mercy dogs focused on rescuing wounded soldiers, fierce guard dogs or as messengers."
+                "content": "These loyal canines can be trained to serve in multiple roles: as mercy dogs for rescuing wounded soldiers, fierce guard dogs or as messengers."
             }
         ],
         "equipment":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Dogs do not suffer penalties for fighting unarmed. In battle they are treated as non-ELITE Troops. War Dogs cannot become ELITE.",
-                "glossary": [{"val": "ELITE", "id": "gl_elite"}]
+                "content": "Dogs do not suffer penalties for fighting unarmed. In battle they are treated as non-ELITE Troops. War Dogs cannot become ELITE. At an additional cost of +1 Glory Point the dog gains an ability to form a FIRETEAM with any 1 model in your Warband.",
+                "glossary": [{"val": "ELITE", "id": "gl_elite"},{"val": "FIRETEAM", "id": "gl_fireteam"}]
             }
             ],
         "abilities":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "addon"}],
                 "content": "ab_fourpaws"
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "addon"}],
+                "content": "ab_specialiseddog"
             }
         ]
     },
@@ -3162,7 +3166,7 @@
         "faction_id": "fc_newantioch",
         "variant_id": "fv_theredbrigade",
         "eventtags": {},
-        "name": "Trench Dog",
+        "name": "Trench Dog (Red Brigade)",
         "team":"heaven",
         "blurb": [
             {

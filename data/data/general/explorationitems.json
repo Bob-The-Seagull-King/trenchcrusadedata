@@ -191,6 +191,51 @@
         ]
     },
     {
+        "id": "lc_ruinedchurch",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "common", "val": ""}
+            ],
+        "name": "Ruined Church/Masjid/Synagogue",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You find a great shrine, temple or other religious building of faith. Upon its altar rests an object of great power waiting for you.",
+                "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [ 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Purchase:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "You may purchase a Glory Item that costs 10 Glory or less and is allowed to your Warband.",
+                                "glossary": []
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Report:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Alternatively, you can report the location to your superiors and gain 4 Glory Points.",
+                                "glossary": []
+                            }
+                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "lc_survivor",
         "type": "Location",
         "eventtags" : {},
@@ -249,7 +294,7 @@
                         "subcontent": [
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "Your Warband gains a Glory Point.",
+                                "content": "Your Warband gains 2 Glory Points.",
                                 "glossary": []
                             }
                          ]
@@ -523,6 +568,324 @@
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                 "content": "You gather some of the life-giving liquids. This item can be used to cure 1 Scar on any of your Models at any point during the Campaign.",
                 "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "lc_battlefieldofcorpses",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Battlefield of Corpses",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You come across a scene of terrible slaughter. The remains of both humans and Hellish creatures from various nations, fallen through battles over the past 800 years, lie torn and scattered across the horizon, while the trenches that criss-cross this scene are filled with blood. Most of the dead have been looted, but you find up to 2 pieces of equipment, armour or weapons which you can pick from any Warband list other than your own. Their combined cost cannot exceed 100 ducats and neither item can cost any Glory Points. If lost during the Campaign, they are gone permanently. Note that limitations on who can use it still apply if detailed in the rules (such as Assassin’s Daggers, LIMIT etc).",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "lc_hiddenpassages",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Hidden Passages",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You uncover a hidden entrance to a vast underground network, perhaps dug by the Heretics to infiltrate the Great Iron Wall, or by refugees living in the No Man’s Land. This allows you to explore the area you are in far more efficiently. Your Warband gains the Duplicate Exploration Skill.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "lc_blacknetworkcontact",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Black Network Contact",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You make contact with one of the legendary Merchant Princes of the Black Network. From now on, you may purchase Glory Items of any Glory Points cost that are allowed to your Warband during the Trade step.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "lc_treasureoftheholies",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Treasure of the Holies",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You find a legendary holy reliquary, be it the Tabernacle of the Hebrews, an altar to the Morning Star himself, a shrine founded by St. Peter or a place where the Prophet visited. On its altar lies a strongbox containing an object of great power waiting for you. You may purchase any single Glory Item of any Glory Points cost as long as it is allowed to your Warband. You do not have to purchase it immediately, as you may bring the strongbox with you, and can do so in any future Trade step.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "lc_lockofsamsonshair",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Lock of Samson's Hair",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You discover a lock of hair of Samson, imbued with the unlimited strength of the strongest warrior to ever live. This item is a piece of equipment with the following rules: The model with this item gains the Keyword STRONG and +1 to all Injury rolls in Melee.",
+                "glossary": [{"val": "STRONG", "id": "gl_strong"}]
+            }
+        ]
+    },
+    {
+        "id": "lc_sampleofholydna",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Sample of Holy DNA",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You find a sample of Holy DNA. You can treat any one model in your Warband with it. When this model is activated, one INFECTION MARKER or BLOOD MARKER the model has becomes a BLESSINGS MARKER instead.",
+                "glossary": [
+                    {"val": "INFECTION MARKER", "id": "gl_infectionmarker"},
+                    {"val": "BLOOD MARKER", "id": "gl_bloodmarker"},
+                    {"val": "BLESSINGS MARKER", "id": "gl_blessingmarker"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lc_golgothatektites",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Golgotha Tektites",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You can treat any armour you own with the Golgotha Tekites used to forge the armour of the mighty Paladins. The armour now ignores extra BLOOD MARKERS from Keywords GAS, FIRE, and SHRAPNEL.",
+                "glossary": [
+                    {"val": "BLOOD MARKERS", "id": "gl_bloodmarker"},
+                    {"val": "GAS", "id": "gl_gas"},
+                    {"val": "FIRE", "id": "gl_fire"},
+                    {"val": "SHRAPNEL", "id": "gl_shrapnel"}
+                ]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "New Antioch Warbands can turn the tektites into the Church and exchange them for 15 Glory Points worth of items from either New Antioch or Trench Pilgrims list."
+            }
+        ]
+    },
+    {
+        "id": "lc_fruitfromthetreeofgoodandevilknowledge",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Fruit From the Tree of Good and Evil Knowledge",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Amongst bones of giant humans unearthed by the ravages of war you discover a golden-hued fruit wrapped in spun cloth. Any model eating this fruit will immediately gain any Skill of your choice normally available to your Warband/this model (including any Exploration Skill). In addition the model will gain the Keyword DEMONIC.",
+                "glossary": [
+                    {"val": "DEMONIC", "id": "gl_demonic"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lc_esotericlibrary",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Esoteric Library",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You find a concealed collection of Works of Goetic Magic, blood sacrifice rites, and learn how to summon demons. You may:",
+                "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [ 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Sell:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "You gain 6D6X10 ducats.",
+                                "glossary": []
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Burn (New Antioch, Sultanate or Trench Pilgrim only):",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Gain 3+D3 Glory Points.",
+                                "glossary": []
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Study (Court or Heretic Warband only):",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "At the start of each Battle, select any one model (friend or foe). That model starts the Battle with +1 BLOOD MARKER.",
+                                "glossary": [{"val": "+1 BLOOD MARKER", "id": "gl_bloodmarker"}]
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Plague (Black Grail Only):",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Black Grail Warband may unleash a Plague from the books. At the start of each Battle, select any one model (friend or foe). That model starts the Battle with +1 INFECTION MARKER.",
+                                "glossary": [{"val": "+1 INFECTION MARKER", "id": "gl_infectionmarker"}]
+                            }
+                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lc_jabireanalchemicalbook",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Jabirean Alchemical Book",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You find one of the fabled books from the Jabirean Corpus, filled with the most wondrous secrets of the nature of the universe. Choose one:",
+                "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [ 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Sell:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "You can sell the book for either 150 ducats or 5 Glory Points",
+                                "glossary": []
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Keep:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Your Warband may now buy a Fire Shield exactly as if it was a House of Wisdom Warband.",
+                                "glossary": []
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Study (House of Wisdom Warband only):",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "You glean from it great secrets of Takwin creation, and all the Alchemical Formulae now cost 5 ducats less (down to minimum of 5)."
+                            }
+                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lc_skullofasaint",
+        "type": "Location",
+        "eventtags" : {},
+        "source": "core",
+        "tags": [
+            {"tag_name": "legendary", "val": ""}
+            ],
+        "name": "Skull of a Saint",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "You find the skull of a saint beheaded in ages past. The power of communion lingers in its holy remains.",
+                "glossary": []
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [ 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Sultanate/New Antioch/Pilgrims:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "A saint guides your troops before each battle. The model with the skull gains the following skill: Unless the scenario prohibits the use of special deployment of Infiltrators, you may deploy the model on any table edge as long as it is at least 8\" away from any enemy model after Infiltrators are deployed.",
+                                "glossary": []
+                            }
+                         ]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Hell-Aligned Warbands:",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The skull screams as you mount it on a pole to mock God and paint it with blasphemous names. This item counts as a banner. It adds +2D to your Morale Tests and you automatically gain 1 Glory Point after each battle.",
+                                "glossary": []
+                            }
+                         ]
+                    }
+                ]
             }
         ]
     },

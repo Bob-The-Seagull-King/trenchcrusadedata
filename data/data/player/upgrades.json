@@ -1187,5 +1187,83 @@
                 "glossary": [{"val": "BLESSING DICE", "id": "gl_blessingmarker"}]
             }
                         ]
+    },
+    {
+        "id": "up_dog_guarddog",
+        "type": "Upgrade",
+        "name": "Guard Dog",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "These dogs both warn their masters of impending danger and fight fiercely for their company. No infiltrator can be placed within 12” of a Guard Dog, and you can charge any enemy within 4” of this dog even if it is out of sight."
+            }
+        ]
+    },
+    {
+        "id": "up_dog_mercydog",
+        "type": "Upgrade",
+        "name": "Mercy Dog",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Mercy dogs carry a Medi-Kit which can be used by any friendly model on themselves within 1” of the dog. Mercy dogs can also drag any model within 1” that is Down at ½ speed with them, both with normal movement or when dashing -if this takes the model out of melee combat, this does not trigger a free melee attack ACTION.",
+                "glossary": [{"val": "ACTION", "id": "gl_action"}]
+            }
+        ]
+    },
+    {
+        "id": "up_dog_martyrdomdog",
+        "type": "Upgrade",
+        "name": "Martyrdom Dog",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Trench Pilgrims often enthusiastically strap their dogs with explosives so they can partake in a glorious martyrdom operation. The explosives use exactly the same rules as the Martyrdom Explosives of the Ecclesiastic Prisoners."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "gap"}],
+                "content": ""
+            },
+            
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "A dog strapped with a Martyrdom Device can trigger it at any point during their Activation. This does not require an ACTION. When detonated, the explosion is treated as a BLAST 3” weapon targeting the dog model. Models within 1” of the dog hit by the explosion roll their injuries with +1 DICE. The dog rolls 4d6 and adds them together to determine the results of their injury roll. If the explosive goes off and the dog somehow survives the battle, you can buy them a new explosive for 35 ducats as normal, or simply field them without.",
+                "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"}]
+            }
+        ]
+    },
+    {
+        "id": "up_dog_hellhound",
+        "type": "Upgrade",
+        "name": "Hellhound",
+        "eventtags": {"trait": true, "melee": 1},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "This horrifying infernal canine is the size of a small pony, and within its tortured belly rage flames of Hell itself. It howls in constant agony and rage in combat. This dog is immune to any attack with the Keyword FIRE, and its own attack has the Keyword FIRE. It has +1 Dice Melee attack characteristic. For the Mammon or Black Grail Warband, replace Keyword FIRE with keyword GAS in the rules above.",
+                "glossary": [
+                    {"val": "GAS", "id": "gl_gas"},
+                    {"val": "FIRE", "id": "gl_fire"}    
+                ]
+            }
+        ]
+    },
+    {
+        "id": "up_dog_fireteam",
+        "type": "Upgrade",
+        "name": "Fireteam",
+        "eventtags": {"trait": true, "melee": 1},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The dog gains an ability to form a FIRETEAM with any 1 model in your Warband.",
+                "glossary": [
+                    {"val": "FIRETEAM", "id": "gl_fireteam"}
+                ]
+            }
+        ]
     }
 ]

@@ -3035,13 +3035,12 @@
         "type": "Equipment",
         "source": "core",
         "tags": [
-            {"tag_name": "Consumable", "val": "gl_consumable"}
                 ],
         "category": "equipment",
         "name": "Cup of Filth",
         "equip_type": null,
         "range": null,
-        "blurb": "Taken from the river of nauseating corruption vomited by the Lord of the Flies himself before these was time, this liquid is collected from his unholy river that is the source of every illness and plague the Creation has ever known or will know.",
+        "blurb": "Drawn from the river of nauseating corruption vomited by the Lord of the Flies before time began, this liquid is collected from his unholy river, the source of every illness and plague that Creation has ever known or will ever know.",
         "modifiers": [],
         "eventtags": {"trait": true},
         "description":  [
@@ -3051,7 +3050,7 @@
                     "subcontent": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                            "content": "Up to 4 Thralls can drink from a single Cup, and it grants them +1 DICE to Dash ACTIONS for the duration of a single battle. Alternatively, a single ELITE model can drink it to gain the same effect.",
+                            "content": "Before the battle begins, the model equipped with the cup may allow either one an ELITE or up to 4 Thralls to drink from it. A model that drank from the cup gains +1 DICE to Dash until the end of the battle. The Cup fills itself again after each battle.",
                             "glossary": [{"val": "+1 DICE", "id": "gl_plusdice"},{"val": "ACTIONS", "id": "gl_action"},{"val": "ELITE", "id": "gl_elite"}]
                         }
                     ]
@@ -3732,7 +3731,7 @@
                 "subcontent": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Rolls all injuries with +2 DICE. If the Axe hits an enemy in Melee, the model armed with it can take a second Melee Attack ACTION after resolving the damage from the first strike. This attack can be against the same or a different target.",
+                        "content": "Rolls all injuries with +2 DICE. If the Axe hits an enemy in Melee, the model armed with it can take a second Melee Attack ACTION after resolving the damage from the first strike. This attack can be against the same or a different target. You can never make more than 2 attacks per Activation with this weapon, even if other bonuses would allow it.",
                         "glossary": [{"val": "+2 DICE", "id": "gl_plusdice"},{"val": "ACTION", "id": "gl_action"}]
                     }
                 ]
@@ -4716,7 +4715,7 @@
         "range": null,
         "blurb": "Yoke Fiends are unruly beasts, and almost impossible to control whenever they smell mortal blood. The Court nobles use cruel barbed muzzles to bring their footsoldiers to heel. Attuned to the will of a the noble in the charge who can constrict them until the pain becomes so unbearable that even the most bestial Yoke Fiend is brought to heel.",
         "modifiers": [],
-        "eventtags": {"trait": true},
+        "eventtags": {"trait": true, "ranged": 1},
         "description":  [
             {
                 "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -4752,7 +4751,7 @@
                     
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Ignores the additional BLOOD MARKER caused by the Keyword SHRAPNEL. Any model wearing this helmet starts the battle Down. During the first term, If attacked before it is Activated, the Wretched suffers an extra BLOOD MARKER from the first attack that hits it.",
+                        "content": "Ignores the additional BLOOD MARKER caused by the Keyword SHRAPNEL. Any model wearing this helmet starts the battle Down. During the first turn, If attacked before it is Activated, the Wretched suffers an extra BLOOD MARKER from the first attack that hits it.",
                         "glossary": [{"val": "BLOOD MARKER", "id": "gl_bloodmarker"},{"val": "SHRAPNEL", "id": "gl_shrapnel"}]
                     }
                 ]

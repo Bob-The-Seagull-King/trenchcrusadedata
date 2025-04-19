@@ -1659,6 +1659,68 @@
         ]
     },
     {
+        "id": "ab_specialiseddog",
+        "type": "Addon",
+        "source": "core",
+        "tags": [
+                ],
+        "faction_id": "",
+        "name": "Specialised Dog",
+        "eventtags": {"trait": true},
+        "description":  [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "For the cost of additional +1 Glory Point the dog can be upgraded into a specialised dog, dependant on the faction their warband is a part of."
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "list"}],
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Any except Black Grail or Court: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_dog_guarddog"
+                            }
+                        ]
+                    },                 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "New Antioch: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_dog_mercydog"
+                            }
+                        ]
+                    },                 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Trench Pilgrim: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_dog_martyrdomdog"
+                            }
+                        ]
+                    },                 
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                        "content": "Black Grail, Court, and Heretic Legion Only: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "upgradeclick"}],
+                                "content": "up_dog_hellhound"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "ab_diseasecarrier",
         "type": "Addon",
         "source": "core",

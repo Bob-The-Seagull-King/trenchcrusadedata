@@ -111,7 +111,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Skirmish",
+                                        "content": "Claim No Man’s Land",
                                         "glossary": []
                                     }
                                  ]
@@ -122,7 +122,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Scouting Parties",
+                                        "content": "Hunt for Heroes",
                                         "glossary": []
                                     }
                                  ]
@@ -133,7 +133,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Fallen Idols",
+                                        "content": "Hill 223",
                                         "glossary": []
                                     }
                                  ]
@@ -144,7 +144,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Vanguard",
+                                        "content": "Relic Hunt",
                                         "glossary": []
                                     }
                                  ]
@@ -155,7 +155,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Storming The Shores",
+                                        "content": "Supply Raid",
                                         "glossary": []
                                     }
                                  ]
@@ -166,7 +166,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Battle Trophies",
+                                        "content": "Random Scenario",
                                         "glossary": []
                                     }
                                  ]
@@ -205,7 +205,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Relic Hunt",
+                                        "content": "Armoured Train",
                                         "glossary": []
                                     }
                                  ]
@@ -216,7 +216,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Barbed Wire",
+                                        "content": "Storming the Shores",
                                         "glossary": []
                                     }
                                  ]
@@ -227,7 +227,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Linebreaker",
+                                        "content": "Claim No Man’s Land",
                                         "glossary": []
                                     }
                                  ]
@@ -238,7 +238,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Claim the No Man's Land",
+                                        "content": "Dragon Hunt",
                                         "glossary": []
                                     }
                                  ]
@@ -249,7 +249,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Armoured Train",
+                                        "content": "Random Scenario",
                                         "glossary": []
                                     }
                                  ]
@@ -288,7 +288,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Over the Top",
+                                        "content": "Dragon Hunt",
                                         "glossary": []
                                     }
                                  ]
@@ -299,7 +299,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Opposed River Crossing",
+                                        "content": "From Below",
                                         "glossary": []
                                     }
                                  ]
@@ -310,7 +310,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Let the Sleeping Beasts Lie",
+                                        "content": "Fields of Glory",
                                         "glossary": []
                                     }
                                  ]
@@ -321,7 +321,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Poison Gas",
+                                        "content": "Storming the Shores",
                                         "glossary": []
                                     }
                                  ]
@@ -332,7 +332,7 @@
                                 "subcontent": [
                                     {
                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                        "content": "Fields of Glory",
+                                        "content": "Random Scenario",
                                         "glossary": []
                                     }
                                  ]
@@ -369,7 +369,7 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "As you play the campaign, the words of your deeds on the battlefield spreads and attracts the attention of your superiors who will allocate more troops and resources at your disposal within their organisation, and make greater reinforcements available to you. This is represented by Warband Threshold Value. Warbands starting value is indicated in the Warband list, and is typically 700 Gold Ducats. This value grows during the Campaign as indicated below (additions to the Value are cumulative).",
+                        "content": "As you play the campaign, the words of your deeds on the battlefield spreads and attracts the attention of your superiors who will allocate more troops and resources at your disposal within their organisation, and make greater reinforcements available to you. This is represented by Warband Threshold Value. Warbands starting value is indicated in the Warband list, and is typically 700 Gold Ducats. This value grows during the Campaign as indicated below (additions to the Value are cumulative). Each Warband’s Threshold Value depends on the number of battles they have played.",
                         "subcontent": [ ]
                     }
                 ]
@@ -386,6 +386,12 @@
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
                         "content": "Note that the Warband can be bigger than this, you just cannot field more models in battle than indicated in the table below. Also, some Scenarios limit the number of models below your Max Field Strength. In such cases, follow the Scenario’s instructions.",
+                        "glossary": []
+                    },
+                    { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "When a Papal States Intervention Force calculates their Warband Threshold Value, or requests Reinforcements, they do so at -200 ducats. For example, such a warband about to play battle 3 in a campaign would have a Warband Threshold Value of 700 ducats.",
                         "glossary": []
                     }
                 ]
@@ -545,7 +551,7 @@
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "In Trench Crusade all Warbands are part of one of great military organisations or under the guidance of a powerful patron, and periodically receive reinforcements to offset their combat losses. Thus after each battle you can build up your force back to the current Warband Threshold Value in Gold Ducats if the Warband Value has fallen under this threshold. When you do this, you must first do the following:",
+                "content": "In Trench Crusade all Warbands are part of one of the great military organisations or under the guidance of a powerful patron, and periodically receive reinforcements to offset their combat losses. Thus after each battle you can build up your force back to the current Warband Threshold Value in Gold Ducats if the Warband Value has fallen under this threshold. When you do this, you must first do the following:",
                 "subcontent": [ ]
             },
             {
@@ -554,7 +560,7 @@
                 "subcontent": [ 
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Forego Exploration & Looting Phase completely. Your Warband falls back and requests Reinforcements, missing the opportunity to Explore and Loot."
+                        "content": "Forego the Exploration & Looting step completely. Your Warband falls back and requests Reinforcements, missing the opportunity to Loot and Explore."
                     },
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -569,8 +575,14 @@
                         "content": "Once you’ve done this, calculate the current value of your warband in ducats."
                     },
                     {
-                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "You may now buy new troops, weapons, armour and equipment up to the Warband Threshold Value (see above). Do not keep any leftover ducats."
+                        "tags": [{"tag_name": "desc_type", "val": "list"}],
+                        "content": "You may now buy new troops, weapons, armour and equipment up to the Warband Threshold Value (see above). Do not keep any leftover ducats.",
+                        "subcontent": [
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "The Papal States Intervention Force will also gain 4 Glory Points each time they use the Reinforcement action." 
+                            }
+                        ]
                     }
                 ]
             }   
@@ -620,7 +632,7 @@
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                "content": "Campaigns are divided into 3 Stages: Early, Mid, and Endgame. You play a set number of games in each of these stages before moving on to the next. Once a player has played 11 Battles in total they can play no more until all the other players have played 11 games as well.",
+                "content": "Campaigns are divided into 3 Stages: Early, Mid, and Endgame. You play a set number of games in each of these stages before moving on to the next.  If two players of the campaign are not on the same stage, the Campaign Stage is determined by the warband of the lower stage. Once a player has played 11 Battles in total they can play no more until all the other players have played 11 games as well.",
                 "subcontent": [ ]
             },
             { "tags": [{"tag_name": "desc_type", "val": "gap"}], "content": "" },
@@ -636,7 +648,7 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Players often want to join a Campaign in progress. This is fine, and new forces are purchased   with the currentWarband Reinforced Threshold of the campaign.",
+                        "content": "Players often want to join a Campaign in progress. This is fine, and new forces are purchased with the current Warband Threshold Value of the campaign. In addition, they can tick 1 Experience box per battle the top Warband in the campaign has played and gain the Advancements as if they played the games. This Experience can be divided between the ELITE models as the player sees fit.",
                         "subcontent": [ ]
                     }
                 ]
@@ -733,7 +745,7 @@
                 "description": [
                     {
                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                        "content": "Buy items allowed for your Warband. See your Warband Equipment list for the available items, and Trading section to see what other items might be offered to you. You may also sell any surplus Weapons, Armour and Equipment, and you receive half of their base value from the merchants. See Trading rules for details.",
+                        "content": "Buy items allowed for your Warband. See your Warband Equipment list for the available items, and Trading section to see what other items might be offered to you. You may also sell any surplus Weapons, Armour and Equipment, and you receive half of their base value from the merchants, including Glory Items. See Trading rules for details.",
                         "subcontent": [ ]
                     }
                 ]
@@ -800,6 +812,10 @@
                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                 "content": "You can only have one of each type of Battle Scar or Skill per ELITE, unless explicitly stated in its entry. If a model rolls a result that would cause it to gain a Battle Scar that it cannot gain again, re-roll on the chart until a viable result is achieved.",
                 "glossary": [ {"val": "ELITE", "id": "gl_elite"}]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "After determining Injuries, You can dismiss any warrior you wish after the battle if they have 2+ Scars."
             }
         ],
         "rules": [
@@ -866,7 +882,7 @@
                             },
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                "content": "Assign the Promotions dice to the non-ELITE models in your warband. You can choose which model gets the dice, but you can assign a maximum of 2 per model, unless all such models already have 2, in which case you can assign the remaining surplus dice as you wish.",
+                                "content": "Assign up to 2 Promotion Dice to each Non-ELITE model (up to 3 if that model performed a Glorious Deed during the battle) in your army that is eligible for promotion. If every such model has been assigned 2 Promotion Dice and you have Promotion Dice remaining, you may assign dice so that no model has more than two or more dice than another.",
                                 "glossary": [ {"val": "ELITE", "id": "gl_elite"}]
                             },
                             {
@@ -877,6 +893,11 @@
                             {
                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                 "content": "Once a model is promoted, stop! Only 1 Promotion per Battle!",
+                                "glossary": [ {"val": "ELITE", "id": "gl_elite"}]
+                            },
+                            {
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Keep a tally of Promotion Dice rolls you’ve failed thus far, including any from revious games in the campaign. If in total you fail 5 Promotion rolls in a row (regardless how the dice are distributed amongst the models), the 6th one will always succeed. This re-sets the counter.",
                                 "glossary": [ {"val": "ELITE", "id": "gl_elite"}]
                             },
                             {

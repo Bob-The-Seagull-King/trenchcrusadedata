@@ -48,6 +48,30 @@
         ]
     },
     {
+        "id": "ec_legendary",
+        "type": "ExplorationChart",
+        "source": "core",
+        "tags": [
+            ],
+        "name": "Legendary Exploration Location Table",
+        "description": [
+        ],
+        "listtype": "location",
+        "list_items": [
+            { "id": "lc_battlefieldofcorpses", "roll_start": 6, "roll_end": 6},
+            { "id": "lc_esotericlibrary", "roll_start": 8, "roll_end": 8},
+            { "id": "lc_hiddenpassages", "roll_start": 10, "roll_end": 10},
+            { "id": "lc_jabireanalchemicalbook", "roll_start": 12, "roll_end": 12},
+            { "id": "lc_blacknetworkcontact", "roll_start": 14, "roll_end": 14},
+            { "id": "lc_treasureoftheholies", "roll_start": 16, "roll_end": 16},
+            { "id": "lc_skullofasaint", "roll_start": 18, "roll_end": 18},
+            { "id": "lc_lockofsamsonshair", "roll_start": 20, "roll_end": 20},
+            { "id": "lc_sampleofholydna", "roll_start": 26, "roll_end": 26},
+            { "id": "lc_golgothatektites", "roll_start": 30, "roll_end": 30},
+            { "id": "lc_fruitfromthetreeofgoodandevilknowledge", "roll_start": 36, "roll_end": 36}
+        ]
+    },
+    {
         "id": "ec_modifiers",
         "type": "ExplorationChart",
         "source": "core",

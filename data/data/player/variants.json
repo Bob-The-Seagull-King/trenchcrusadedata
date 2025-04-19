@@ -53,7 +53,7 @@
             {"id": "md_anointedheavyinfantry", "cost": 95, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": ["eq_reinforcedarmour","eq_infernalbrandmark"], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
             {"id": "md_artillerywitch", "cost": 90, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
             {"id": "md_goeticwarlock", "cost": 4, "cost_id": "glory", "limit_min": 0, "limit_max": 1, "equipment": ["eq_swordaxe","eq_swordaxe"], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
-            {"id": "md_wardog", "cost": 1, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
+            {"id": "md_wardog", "cost": 1, "cost_id": "glory", "limit_min": "Up to one dog per type", "limit_max": "Up to one dog per type", "equipment": [], "upgrades": [{"id": "up_dog_fireteam", "cost": 1, "cost_id": "glory"},{"id": "up_dog_hellhound", "cost": 1, "cost_id": "glory"},{"id": "up_dog_guarddog", "cost": 1, "cost_id": "glory"}]},
             {"id": "md_guarddog", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
             {"id": "md_mercydog", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": ["eq_medikit"], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
             {"id": "md_hellhound", "cost": 2, "cost_id": "glory", "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_infiltratornaval", "cost": 10, "cost_id": "ducats"}]},
@@ -1290,7 +1290,8 @@
             {"id": "md_combatengineer",             "cost": 80, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": ["eq_shovel","eq_engineerbodyarmour"],                                            "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
             {"id": "md_mechanisedheavyinfantry",    "cost": 85, "cost_id": "ducats", "limit_min": 0, "limit_max": 3, "equipment": ["eq_reinforcedarmour"],                                                          "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4},{"id": "up_machinearmour", "cost": 10, "cost_id": "ducats"}]},
             {"id": "md_combatmedic",                "cost": 65, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": ["eq_misericordia","eq_medikit"],                                                 "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
-            {"id": "md_wardog",                     "cost":  1, "cost_id": "glory",  "limit_min": 0, "limit_max": 0, "equipment": [],                                                                               "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
+            
+            {"id": "md_wardog", "cost": 1, "cost_id": "glory", "limit_min": "Up to one dog per type", "limit_max": "Up to one dog per type", "equipment": [], "upgrades": [{"id": "up_dog_fireteam", "cost": 1, "cost_id": "glory"},{"id": "up_dog_mercydog", "cost": 1, "cost_id": "glory"},{"id": "up_dog_guarddog", "cost": 1, "cost_id": "glory"}]},
             {"id": "md_guarddog",                   "cost":  2, "cost_id": "glory",  "limit_min": 0, "limit_max": 0, "equipment": [],                                                                               "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
             {"id": "md_mercydog",                   "cost":  2, "cost_id": "glory",  "limit_min": 0, "limit_max": 0, "equipment": ["eq_medikit"],                                                                   "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
             {"id": "md_communicantantitankhunter",  "cost":  5, "cost_id": "glory",  "limit_min": 0, "limit_max": 1, "equipment": ["eq_antimaterialrifle","eq_combathelmet","eq_trenchclub","eq_trenchclub"],       "upgrades": [{"id": "up_supremeblessing", "cost": 0, "cost_id": "ducats", "limit": 1},{"id": "up_swissguard", "cost": 5, "cost_id": "ducats", "limit": 4}]},
@@ -1954,7 +1955,7 @@
         ],
         "removed_rules": [],
         "removed_equip": ["eq_greatbannerofnewantioch"],
-        "removed_model": ["md_lieutenant","md_trenchcleric","md_sniperpriest", "md_wardog", "md_guarddog", "md_mercydog"],
+        "removed_model": ["md_lieutenant","md_trenchcleric","md_sniperpriest", "md_wardog"],
         "equipment": [
             {"id": "eq_redbanner",    "cost": 2, "cost_id": "glory",  "limit": 1, "restriction": []},            
             {"id": "eq_bloodcloak",    "cost": 10, "cost_id": "ducats",  "limit": 4, "restriction": []}
@@ -1965,7 +1966,7 @@
             {"id": "md_trenchcleric",               "cost": 60, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
             {"id": "md_sniperpriest",               "cost": 50, "cost_id": "ducats", "limit_min": 0, "limit_max": 2, "equipment": [], "upgrades": []},
             {"id": "md_crimsoncommunicant",         "cost": 65, "cost_id": "ducats", "limit_min": 0, "limit_max": 1, "equipment": [], "upgrades": []},
-            {"id": "md_trenchdog",                  "cost":  35, "cost_id": "ducats",  "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_brigadedog_fireteam", "cost": 5, "cost_id": "ducats"},{"id": "up_brigadedog_grenade", "cost": 5, "cost_id": "ducats"},{"id": "up_brigadedog_guarddog", "cost": 5, "cost_id": "ducats", "limit" : 1},{"id": "up_brigadedog_mercydog", "cost": 5, "cost_id": "ducats", "limit" : 2},{"id": "up_brigadedog_attackdog", "cost": 5, "cost_id": "ducats"}]}
+            {"id": "md_wardog",                  "cost":  35, "cost_id": "ducats",  "limit_min": 0, "limit_max": 0, "equipment": [], "upgrades": [{"id": "up_brigadedog_fireteam", "cost": 5, "cost_id": "ducats"},{"id": "up_brigadedog_grenade", "cost": 5, "cost_id": "ducats"},{"id": "up_brigadedog_guarddog", "cost": 5, "cost_id": "ducats", "limit" : 1},{"id": "up_brigadedog_mercydog", "cost": 5, "cost_id": "ducats", "limit" : 2},{"id": "up_brigadedog_attackdog", "cost": 5, "cost_id": "ducats"}]}
         ]
     } ,
     {
